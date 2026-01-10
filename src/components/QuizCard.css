@@ -143,14 +143,9 @@
 .feedback {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding: 16px;
-  background: #f9f9f9;
-  border-radius: 12px;
+  gap: 8px;
   animation: fadeIn 0.3s ease;
   flex-shrink: 0;
-  max-height: 30vh;
-  overflow-y: auto;
 }
 
 @keyframes fadeIn {
@@ -164,30 +159,23 @@
   }
 }
 
-.feedback-message {
-  font-size: 1.125rem;
-  font-weight: 700;
+.feedback-status {
+  font-size: 0.95rem;
+  font-weight: 600;
   text-align: center;
+  padding: 6px 12px;
+  border-radius: 6px;
   flex-shrink: 0;
 }
 
-.feedback-message.correct {
-  color: #4caf50;
+.feedback-status.correct {
+  color: #2e7d32;
+  background: #e8f5e9;
 }
 
-.feedback-message.incorrect {
-  color: #f44336;
-}
-
-.explanation {
-  font-size: 1rem;
-  line-height: 1.5;
-  font-weight: 600;
-  color: #333;
-  text-align: center;
-  padding: 0 4px;
-  max-height: 15vh;
-  overflow-y: auto;
+.feedback-status.incorrect {
+  color: #c62828;
+  background: #ffebee;
 }
 
 .next-button {
@@ -245,17 +233,12 @@
   }
 
   .feedback {
-    padding: 12px;
-    gap: 10px;
-    max-height: 28vh;
+    gap: 6px;
   }
 
-  .feedback-message {
-    font-size: 1rem;
-  }
-
-  .explanation {
-    font-size: 0.85rem;
+  .feedback-status {
+    font-size: 0.9rem;
+    padding: 5px 10px;
   }
 
   .next-button {

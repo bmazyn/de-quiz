@@ -49,11 +49,10 @@ export default function QuizCard({ card, answerState, onAnswer, onNext }: QuizCa
 
       {isAnswered && (
         <div className="feedback">
-          <div className={`feedback-message ${answerState.isCorrect ? "correct" : "incorrect"}`}>
-            {answerState.isCorrect ? "✓ Correct!" : "✗ Incorrect"}
-          </div>
-          <div className="explanation">
-            {card.explanations[answerState.selectedChoice!]}
+          <div className={`feedback-status ${answerState.isCorrect ? "correct" : "incorrect"}`}>
+            {answerState.isCorrect 
+              ? "✓ Correct" 
+              : `✕ Wrong — Correct: ${card.correct}`}
           </div>
           <button className="next-button" onClick={onNext}>
             Next →
