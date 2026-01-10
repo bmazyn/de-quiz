@@ -47,6 +47,7 @@ export default function QuizCard({ card, answerState, onAnswer, onNext, theme, o
     }
   };
 
+  // Split promptLine from dataset - format: "pinyin — hanzi"
   const [pinyin, hanzi] = card.promptLine.split(' — ');
 
   return (
@@ -66,7 +67,7 @@ export default function QuizCard({ card, answerState, onAnswer, onNext, theme, o
             onClick={() => handleAnswerClick(choice)}
             disabled={isAnswered}
           >
-            <span className="choice-label">{choice}</span>
+            {/* Answer text comes directly from card.choices - no modifications */}
             <span className="choice-text">{card.choices[choice]}</span>
           </button>
         ))}

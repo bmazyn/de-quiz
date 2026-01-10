@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import QuizCard from "./QuizCard";
 import type { QuizCard as QuizCardType, ChoiceKey, AnswerState } from "../types";
+// Single source of truth for all quiz content - DO NOT modify or supplement
 import quizCardsData from "../data/quizCards.json";
 import { useTheme } from "../hooks/useTheme";
 import "./QuizFeed.css";

@@ -1,0 +1,1731 @@
+[
+  {
+    "id": "hsk1-001",
+    "kind": "vocab",
+    "pinyin": "ài",
+    "hanzi": "爱",
+    "choices": {
+      "A": "o'clock",
+      "B": "to love",
+      "C": "hot",
+      "D": "Beijing"
+    },
+    "correct": "B"
+  },
+  {
+    "id": "hsk1-002",
+    "kind": "vocab",
+    "pinyin": "bā",
+    "hanzi": "八",
+    "choices": {
+      "A": "eight",
+      "B": "water",
+      "C": "possessive particle",
+      "D": "movie"
+    },
+    "correct": "A"
+  },
+  {
+    "id": "hsk1-003",
+    "kind": "vocab",
+    "pinyin": "bàba",
+    "hanzi": "爸爸",
+    "choices": {
+      "A": "dad/father",
+      "B": "to make a phone call",
+      "C": "measure word for books",
+      "D": "Beijing"
+    },
+    "correct": "A"
+  },
+  {
+    "id": "hsk1-004",
+    "kind": "vocab",
+    "pinyin": "bēizi",
+    "hanzi": "杯子",
+    "choices": {
+      "A": "ten",
+      "B": "two",
+      "C": "year",
+      "D": "cup/glass"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-005",
+    "kind": "vocab",
+    "pinyin": "Běijīng",
+    "hanzi": "北京",
+    "choices": {
+      "A": "we",
+      "B": "to drink",
+      "C": "Beijing",
+      "D": "apple"
+    },
+    "correct": "C"
+  },
+  {
+    "id": "hsk1-006",
+    "kind": "vocab",
+    "pinyin": "běn",
+    "hanzi": "本",
+    "choices": {
+      "A": "all/both",
+      "B": "to be called",
+      "C": "measure word for books",
+      "D": "to drink"
+    },
+    "correct": "C"
+  },
+  {
+    "id": "hsk1-007",
+    "kind": "vocab",
+    "pinyin": "bú kèqi",
+    "hanzi": "不客气",
+    "choices": {
+      "A": "to make a phone call",
+      "B": "you're welcome",
+      "C": "to see",
+      "D": "big/large"
+    },
+    "correct": "B"
+  },
+  {
+    "id": "hsk1-008",
+    "kind": "vocab",
+    "pinyin": "bù",
+    "hanzi": "不",
+    "choices": {
+      "A": "measure word for books",
+      "B": "we",
+      "C": "book",
+      "D": "not/no"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-009",
+    "kind": "vocab",
+    "pinyin": "cài",
+    "hanzi": "菜",
+    "choices": {
+      "A": "China",
+      "B": "to see",
+      "C": "dish/vegetable",
+      "D": "taxi"
+    },
+    "correct": "C"
+  },
+  {
+    "id": "hsk1-010",
+    "kind": "vocab",
+    "pinyin": "chá",
+    "hanzi": "茶",
+    "choices": {
+      "A": "son",
+      "B": "what",
+      "C": "tea",
+      "D": "friend"
+    },
+    "correct": "C"
+  },
+  {
+    "id": "hsk1-011",
+    "kind": "vocab",
+    "pinyin": "chī",
+    "hanzi": "吃",
+    "choices": {
+      "A": "taxi",
+      "B": "to eat",
+      "C": "she",
+      "D": "very"
+    },
+    "correct": "B"
+  },
+  {
+    "id": "hsk1-012",
+    "kind": "vocab",
+    "pinyin": "chūzūchē",
+    "hanzi": "出租车",
+    "choices": {
+      "A": "taxi",
+      "B": "question particle",
+      "C": "to drink",
+      "D": "hot"
+    },
+    "correct": "A"
+  },
+  {
+    "id": "hsk1-013",
+    "kind": "vocab",
+    "pinyin": "dǎ diànhuà",
+    "hanzi": "打电话",
+    "choices": {
+      "A": "restaurant",
+      "B": "nine",
+      "C": "to make a phone call",
+      "D": "shop"
+    },
+    "correct": "C"
+  },
+  {
+    "id": "hsk1-014",
+    "kind": "vocab",
+    "pinyin": "dà",
+    "hanzi": "大",
+    "choices": {
+      "A": "sorry",
+      "B": "big/large",
+      "C": "money",
+      "D": "hot"
+    },
+    "correct": "B"
+  },
+  {
+    "id": "hsk1-015",
+    "kind": "vocab",
+    "pinyin": "de",
+    "hanzi": "的",
+    "choices": {
+      "A": "to see",
+      "B": "possessive particle",
+      "C": "China",
+      "D": "good"
+    },
+    "correct": "B"
+  },
+  {
+    "id": "hsk1-016",
+    "kind": "vocab",
+    "pinyin": "diǎn",
+    "hanzi": "点",
+    "choices": {
+      "A": "she",
+      "B": "weather",
+      "C": "o'clock",
+      "D": "thank you"
+    },
+    "correct": "C"
+  },
+  {
+    "id": "hsk1-017",
+    "kind": "vocab",
+    "pinyin": "diànnǎo",
+    "hanzi": "电脑",
+    "choices": {
+      "A": "train station",
+      "B": "computer",
+      "C": "we",
+      "D": "teacher"
+    },
+    "correct": "B"
+  },
+  {
+    "id": "hsk1-018",
+    "kind": "vocab",
+    "pinyin": "diànshì",
+    "hanzi": "电视",
+    "choices": {
+      "A": "television",
+      "B": "do",
+      "C": "goodbye",
+      "D": "daughter"
+    },
+    "correct": "A"
+  },
+  {
+    "id": "hsk1-019",
+    "kind": "vocab",
+    "pinyin": "diànyǐng",
+    "hanzi": "电影",
+    "choices": {
+      "A": "how",
+      "B": "have",
+      "C": "to come",
+      "D": "movie"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-020",
+    "kind": "vocab",
+    "pinyin": "dōngxi",
+    "hanzi": "东西",
+    "choices": {
+      "A": "television",
+      "B": "work/job",
+      "C": "thing/stuff",
+      "D": "sleep"
+    },
+    "correct": "C"
+  },
+  {
+    "id": "hsk1-021",
+    "kind": "vocab",
+    "pinyin": "dōu",
+    "hanzi": "都",
+    "choices": {
+      "A": "pretty",
+      "B": "all/both",
+      "C": "month",
+      "D": "teacher"
+    },
+    "correct": "B"
+  },
+  {
+    "id": "hsk1-022",
+    "kind": "vocab",
+    "pinyin": "dú",
+    "hanzi": "读",
+    "choices": {
+      "A": "rice",
+      "B": "taxi",
+      "C": "to read",
+      "D": "name"
+    },
+    "correct": "C"
+  },
+  {
+    "id": "hsk1-023",
+    "kind": "vocab",
+    "pinyin": "duìbuqǐ",
+    "hanzi": "对不起",
+    "choices": {
+      "A": "all/both",
+      "B": "to go",
+      "C": "classmate",
+      "D": "sorry"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-024",
+    "kind": "vocab",
+    "pinyin": "duō",
+    "hanzi": "多",
+    "choices": {
+      "A": "yuan",
+      "B": "to see",
+      "C": "seven",
+      "D": "many/much"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-025",
+    "kind": "vocab",
+    "pinyin": "duōshao",
+    "hanzi": "多少",
+    "choices": {
+      "A": "one",
+      "B": "how many/how much",
+      "C": "do",
+      "D": "you"
+    },
+    "correct": "B"
+  },
+  {
+    "id": "hsk1-026",
+    "kind": "vocab",
+    "pinyin": "érzi",
+    "hanzi": "儿子",
+    "choices": {
+      "A": "morning",
+      "B": "have",
+      "C": "son",
+      "D": "particle"
+    },
+    "correct": "C"
+  },
+  {
+    "id": "hsk1-027",
+    "kind": "vocab",
+    "pinyin": "èr",
+    "hanzi": "二",
+    "choices": {
+      "A": "zero",
+      "B": "possessive particle",
+      "C": "two",
+      "D": "very"
+    },
+    "correct": "C"
+  },
+  {
+    "id": "hsk1-028",
+    "kind": "vocab",
+    "pinyin": "fànguǎn",
+    "hanzi": "饭馆",
+    "choices": {
+      "A": "restaurant",
+      "B": "to be",
+      "C": "Chinese (language)",
+      "D": "hospital"
+    },
+    "correct": "A"
+  },
+  {
+    "id": "hsk1-029",
+    "kind": "vocab",
+    "pinyin": "fēijī",
+    "hanzi": "飞机",
+    "choices": {
+      "A": "to return",
+      "B": "airplane",
+      "C": "doctor",
+      "D": "to go"
+    },
+    "correct": "B"
+  },
+  {
+    "id": "hsk1-030",
+    "kind": "vocab",
+    "pinyin": "fēnzhōng",
+    "hanzi": "分钟",
+    "choices": {
+      "A": "minute",
+      "B": "all/both",
+      "C": "can",
+      "D": "he"
+    },
+    "correct": "A"
+  },
+  {
+    "id": "hsk1-031",
+    "kind": "vocab",
+    "pinyin": "gāoxìng",
+    "hanzi": "高兴",
+    "choices": {
+      "A": "happy",
+      "B": "no problem",
+      "C": "dad/father",
+      "D": "possessive particle"
+    },
+    "correct": "A"
+  },
+  {
+    "id": "hsk1-032",
+    "kind": "vocab",
+    "pinyin": "gè",
+    "hanzi": "个",
+    "choices": {
+      "A": "hospital",
+      "B": "happy",
+      "C": "general measure word",
+      "D": "not/no"
+    },
+    "correct": "C"
+  },
+  {
+    "id": "hsk1-033",
+    "kind": "vocab",
+    "pinyin": "gōngzuò",
+    "hanzi": "工作",
+    "choices": {
+      "A": "he",
+      "B": "work/job",
+      "C": "five",
+      "D": "dish/vegetable"
+    },
+    "correct": "B"
+  },
+  {
+    "id": "hsk1-034",
+    "kind": "vocab",
+    "pinyin": "gǒu",
+    "hanzi": "狗",
+    "choices": {
+      "A": "yesterday",
+      "B": "you",
+      "C": "dog",
+      "D": "to read"
+    },
+    "correct": "C"
+  },
+  {
+    "id": "hsk1-035",
+    "kind": "vocab",
+    "pinyin": "Hànyǔ",
+    "hanzi": "汉语",
+    "choices": {
+      "A": "restaurant",
+      "B": "Chinese (language)",
+      "C": "can",
+      "D": "China"
+    },
+    "correct": "B"
+  },
+  {
+    "id": "hsk1-036",
+    "kind": "vocab",
+    "pinyin": "hǎo",
+    "hanzi": "好",
+    "choices": {
+      "A": "teacher",
+      "B": "good",
+      "C": "shop",
+      "D": "to know"
+    },
+    "correct": "B"
+  },
+  {
+    "id": "hsk1-037",
+    "kind": "vocab",
+    "pinyin": "hē",
+    "hanzi": "喝",
+    "choices": {
+      "A": "airplane",
+      "B": "to drink",
+      "C": "general measure word",
+      "D": "o'clock"
+    },
+    "correct": "B"
+  },
+  {
+    "id": "hsk1-038",
+    "kind": "vocab",
+    "pinyin": "hé",
+    "hanzi": "和",
+    "choices": {
+      "A": "and",
+      "B": "minute",
+      "C": "apple",
+      "D": "you"
+    },
+    "correct": "A"
+  },
+  {
+    "id": "hsk1-039",
+    "kind": "vocab",
+    "pinyin": "hěn",
+    "hanzi": "很",
+    "choices": {
+      "A": "very",
+      "B": "not/no",
+      "C": "what",
+      "D": "to go"
+    },
+    "correct": "A"
+  },
+  {
+    "id": "hsk1-040",
+    "kind": "vocab",
+    "pinyin": "huí",
+    "hanzi": "回",
+    "choices": {
+      "A": "one",
+      "B": "tea",
+      "C": "to return",
+      "D": "home"
+    },
+    "correct": "C"
+  },
+  {
+    "id": "hsk1-041",
+    "kind": "vocab",
+    "pinyin": "huì",
+    "hanzi": "会",
+    "choices": {
+      "A": "computer",
+      "B": "can",
+      "C": "restaurant",
+      "D": "can/know how to"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-042",
+    "kind": "vocab",
+    "pinyin": "huǒchēzhàn",
+    "hanzi": "火车站",
+    "choices": {
+      "A": "how many/how much",
+      "B": "particle",
+      "C": "train station",
+      "D": "we"
+    },
+    "correct": "C"
+  },
+  {
+    "id": "hsk1-043",
+    "kind": "vocab",
+    "pinyin": "jǐ",
+    "hanzi": "几",
+    "choices": {
+      "A": "inside",
+      "B": "nine",
+      "C": "particle",
+      "D": "how many"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-044",
+    "kind": "vocab",
+    "pinyin": "jiā",
+    "hanzi": "家",
+    "choices": {
+      "A": "person",
+      "B": "to know",
+      "C": "home",
+      "D": "on"
+    },
+    "correct": "C"
+  },
+  {
+    "id": "hsk1-045",
+    "kind": "vocab",
+    "pinyin": "jiào",
+    "hanzi": "叫",
+    "choices": {
+      "A": "home",
+      "B": "I",
+      "C": "to be called",
+      "D": "book"
+    },
+    "correct": "C"
+  },
+  {
+    "id": "hsk1-046",
+    "kind": "vocab",
+    "pinyin": "jīntiān",
+    "hanzi": "今天",
+    "choices": {
+      "A": "mom",
+      "B": "how many/how much",
+      "C": "today",
+      "D": "particle"
+    },
+    "correct": "C"
+  },
+  {
+    "id": "hsk1-047",
+    "kind": "vocab",
+    "pinyin": "jiǔ",
+    "hanzi": "九",
+    "choices": {
+      "A": "general measure word",
+      "B": "nine",
+      "C": "to buy",
+      "D": "good"
+    },
+    "correct": "B"
+  },
+  {
+    "id": "hsk1-048",
+    "kind": "vocab",
+    "pinyin": "kāi",
+    "hanzi": "开",
+    "choices": {
+      "A": "to know",
+      "B": "can",
+      "C": "to open",
+      "D": "you're welcome"
+    },
+    "correct": "C"
+  },
+  {
+    "id": "hsk1-049",
+    "kind": "vocab",
+    "pinyin": "kàn",
+    "hanzi": "看",
+    "choices": {
+      "A": "no problem",
+      "B": "particle",
+      "C": "to read",
+      "D": "to watch"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-050",
+    "kind": "vocab",
+    "pinyin": "kànjiàn",
+    "hanzi": "看见",
+    "choices": {
+      "A": "to read",
+      "B": "not/no",
+      "C": "at",
+      "D": "to see"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-051",
+    "kind": "vocab",
+    "pinyin": "kuài",
+    "hanzi": "块",
+    "choices": {
+      "A": "dog",
+      "B": "listen",
+      "C": "China",
+      "D": "yuan"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-052",
+    "kind": "vocab",
+    "pinyin": "lái",
+    "hanzi": "来",
+    "choices": {
+      "A": "book",
+      "B": "listen",
+      "C": "who",
+      "D": "to come"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-053",
+    "kind": "vocab",
+    "pinyin": "lǎoshī",
+    "hanzi": "老师",
+    "choices": {
+      "A": "teacher",
+      "B": "restaurant",
+      "C": "not/no",
+      "D": "and"
+    },
+    "correct": "A"
+  },
+  {
+    "id": "hsk1-054",
+    "kind": "vocab",
+    "pinyin": "le",
+    "hanzi": "了",
+    "choices": {
+      "A": "you're welcome",
+      "B": "not/no",
+      "C": "apple",
+      "D": "particle"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-055",
+    "kind": "vocab",
+    "pinyin": "lěng",
+    "hanzi": "冷",
+    "choices": {
+      "A": "cold",
+      "B": "to eat",
+      "C": "not/no",
+      "D": "name"
+    },
+    "correct": "A"
+  },
+  {
+    "id": "hsk1-056",
+    "kind": "vocab",
+    "pinyin": "lǐ",
+    "hanzi": "里",
+    "choices": {
+      "A": "one",
+      "B": "happy",
+      "C": "on",
+      "D": "inside"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-057",
+    "kind": "vocab",
+    "pinyin": "líng",
+    "hanzi": "零",
+    "choices": {
+      "A": "zero",
+      "B": "measure word for books",
+      "C": "seven",
+      "D": "pretty"
+    },
+    "correct": "A"
+  },
+  {
+    "id": "hsk1-058",
+    "kind": "vocab",
+    "pinyin": "liù",
+    "hanzi": "六",
+    "choices": {
+      "A": "six",
+      "B": "dog",
+      "C": "live",
+      "D": "two"
+    },
+    "correct": "A"
+  },
+  {
+    "id": "hsk1-059",
+    "kind": "vocab",
+    "pinyin": "māma",
+    "hanzi": "妈妈",
+    "choices": {
+      "A": "yuan",
+      "B": "mom",
+      "C": "computer",
+      "D": "shop"
+    },
+    "correct": "B"
+  },
+  {
+    "id": "hsk1-060",
+    "kind": "vocab",
+    "pinyin": "ma",
+    "hanzi": "吗",
+    "choices": {
+      "A": "live",
+      "B": "four",
+      "C": "question particle",
+      "D": "China"
+    },
+    "correct": "C"
+  },
+  {
+    "id": "hsk1-061",
+    "kind": "vocab",
+    "pinyin": "mǎi",
+    "hanzi": "买",
+    "choices": {
+      "A": "daughter",
+      "B": "to buy",
+      "C": "to make a phone call",
+      "D": "please"
+    },
+    "correct": "B"
+  },
+  {
+    "id": "hsk1-062",
+    "kind": "vocab",
+    "pinyin": "māo",
+    "hanzi": "猫",
+    "choices": {
+      "A": "dog",
+      "B": "cat",
+      "C": "tomorrow",
+      "D": "computer"
+    },
+    "correct": "B"
+  },
+  {
+    "id": "hsk1-063",
+    "kind": "vocab",
+    "pinyin": "méi",
+    "hanzi": "没",
+    "choices": {
+      "A": "to open",
+      "B": "to drink",
+      "C": "all/both",
+      "D": "not have"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-064",
+    "kind": "vocab",
+    "pinyin": "méi guānxi",
+    "hanzi": "没关系",
+    "choices": {
+      "A": "no problem",
+      "B": "we",
+      "C": "to know",
+      "D": "front"
+    },
+    "correct": "A"
+  },
+  {
+    "id": "hsk1-065",
+    "kind": "vocab",
+    "pinyin": "mǐfàn",
+    "hanzi": "米饭",
+    "choices": {
+      "A": "big/large",
+      "B": "live",
+      "C": "rice",
+      "D": "three"
+    },
+    "correct": "C"
+  },
+  {
+    "id": "hsk1-066",
+    "kind": "vocab",
+    "pinyin": "míngtiān",
+    "hanzi": "明天",
+    "choices": {
+      "A": "have",
+      "B": "sleep",
+      "C": "tomorrow",
+      "D": "big/large"
+    },
+    "correct": "C"
+  },
+  {
+    "id": "hsk1-067",
+    "kind": "vocab",
+    "pinyin": "míngzi",
+    "hanzi": "名字",
+    "choices": {
+      "A": "name",
+      "B": "two",
+      "C": "money",
+      "D": "ten"
+    },
+    "correct": "A"
+  },
+  {
+    "id": "hsk1-068",
+    "kind": "vocab",
+    "pinyin": "nǎr",
+    "hanzi": "哪儿",
+    "choices": {
+      "A": "work/job",
+      "B": "not have",
+      "C": "where",
+      "D": "rice"
+    },
+    "correct": "C"
+  },
+  {
+    "id": "hsk1-069",
+    "kind": "vocab",
+    "pinyin": "nàr",
+    "hanzi": "那儿",
+    "choices": {
+      "A": "measure word for books",
+      "B": "there",
+      "C": "good",
+      "D": "small"
+    },
+    "correct": "B"
+  },
+  {
+    "id": "hsk1-070",
+    "kind": "vocab",
+    "pinyin": "ne",
+    "hanzi": "呢",
+    "choices": {
+      "A": "person",
+      "B": "dog",
+      "C": "all/both",
+      "D": "particle"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-071",
+    "kind": "vocab",
+    "pinyin": "néng",
+    "hanzi": "能",
+    "choices": {
+      "A": "eight",
+      "B": "can",
+      "C": "possessive particle",
+      "D": "year"
+    },
+    "correct": "B"
+  },
+  {
+    "id": "hsk1-072",
+    "kind": "vocab",
+    "pinyin": "nǐ",
+    "hanzi": "你",
+    "choices": {
+      "A": "Beijing",
+      "B": "particle",
+      "C": "you",
+      "D": "small"
+    },
+    "correct": "C"
+  },
+  {
+    "id": "hsk1-073",
+    "kind": "vocab",
+    "pinyin": "nián",
+    "hanzi": "年",
+    "choices": {
+      "A": "year",
+      "B": "inside",
+      "C": "computer",
+      "D": "measure word for books"
+    },
+    "correct": "A"
+  },
+  {
+    "id": "hsk1-074",
+    "kind": "vocab",
+    "pinyin": "nǚ'ér",
+    "hanzi": "女儿",
+    "choices": {
+      "A": "daughter",
+      "B": "at",
+      "C": "two",
+      "D": "today"
+    },
+    "correct": "A"
+  },
+  {
+    "id": "hsk1-075",
+    "kind": "vocab",
+    "pinyin": "péngyou",
+    "hanzi": "朋友",
+    "choices": {
+      "A": "weather",
+      "B": "today",
+      "C": "you",
+      "D": "friend"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-076",
+    "kind": "vocab",
+    "pinyin": "piàoliang",
+    "hanzi": "漂亮",
+    "choices": {
+      "A": "happy",
+      "B": "pretty",
+      "C": "China",
+      "D": "live"
+    },
+    "correct": "B"
+  },
+  {
+    "id": "hsk1-077",
+    "kind": "vocab",
+    "pinyin": "píngguǒ",
+    "hanzi": "苹果",
+    "choices": {
+      "A": "apple",
+      "B": "cup/glass",
+      "C": "sorry",
+      "D": "water"
+    },
+    "correct": "A"
+  },
+  {
+    "id": "hsk1-078",
+    "kind": "vocab",
+    "pinyin": "qī",
+    "hanzi": "七",
+    "choices": {
+      "A": "listen",
+      "B": "seven",
+      "C": "all/both",
+      "D": "Chinese (language)"
+    },
+    "correct": "B"
+  },
+  {
+    "id": "hsk1-079",
+    "kind": "vocab",
+    "pinyin": "qián",
+    "hanzi": "钱",
+    "choices": {
+      "A": "school",
+      "B": "airplane",
+      "C": "money",
+      "D": "to buy"
+    },
+    "correct": "C"
+  },
+  {
+    "id": "hsk1-080",
+    "kind": "vocab",
+    "pinyin": "qiánmiàn",
+    "hanzi": "前面",
+    "choices": {
+      "A": "front",
+      "B": "classmate",
+      "C": "to return",
+      "D": "like"
+    },
+    "correct": "A"
+  },
+  {
+    "id": "hsk1-081",
+    "kind": "vocab",
+    "pinyin": "qǐng",
+    "hanzi": "请",
+    "choices": {
+      "A": "please",
+      "B": "three",
+      "C": "how many/how much",
+      "D": "to come"
+    },
+    "correct": "A"
+  },
+  {
+    "id": "hsk1-082",
+    "kind": "vocab",
+    "pinyin": "qù",
+    "hanzi": "去",
+    "choices": {
+      "A": "she",
+      "B": "good",
+      "C": "to be called",
+      "D": "to go"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-083",
+    "kind": "vocab",
+    "pinyin": "rè",
+    "hanzi": "热",
+    "choices": {
+      "A": "hot",
+      "B": "cup/glass",
+      "C": "do",
+      "D": "possessive particle"
+    },
+    "correct": "A"
+  },
+  {
+    "id": "hsk1-084",
+    "kind": "vocab",
+    "pinyin": "rén",
+    "hanzi": "人",
+    "choices": {
+      "A": "Beijing",
+      "B": "apple",
+      "C": "big/large",
+      "D": "person"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-085",
+    "kind": "vocab",
+    "pinyin": "rènshi",
+    "hanzi": "认识",
+    "choices": {
+      "A": "tomorrow",
+      "B": "to know",
+      "C": "seven",
+      "D": "inside"
+    },
+    "correct": "B"
+  },
+  {
+    "id": "hsk1-086",
+    "kind": "vocab",
+    "pinyin": "sān",
+    "hanzi": "三",
+    "choices": {
+      "A": "measure word for books",
+      "B": "what",
+      "C": "work/job",
+      "D": "three"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-087",
+    "kind": "vocab",
+    "pinyin": "shāngdiàn",
+    "hanzi": "商店",
+    "choices": {
+      "A": "nine",
+      "B": "inside",
+      "C": "shop",
+      "D": "dish/vegetable"
+    },
+    "correct": "C"
+  },
+  {
+    "id": "hsk1-088",
+    "kind": "vocab",
+    "pinyin": "shàng",
+    "hanzi": "上",
+    "choices": {
+      "A": "to know",
+      "B": "student",
+      "C": "on",
+      "D": "o'clock"
+    },
+    "correct": "C"
+  },
+  {
+    "id": "hsk1-089",
+    "kind": "vocab",
+    "pinyin": "shàngwǔ",
+    "hanzi": "上午",
+    "choices": {
+      "A": "three",
+      "B": "teacher",
+      "C": "train station",
+      "D": "morning"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-090",
+    "kind": "vocab",
+    "pinyin": "shǎo",
+    "hanzi": "少",
+    "choices": {
+      "A": "can",
+      "B": "computer",
+      "C": "how many/how much",
+      "D": "few"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-091",
+    "kind": "vocab",
+    "pinyin": "shéi",
+    "hanzi": "谁",
+    "choices": {
+      "A": "shop",
+      "B": "who",
+      "C": "at",
+      "D": "sleep"
+    },
+    "correct": "B"
+  },
+  {
+    "id": "hsk1-092",
+    "kind": "vocab",
+    "pinyin": "shénme",
+    "hanzi": "什么",
+    "choices": {
+      "A": "what",
+      "B": "small",
+      "C": "can",
+      "D": "to come"
+    },
+    "correct": "A"
+  },
+  {
+    "id": "hsk1-093",
+    "kind": "vocab",
+    "pinyin": "shí",
+    "hanzi": "十",
+    "choices": {
+      "A": "two",
+      "B": "ten",
+      "C": "inside",
+      "D": "listen"
+    },
+    "correct": "B"
+  },
+  {
+    "id": "hsk1-094",
+    "kind": "vocab",
+    "pinyin": "shì",
+    "hanzi": "是",
+    "choices": {
+      "A": "shop",
+      "B": "zero",
+      "C": "restaurant",
+      "D": "to be"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-095",
+    "kind": "vocab",
+    "pinyin": "shū",
+    "hanzi": "书",
+    "choices": {
+      "A": "to eat",
+      "B": "book",
+      "C": "to know",
+      "D": "to drink"
+    },
+    "correct": "B"
+  },
+  {
+    "id": "hsk1-096",
+    "kind": "vocab",
+    "pinyin": "shuǐ",
+    "hanzi": "水",
+    "choices": {
+      "A": "water",
+      "B": "airplane",
+      "C": "shop",
+      "D": "to return"
+    },
+    "correct": "A"
+  },
+  {
+    "id": "hsk1-097",
+    "kind": "vocab",
+    "pinyin": "shuìjiào",
+    "hanzi": "睡觉",
+    "choices": {
+      "A": "sleep",
+      "B": "to buy",
+      "C": "general measure word",
+      "D": "measure word for books"
+    },
+    "correct": "A"
+  },
+  {
+    "id": "hsk1-098",
+    "kind": "vocab",
+    "pinyin": "sì",
+    "hanzi": "四",
+    "choices": {
+      "A": "have",
+      "B": "four",
+      "C": "daughter",
+      "D": "please"
+    },
+    "correct": "B"
+  },
+  {
+    "id": "hsk1-099",
+    "kind": "vocab",
+    "pinyin": "tā",
+    "hanzi": "他",
+    "choices": {
+      "A": "he",
+      "B": "no problem",
+      "C": "general measure word",
+      "D": "to come"
+    },
+    "correct": "A"
+  },
+  {
+    "id": "hsk1-100",
+    "kind": "vocab",
+    "pinyin": "tā",
+    "hanzi": "她",
+    "choices": {
+      "A": "one",
+      "B": "she",
+      "C": "sleep",
+      "D": "month"
+    },
+    "correct": "B"
+  },
+  {
+    "id": "hsk1-101",
+    "kind": "vocab",
+    "pinyin": "tiānqì",
+    "hanzi": "天气",
+    "choices": {
+      "A": "I",
+      "B": "few",
+      "C": "sorry",
+      "D": "weather"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-102",
+    "kind": "vocab",
+    "pinyin": "tīng",
+    "hanzi": "听",
+    "choices": {
+      "A": "o'clock",
+      "B": "student",
+      "C": "how",
+      "D": "listen"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-103",
+    "kind": "vocab",
+    "pinyin": "tóngxué",
+    "hanzi": "同学",
+    "choices": {
+      "A": "three",
+      "B": "classmate",
+      "C": "where",
+      "D": "you"
+    },
+    "correct": "B"
+  },
+  {
+    "id": "hsk1-104",
+    "kind": "vocab",
+    "pinyin": "wǒ",
+    "hanzi": "我",
+    "choices": {
+      "A": "can",
+      "B": "goodbye",
+      "C": "small",
+      "D": "I"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-105",
+    "kind": "vocab",
+    "pinyin": "wǒmen",
+    "hanzi": "我们",
+    "choices": {
+      "A": "six",
+      "B": "we",
+      "C": "sleep",
+      "D": "dog"
+    },
+    "correct": "B"
+  },
+  {
+    "id": "hsk1-106",
+    "kind": "vocab",
+    "pinyin": "wǔ",
+    "hanzi": "五",
+    "choices": {
+      "A": "she",
+      "B": "he",
+      "C": "name",
+      "D": "five"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-107",
+    "kind": "vocab",
+    "pinyin": "xǐhuan",
+    "hanzi": "喜欢",
+    "choices": {
+      "A": "like",
+      "B": "zero",
+      "C": "good",
+      "D": "tea"
+    },
+    "correct": "A"
+  },
+  {
+    "id": "hsk1-108",
+    "kind": "vocab",
+    "pinyin": "xiǎo",
+    "hanzi": "小",
+    "choices": {
+      "A": "can/know how to",
+      "B": "month",
+      "C": "small",
+      "D": "how many"
+    },
+    "correct": "C"
+  },
+  {
+    "id": "hsk1-109",
+    "kind": "vocab",
+    "pinyin": "xièxie",
+    "hanzi": "谢谢",
+    "choices": {
+      "A": "thank you",
+      "B": "minute",
+      "C": "morning",
+      "D": "to see"
+    },
+    "correct": "A"
+  },
+  {
+    "id": "hsk1-110",
+    "kind": "vocab",
+    "pinyin": "xuésheng",
+    "hanzi": "学生",
+    "choices": {
+      "A": "dish/vegetable",
+      "B": "particle",
+      "C": "student",
+      "D": "teacher"
+    },
+    "correct": "C"
+  },
+  {
+    "id": "hsk1-111",
+    "kind": "vocab",
+    "pinyin": "xuéxiào",
+    "hanzi": "学校",
+    "choices": {
+      "A": "two",
+      "B": "particle",
+      "C": "not/no",
+      "D": "school"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-112",
+    "kind": "vocab",
+    "pinyin": "yī",
+    "hanzi": "一",
+    "choices": {
+      "A": "four",
+      "B": "student",
+      "C": "hospital",
+      "D": "one"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-113",
+    "kind": "vocab",
+    "pinyin": "yīshēng",
+    "hanzi": "医生",
+    "choices": {
+      "A": "very",
+      "B": "do",
+      "C": "today",
+      "D": "doctor"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-114",
+    "kind": "vocab",
+    "pinyin": "yīyuàn",
+    "hanzi": "医院",
+    "choices": {
+      "A": "Chinese (language)",
+      "B": "not have",
+      "C": "airplane",
+      "D": "hospital"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-115",
+    "kind": "vocab",
+    "pinyin": "yǒu",
+    "hanzi": "有",
+    "choices": {
+      "A": "home",
+      "B": "to see",
+      "C": "three",
+      "D": "have"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-116",
+    "kind": "vocab",
+    "pinyin": "yuè",
+    "hanzi": "月",
+    "choices": {
+      "A": "month",
+      "B": "small",
+      "C": "how",
+      "D": "question particle"
+    },
+    "correct": "A"
+  },
+  {
+    "id": "hsk1-117",
+    "kind": "vocab",
+    "pinyin": "zài",
+    "hanzi": "在",
+    "choices": {
+      "A": "pretty",
+      "B": "yuan",
+      "C": "at",
+      "D": "goodbye"
+    },
+    "correct": "C"
+  },
+  {
+    "id": "hsk1-118",
+    "kind": "vocab",
+    "pinyin": "zàijiàn",
+    "hanzi": "再见",
+    "choices": {
+      "A": "question particle",
+      "B": "goodbye",
+      "C": "television",
+      "D": "school"
+    },
+    "correct": "B"
+  },
+  {
+    "id": "hsk1-119",
+    "kind": "vocab",
+    "pinyin": "zěnme",
+    "hanzi": "怎么",
+    "choices": {
+      "A": "to watch",
+      "B": "restaurant",
+      "C": "train station",
+      "D": "how"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-120",
+    "kind": "vocab",
+    "pinyin": "Zhōngguó",
+    "hanzi": "中国",
+    "choices": {
+      "A": "four",
+      "B": "China",
+      "C": "doctor",
+      "D": "to watch"
+    },
+    "correct": "B"
+  },
+  {
+    "id": "hsk1-121",
+    "kind": "vocab",
+    "pinyin": "zhù",
+    "hanzi": "住",
+    "choices": {
+      "A": "to eat",
+      "B": "live",
+      "C": "to buy",
+      "D": "like"
+    },
+    "correct": "B"
+  },
+  {
+    "id": "hsk1-122",
+    "kind": "vocab",
+    "pinyin": "zuò",
+    "hanzi": "做",
+    "choices": {
+      "A": "to be called",
+      "B": "do",
+      "C": "airplane",
+      "D": "yesterday"
+    },
+    "correct": "B"
+  },
+  {
+    "id": "hsk1-123",
+    "kind": "vocab",
+    "pinyin": "zuótiān",
+    "hanzi": "昨天",
+    "choices": {
+      "A": "yesterday",
+      "B": "do",
+      "C": "sleep",
+      "D": "cup/glass"
+    },
+    "correct": "A"
+  },
+  {
+    "id": "hsk1-124",
+    "kind": "phrase",
+    "pinyin": "nǐ hǎo",
+    "hanzi": "你好",
+    "choices": {
+      "A": "happy",
+      "B": "front",
+      "C": "Hello",
+      "D": "thing/stuff"
+    },
+    "correct": "C"
+  },
+  {
+    "id": "hsk1-125",
+    "kind": "phrase",
+    "pinyin": "nǐ hǎo ma",
+    "hanzi": "你好吗",
+    "choices": {
+      "A": "year",
+      "B": "do",
+      "C": "restaurant",
+      "D": "How are you?"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-126",
+    "kind": "phrase",
+    "pinyin": "wǒ shì xuésheng",
+    "hanzi": "我是学生",
+    "choices": {
+      "A": "to read",
+      "B": "to open",
+      "C": "I am a student",
+      "D": "he"
+    },
+    "correct": "C"
+  },
+  {
+    "id": "hsk1-127",
+    "kind": "phrase",
+    "pinyin": "xuéxiào zài nǎr",
+    "hanzi": "学校在哪儿",
+    "choices": {
+      "A": "big/large",
+      "B": "friend",
+      "C": "Where is the school?",
+      "D": "cup/glass"
+    },
+    "correct": "C"
+  },
+  {
+    "id": "hsk1-128",
+    "kind": "phrase",
+    "pinyin": "wǒ bù zhīdao",
+    "hanzi": "我不知道",
+    "choices": {
+      "A": "I don't know",
+      "B": "what",
+      "C": "yuan",
+      "D": "live"
+    },
+    "correct": "A"
+  },
+  {
+    "id": "hsk1-129",
+    "kind": "phrase",
+    "pinyin": "wǒ ài nǐ",
+    "hanzi": "我爱你",
+    "choices": {
+      "A": "few",
+      "B": "big/large",
+      "C": "I love you",
+      "D": "he"
+    },
+    "correct": "C"
+  },
+  {
+    "id": "hsk1-130",
+    "kind": "phrase",
+    "pinyin": "xièxie",
+    "hanzi": "谢谢",
+    "choices": {
+      "A": "Thank you",
+      "B": "weather",
+      "C": "year",
+      "D": "listen"
+    },
+    "correct": "A"
+  },
+  {
+    "id": "hsk1-131",
+    "kind": "phrase",
+    "pinyin": "bú kèqi",
+    "hanzi": "不客气",
+    "choices": {
+      "A": "You're welcome",
+      "B": "to open",
+      "C": "to know",
+      "D": "dish/vegetable"
+    },
+    "correct": "A"
+  },
+  {
+    "id": "hsk1-132",
+    "kind": "phrase",
+    "pinyin": "duìbuqǐ",
+    "hanzi": "对不起",
+    "choices": {
+      "A": "five",
+      "B": "big/large",
+      "C": "not have",
+      "D": "Sorry"
+    },
+    "correct": "D"
+  },
+  {
+    "id": "hsk1-133",
+    "kind": "phrase",
+    "pinyin": "méi guānxi",
+    "hanzi": "没关系",
+    "choices": {
+      "A": "who",
+      "B": "No problem",
+      "C": "inside",
+      "D": "thing/stuff"
+    },
+    "correct": "B"
+  }
+]
