@@ -4,10 +4,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: calc(env(safe-area-inset-top, 0px) + 8px);
-  padding-right: calc(env(safe-area-inset-right, 0px) + 12px);
-  padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 12px);
-  padding-left: calc(env(safe-area-inset-left, 0px) + 12px);
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-right: calc(env(safe-area-inset-right, 0px) + 8px);
+  padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 8px);
+  padding-left: calc(env(safe-area-inset-left, 0px) + 8px);
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   overflow: hidden;
 }
@@ -20,11 +20,11 @@
 
 .stats-bar {
   display: flex;
-  gap: 12px;
-  padding: 10px 16px;
+  gap: 10px;
+  padding: 8px 14px;
   background: rgba(255, 255, 255, 0.95);
-  border-radius: 12px;
-  margin-bottom: 8px;
+  border-radius: 10px;
+  margin-bottom: 4px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   flex-shrink: 0;
@@ -34,8 +34,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2px;
-  min-width: 60px;
+  gap: 1px;
+  min-width: 55px;
 }
 
 .stat-label {
@@ -47,28 +47,53 @@
 }
 
 .stat-value {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: #1a1a1a;
 }
 
 .progress-indicator {
-  padding: 8px 16px;
+  padding: 6px 14px;
   background: rgba(255, 255, 255, 0.9);
-  border-radius: 12px;
-  font-size: 0.85rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
   font-weight: 600;
   color: #666;
-  margin-top: 8px;
+  margin-top: 4px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
 }
 
 @media (max-width: 480px) {
   .quiz-feed {
-    padding-top: calc(env(safe-area-inset-top, 0px) + 8px);
-    padding-right: calc(env(safe-area-inset-right, 0px) + 8px);
-    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 16px);
-    padding-left: calc(env(safe-area-inset-left, 0px) + 8px);
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-right: calc(env(safe-area-inset-right, 0px) + 6px);
+    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 12px);
+    padding-left: calc(env(safe-area-inset-left, 0px) + 6px);
+  }
+
+  .stats-bar {
+    gap: 8px;
+    padding: 6px 12px;
+    margin-bottom: 3px;
+  }
+
+  .stat {
+    min-width: 50px;
+    gap: 0px;
+  }
+
+  .stat-label {
+    font-size: 0.65rem;
+  }
+
+  .stat-value {
+    font-size: 1.05rem;
+  }
+
+  .progress-indicator {
+    padding: 5px 12px;
+    font-size: 0.75rem;
+    margin-top: 3px;
   }
 }
