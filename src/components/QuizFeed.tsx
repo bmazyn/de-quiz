@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import QuizCard from "./QuizCard";
 import type { QuizCard as QuizCardType, ChoiceKey, AnswerState } from "../types";
 // Single source of truth for all quiz content - DO NOT modify or supplement
-import quizCardsData from "../data/quizCards.json";
+import quizCardsData from "../data/hsk1_200_cards.json";
 import { useTheme } from "../hooks/useTheme";
 import "./QuizFeed.css";
 
@@ -128,7 +128,7 @@ export default function QuizFeed() {
     
     // Pronounce immediately within tap handler (iPhone Safari requirement)
     if (nextCard && 'speechSynthesis' in window) {
-      const hanzi = nextCard.promptLine.split(' — ')[1];
+      const hanzi = nextCard.hanzi;
       if (hanzi) {
         window.speechSynthesis.cancel();
         const utterance = new SpeechSynthesisUtterance(hanzi);

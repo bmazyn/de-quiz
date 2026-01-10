@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import type { QuizCard as QuizCardType, ChoiceKey, AnswerState } from "../types";
 import ThemeToggle from "./ThemeToggle";
 import "./QuizCard.css";
@@ -26,7 +27,18 @@ function triggerHaptic(isCorrect: boolean) {
 
 export default function QuizCard({ card, answerState, onAnswer, onNext, theme, onToggleTheme }: QuizCardProps) {
   const isAnswered = answerState.selectedChoice !== null;
-  const choices: ChoiceKey[] = ["A", "B", "C", "D"];
+  
+  // Shuffle choices once per card to prevent position memorization
+  const shuffledChoices = useMemo(() => {
+    const choices: ChoiceKey[] = ["A", "B", "C", "D"];
+    const shuffled = [...choices];
+    // Fisher-Yates shuffle
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+  }, [card.id]); // Reshuffle only when card changes
 
   const getChoiceClassName = (choice: ChoiceKey): string => {
     if (!isAnswered) return "choice-button";
@@ -53,7 +65,7 @@ export default function QuizCard({ card, answerState, onAnswer, onNext, theme, o
       // Stop any currently playing audio
       window.speechSynthesis.cancel();
       
-      const utterance = new SpeechSynthesisUtterance(hanzi);
+      const utterance = new SpeechSynthesisUtterance(card.hanzi);
       utterance.lang = 'zh-CN';
       utterance.rate = 0.9; // Slightly slower for learning
       window.speechSynthesis.speak(utterance);
@@ -61,20 +73,17 @@ export default function QuizCard({ card, answerState, onAnswer, onNext, theme, o
     // Fail silently if not supported
   };
 
-  // Split promptLine from dataset - format: "pinyin — hanzi"
-  const [pinyin, hanzi] = card.promptLine.split(' — ');
-
   return (
     <div className="quiz-card">
       <ThemeToggle theme={theme} onToggle={onToggleTheme} />
 
       <div className="prompt-section">
-        <div className="pinyin">{pinyin}</div>
-        <div className="hanzi" onClick={handlePronunciation}>{hanzi}</div>
+        <div className="pinyin">{card.pinyin}</div>
+        <div className="hanzi" onClick={handlePronunciation}>{card.hanzi}</div>
       </div>
 
       <div className="choices">
-        {choices.map((choice) => (
+        {shuffledChoices.map((choice) => (
           <button
             key={choice}
             className={getChoiceClassName(choice)}
