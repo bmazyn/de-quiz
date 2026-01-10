@@ -8,7 +8,7 @@
   padding-right: calc(env(safe-area-inset-right, 0px) + 8px);
   padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 8px);
   padding-left: calc(env(safe-area-inset-left, 0px) + 8px);
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--bg-gradient);
   overflow: hidden;
 }
 
