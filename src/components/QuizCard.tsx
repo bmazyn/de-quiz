@@ -1,4 +1,5 @@
 import type { QuizCard as QuizCardType, ChoiceKey, AnswerState } from "../types";
+import ThemeToggle from "./ThemeToggle";
 import "./QuizCard.css";
 
 interface QuizCardProps {
@@ -6,9 +7,11 @@ interface QuizCardProps {
   answerState: AnswerState;
   onAnswer: (choice: ChoiceKey) => void;
   onNext: () => void;
+  theme: 'light' | 'dark';
+  onToggleTheme: () => void;
 }
 
-export default function QuizCard({ card, answerState, onAnswer, onNext }: QuizCardProps) {
+export default function QuizCard({ card, answerState, onAnswer, onNext, theme, onToggleTheme }: QuizCardProps) {
   const isAnswered = answerState.selectedChoice !== null;
   const choices: ChoiceKey[] = ["A", "B", "C", "D"];
 
@@ -25,6 +28,7 @@ export default function QuizCard({ card, answerState, onAnswer, onNext }: QuizCa
 
   return (
     <div className="quiz-card">
+      <ThemeToggle theme={theme} onToggle={onToggleTheme} />
       <div className="card-header">
         <span className="card-kind">{card.kind}</span>
       </div>

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import QuizCard from "./QuizCard";
 import type { QuizCard as QuizCardType, ChoiceKey, AnswerState } from "../types";
 import quizCardsData from "../data/quizCards.json";
+import { useTheme } from "../hooks/useTheme";
 import "./QuizFeed.css";
 
 // Fisher-Yates shuffle
@@ -15,6 +16,7 @@ function shuffleArray<T>(array: T[]): T[] {
 }
 
 export default function QuizFeed() {
+  const { theme, toggleTheme } = useTheme();
   const [shuffledDeck, setShuffledDeck] = useState<QuizCardType[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answerState, setAnswerState] = useState<AnswerState>({
@@ -134,6 +136,8 @@ export default function QuizFeed() {
         answerState={answerState}
         onAnswer={handleAnswer}
         onNext={handleNext}
+        theme={theme}
+        onToggleTheme={toggleTheme}
       />
 
       <div className="progress-indicator">
