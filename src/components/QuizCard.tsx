@@ -65,7 +65,7 @@ export default function QuizCard({ card, answerState, onAnswer, onNext, theme, o
       // Stop any currently playing audio
       window.speechSynthesis.cancel();
       
-      const utterance = new SpeechSynthesisUtterance(card.hanzi);
+      const utterance = new SpeechSynthesisUtterance(hanzi);
       utterance.lang = 'zh-CN';
       utterance.rate = 0.9; // Slightly slower for learning
       window.speechSynthesis.speak(utterance);
@@ -73,13 +73,16 @@ export default function QuizCard({ card, answerState, onAnswer, onNext, theme, o
     // Fail silently if not supported
   };
 
+  // Split promptLine from dataset - format: "pinyin — hanzi"
+  const [pinyin, hanzi] = card.promptLine.split(' — ');
+
   return (
     <div className="quiz-card">
       <ThemeToggle theme={theme} onToggle={onToggleTheme} />
 
       <div className="prompt-section">
-        <div className="pinyin">{card.pinyin}</div>
-        <div className="hanzi" onClick={handlePronunciation}>{card.hanzi}</div>
+        <div className="pinyin">{pinyin}</div>
+        <div className="hanzi" onClick={handlePronunciation}>{hanzi}</div>
       </div>
 
       <div className="choices">

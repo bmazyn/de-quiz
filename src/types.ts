@@ -1,12 +1,15 @@
 export type CardKind = "vocab" | "sentence" | "phrase";
 
+export type HSKLevel = "HSK1" | "HSK2";
+
 export type ChoiceKey = "A" | "B" | "C" | "D";
 
 export interface QuizCard {
   id: string;
   kind: CardKind;
-  pinyin: string;
-  hanzi: string;
+  level: HSKLevel;
+  promptLine: string;
+  question: string;
   choices: {
     A: string;
     B: string;
@@ -14,6 +17,14 @@ export interface QuizCard {
     D: string;
   };
   correct: ChoiceKey;
+  explanations: {
+    A: string;
+    B: string;
+    C: string;
+    D: string;
+  };
+  tags: string[];
+  difficulty: number;
 }
 
 export interface AnswerState {
