@@ -16,15 +16,32 @@ export default function LandingPage() {
     return saved ? JSON.parse(saved) : ["HSK1"];
   });
 
+  const [selectedDecks, setSelectedDecks] = useState<string[]>(() => {
+    const saved = localStorage.getItem("selectedDecks");
+    return saved ? JSON.parse(saved) : [];
+  });
+
   useEffect(() => {
     localStorage.setItem("selectedLevels", JSON.stringify(selectedLevels));
   }, [selectedLevels]);
+
+  useEffect(() => {
+    localStorage.setItem("selectedDecks", JSON.stringify(selectedDecks));
+  }, [selectedDecks]);
 
   const handleLevelToggle = (level: HSKLevel) => {
     setSelectedLevels(prev => 
       prev.includes(level) 
         ? prev.filter(l => l !== level)
         : [...prev, level]
+    );
+  };
+
+  const handleDeckToggle = (deck: string) => {
+    setSelectedDecks(prev => 
+      prev.includes(deck)
+        ? prev.filter(d => d !== deck)
+        : [...prev, deck]
     );
   };
 
@@ -67,7 +84,19 @@ export default function LandingPage() {
         </div>
 
         <div className="level-selection">
-          <h2 className="level-title">Select Study Level</h2>
+          <div className="level-checkboxes">
+            <label className="level-checkbox">
+              <input
+                type="checkbox"
+                checked={selectedDecks.includes("Foundation 1")}
+                onChange={() => handleDeckToggle("Foundation 1")}
+              />
+              <span>Foundation 1</span>
+            </label>
+          </div>
+        </div>
+
+        <div className="level-selection">
           <div className="level-checkboxes">
             <label className="level-checkbox">
               <input
@@ -115,7 +144,7 @@ export default function LandingPage() {
         <button 
           className="start-button"
           onClick={handleStart}
-          disabled={selectedLevels.length === 0}
+          disabled={selectedLevels.length === 0 && selectedDecks.length === 0}
         >
           Start
         </button>

@@ -22,6 +22,10 @@ export default function QuizFeed() {
     const saved = localStorage.getItem("selectedLevels");
     return saved ? JSON.parse(saved) : ["HSK1"];
   });
+  const [selectedDecks] = useState<string[]>(() => {
+    const saved = localStorage.getItem("selectedDecks");
+    return saved ? JSON.parse(saved) : [];
+  });
   const [filteredCards, setFilteredCards] = useState<QuizCardType[]>([]);
   const [shuffledDeck, setShuffledDeck] = useState<QuizCardType[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -56,13 +60,22 @@ export default function QuizFeed() {
       ...card,
       level: card.level || "HSK1"
     }));
-    const filtered = cardsWithLevel.filter(card => 
-      (card.kind === 'vocab' || card.kind === 'sentence' || card.kind === 'phrase') &&
-      selectedLevels.includes(card.level as HSKLevel)
-    );
+    
+    const filtered = cardsWithLevel.filter(card => {
+      const isValidKind = card.kind === 'vocab' || card.kind === 'sentence' || card.kind === 'phrase';
+      
+      // If decks are selected, filter by deck only
+      if (selectedDecks.length > 0) {
+        return isValidKind && card.deck && selectedDecks.includes(card.deck);
+      }
+      
+      // Otherwise, filter by level
+      return isValidKind && selectedLevels.includes(card.level as HSKLevel);
+    });
+    
     setFilteredCards(filtered);
     setShuffledDeck(shuffleArray(filtered));
-  }, [selectedLevels]);
+  }, [selectedLevels, selectedDecks]);
 
   // Centralized audio playback: play current card's Chinese audio whenever visible card changes
   useEffect(() => {
