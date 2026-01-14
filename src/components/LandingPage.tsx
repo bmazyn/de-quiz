@@ -40,6 +40,7 @@ export default function LandingPage() {
     // Play and immediately pause to unlock audio context (no audible sound)
     const audio = audioUnlockRef.current;
     audio.currentTime = 0;
+    audio.load(); // Required for iOS Safari to properly initialize on first tap
     audio.play().catch(() => {
       // Ignore errors - some browsers may block even this
     }).finally(() => {
