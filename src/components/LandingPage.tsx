@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTheme } from "../hooks/useTheme";
 import type { HSKLevel } from "../types";
@@ -7,6 +7,9 @@ import "./LandingPage.css";
 export default function LandingPage() {
   const { theme, toggleTheme } = useTheme();
   const navigate = useNavigate();
+  
+  // Audio element for iOS Safari autoplay unlock
+  const audioUnlockRef = useRef<HTMLAudioElement | null>(null);
   
   const [selectedLevels, setSelectedLevels] = useState<HSKLevel[]>(() => {
     const saved = localStorage.getItem("selectedLevels");
@@ -26,6 +29,24 @@ export default function LandingPage() {
   };
 
   const handleStart = () => {
+    // iOS Safari requires audio.play() to be called within a user gesture
+    // to enable autoplay. We play a silent audio and immediately pause it.
+    if (!audioUnlockRef.current) {
+      // Silent audio data URI (0.5 second silence)
+      const silentAudio = 'data:audio/mp3;base64,SUQzBAAAAAABEVRYWFgAAAAtAAADY29tbWVudABCaWdTb3VuZEJhbmsuY29tIC8gTGFTb25vdGhlcXVlLm9yZwBURU5DAAAAHQAAA1N3aXRjaCBQbHVzIMKpIE5DSCBTb2Z0d2FyZQBUSVQyAAAABgAAAzIyMzUAVFNTRQAAAA8AAANMYXZmNTcuODMuMTAwAAAAAAAAAAAAAAD/80DEAAAAA0gAAAAATEFNRTMuMTAwVVVVVVVVVVVVVUxBTUUzLjEwMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVf/zQsRbAAADSAAAAABVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVf/zQMSkAAADSAAAAABVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV';
+      audioUnlockRef.current = new Audio(silentAudio);
+    }
+    
+    // Play and immediately pause to unlock audio context (no audible sound)
+    const audio = audioUnlockRef.current;
+    audio.currentTime = 0;
+    audio.play().catch(() => {
+      // Ignore errors - some browsers may block even this
+    }).finally(() => {
+      audio.pause();
+      audio.currentTime = 0;
+    });
+    
     navigate("/quiz");
   };
 
