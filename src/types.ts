@@ -8,6 +8,7 @@ export interface QuizCard {
   id: string;
   kind: CardKind;
   level: HSKLevel;
+  deck?: string;
   promptLine: string;
   question: string;
   choices: {
