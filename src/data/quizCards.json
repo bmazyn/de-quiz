@@ -3,6 +3,7 @@
     "id": "hsk1-001",
     "kind": "vocab",
     "level": "HSK1",
+    "deck": "Foundation 1",
     "promptLine": "nǐ hǎo — 你好",
     "question": "What does this mean?",
     "choices": {
@@ -25,6 +26,7 @@
     "id": "hsk1-002",
     "kind": "vocab",
     "level": "HSK1",
+    "deck": "Foundation 1",
     "promptLine": "zài jiàn — 再见",
     "question": "What does this mean?",
     "choices": {
@@ -47,6 +49,7 @@
     "id": "hsk1-003",
     "kind": "vocab",
     "level": "HSK1",
+    "deck": "Foundation 1",
     "promptLine": "xiè xie — 谢谢",
     "question": "What does this mean?",
     "choices": {
@@ -69,6 +72,7 @@
     "id": "hsk1-004",
     "kind": "vocab",
     "level": "HSK1",
+    "deck": "Foundation 1",
     "promptLine": "wǒ — 我",
     "question": "What does this mean?",
     "choices": {
@@ -91,6 +95,7 @@
     "id": "hsk1-005",
     "kind": "vocab",
     "level": "HSK1",
+    "deck": "Foundation 1",
     "promptLine": "nǐ — 你",
     "question": "What does this mean?",
     "choices": {
@@ -113,6 +118,7 @@
     "id": "hsk1-006",
     "kind": "vocab",
     "level": "HSK1",
+    "deck": "Foundation 1",
     "promptLine": "tā — 他",
     "question": "What does this mean?",
     "choices": {
@@ -135,6 +141,7 @@
     "id": "hsk1-007",
     "kind": "vocab",
     "level": "HSK1",
+    "deck": "Foundation 1",
     "promptLine": "shì — 是",
     "question": "What does this mean?",
     "choices": {
@@ -157,6 +164,7 @@
     "id": "hsk1-008",
     "kind": "vocab",
     "level": "HSK1",
+    "deck": "Foundation 1",
     "promptLine": "yǒu — 有",
     "question": "What does this mean?",
     "choices": {
@@ -179,6 +187,7 @@
     "id": "hsk1-009",
     "kind": "vocab",
     "level": "HSK1",
+    "deck": "Foundation 1",
     "promptLine": "bù — 不",
     "question": "What does this mean?",
     "choices": {
@@ -201,6 +210,7 @@
     "id": "hsk1-010",
     "kind": "vocab",
     "level": "HSK1",
+    "deck": "Foundation 1",
     "promptLine": "de — 的",
     "question": "What does this particle do?",
     "choices": {
@@ -223,6 +233,7 @@
     "id": "hsk1-011",
     "kind": "vocab",
     "level": "HSK1",
+    "deck": "Foundation 1",
     "promptLine": "men — 们",
     "question": "What does this character do?",
     "choices": {
@@ -245,6 +256,7 @@
     "id": "hsk1-012",
     "kind": "vocab",
     "level": "HSK1",
+    "deck": "Foundation 1",
     "promptLine": "hěn — 很",
     "question": "What does this mean?",
     "choices": {
@@ -267,6 +279,7 @@
     "id": "hsk1-013",
     "kind": "vocab",
     "level": "HSK1",
+    "deck": "Foundation 1",
     "promptLine": "yě — 也",
     "question": "What does this mean?",
     "choices": {
@@ -289,6 +302,7 @@
     "id": "hsk1-014",
     "kind": "vocab",
     "level": "HSK1",
+    "deck": "Foundation 1",
     "promptLine": "rén — 人",
     "question": "What does this mean?",
     "choices": {
@@ -311,6 +325,7 @@
     "id": "hsk1-015",
     "kind": "vocab",
     "level": "HSK1",
+    "deck": "Foundation 1",
     "promptLine": "zhōng guó — 中国",
     "question": "What does this mean?",
     "choices": {
@@ -333,6 +348,7 @@
     "id": "hsk1-016",
     "kind": "vocab",
     "level": "HSK1",
+    "deck": "Foundation 1",
     "promptLine": "míng zi — 名字",
     "question": "What does this mean?",
     "choices": {
@@ -355,6 +371,7 @@
     "id": "hsk1-017",
     "kind": "vocab",
     "level": "HSK1",
+    "deck": "Foundation 1",
     "promptLine": "shén me — 什么",
     "question": "What does this mean?",
     "choices": {
@@ -377,6 +394,7 @@
     "id": "hsk1-018",
     "kind": "vocab",
     "level": "HSK1",
+    "deck": "Foundation 1",
     "promptLine": "shuí — 谁",
     "question": "What does this mean?",
     "choices": {
@@ -399,6 +417,7 @@
     "id": "hsk1-019",
     "kind": "vocab",
     "level": "HSK1",
+    "deck": "Foundation 1",
     "promptLine": "nǎ — 哪",
     "question": "What does this mean?",
     "choices": {
@@ -421,6 +440,7 @@
     "id": "hsk1-020",
     "kind": "vocab",
     "level": "HSK1",
+    "deck": "Foundation 1",
     "promptLine": "zhè — 这",
     "question": "What does this mean?",
     "choices": {
@@ -443,6 +463,7 @@
     "id": "hsk1-021",
     "kind": "vocab",
     "level": "HSK1",
+    "deck": "Foundation 1",
     "promptLine": "nà — 那",
     "question": "What does this mean?",
     "choices": {
