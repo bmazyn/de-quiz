@@ -21,10 +21,14 @@ export default function LandingPage() {
     return saved ? JSON.parse(saved) : [];
   });
 
-  const [masteredSections, setMasteredSections] = useState<Record<string, boolean>>(() => {
+  /*const [masteredSections, setMasteredSections] = useState<Record<string, boolean>>(() => {
     const saved = localStorage.getItem("quickcard_mastered_sections");
     return saved ? JSON.parse(saved) : {};
-  });
+  });*/
+  const [masteredSections] = useState<Record<string, boolean>>(() => {
+  const saved = localStorage.getItem("quickcard_mastered_sections");
+  return saved ? JSON.parse(saved) : {};
+});
 
   useEffect(() => {
     localStorage.setItem("selectedLevels", JSON.stringify(selectedLevels));
