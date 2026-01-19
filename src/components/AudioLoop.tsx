@@ -1,0 +1,241 @@
+import { useState, useEffect, useRef } from "react";
+import { useNavigate, useSearchParams } from "react-router-dom";
+import { useTheme } from "../hooks/useTheme";
+import type { QuizCard } from "../types";
+import quizCardsData from "../data/quizCards.json";
+import "./AudioLoop.css";
+
+export default function AudioLoop() {
+  const { theme } = useTheme();
+  const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
+  const sectionName = searchParams.get("section") || "";
+
+  const [cards, setCards] = useState<QuizCard[]>([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPaused, setIsPaused] = useState(false);
+
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const timeoutRef = useRef<number | null>(null);
+
+  // Load cards for the section
+  useEffect(() => {
+    let sectionCards: QuizCard[] = [];
+    
+    if (sectionName === "Foundation") {
+      // Load all Foundation decks
+      const foundationDecks = ["Foundation 1", "Numbers", "Time 1", "Greetings 1"];
+      sectionCards = quizCardsData.filter((card) => 
+        foundationDecks.includes(card.deck || "")
+      ) as QuizCard[];
+    } else {
+      // Load specific deck
+      sectionCards = quizCardsData.filter((card) => card.deck === sectionName) as QuizCard[];
+    }
+    
+    setCards(sectionCards);
+  }, [sectionName]);
+
+  // Parse pinyin and hanzi from promptLine (format: "pinyin — hanzi")
+  const parseCard = (card: QuizCard) => {
+    const parts = card.promptLine.split(" — ");
+    return {
+      pinyin: parts[0] || "",
+      hanzi: parts[1] || "",
+      meaning: card.choices[card.correct],
+    };
+  };
+
+  // Play audio sequence for current card
+  const playCardAudio = async (cardIndex: number) => {
+    if (cardIndex >= cards.length) {
+      // Loop back to start
+      setCurrentIndex(0);
+      if (isPlaying && !isPaused) {
+        timeoutRef.current = window.setTimeout(() => playCardAudio(0), 1000);
+      }
+      return;
+    }
+
+    const card = cards[cardIndex];
+    const { hanzi, meaning } = parseCard(card);
+
+    // Play Chinese audio using speech synthesis
+    if ('speechSynthesis' in window) {
+      speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(hanzi);
+      utterance.lang = 'zh-CN';
+      utterance.rate = 0.9;
+      
+      speechSynthesis.speak(utterance);
+      await new Promise((resolve) => {
+        utterance.onend = resolve;
+      });
+    }
+
+    if (!isPlaying || isPaused) return;
+
+    // Pause between Chinese and English
+    await new Promise((resolve) => {
+      timeoutRef.current = window.setTimeout(resolve, 800);
+    });
+
+    if (!isPlaying || isPaused) return;
+
+    // Play English audio (TTS or fallback to speech synthesis)
+    const englishAudio = new Audio(`/audio/${card.id}_english.mp3`);
+    audioRef.current = englishAudio;
+
+    try {
+      await englishAudio.play();
+      await new Promise((resolve) => {
+        englishAudio.onended = resolve;
+      });
+    } catch {
+      // Fallback to speech synthesis with English voice
+      if ('speechSynthesis' in window) {
+        const voices = speechSynthesis.getVoices();
+        const englishVoice = voices.find(voice => voice.lang.startsWith('en'));
+        
+        const utterance = new SpeechSynthesisUtterance(meaning);
+        utterance.lang = 'en-US';
+        if (englishVoice) {
+          utterance.voice = englishVoice;
+        }
+        utterance.rate = 0.9;
+        speechSynthesis.speak(utterance);
+        await new Promise((resolve) => {
+          utterance.onend = resolve;
+        });
+      }
+    }
+
+    if (!isPlaying || isPaused) return;
+
+    // Pause before next card
+    await new Promise((resolve) => {
+      timeoutRef.current = window.setTimeout(resolve, 1500);
+    });
+
+    if (!isPlaying || isPaused) return;
+
+    // Advance to next card
+    setCurrentIndex((prev) => prev + 1);
+  };
+
+  // Handle play button
+  const handlePlay = () => {
+    setIsPlaying(true);
+    setIsPaused(false);
+  };
+
+  // Handle pause button
+  const handlePause = () => {
+    setIsPaused(true);
+    if (audioRef.current) {
+      audioRef.current.pause();
+    }
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+  };
+
+  // Handle stop button
+  const handleStop = () => {
+    setIsPlaying(false);
+    setIsPaused(false);
+    setCurrentIndex(0);
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+    }
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+  };
+
+  // Auto-play when play state changes
+  useEffect(() => {
+    if (isPlaying && !isPaused && cards.length > 0) {
+      playCardAudio(currentIndex);
+    }
+  }, [isPlaying, isPaused, currentIndex, cards]);
+
+  // Cleanup on unmount
+  useEffect(() => {
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+      }
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
+  }, []);
+
+  if (cards.length === 0) {
+    return (
+      <div className={`audio-loop ${theme}`}>
+        <div className="audio-loop-content">
+          <div className="audio-loop-header">
+            <button className="home-icon" onClick={() => navigate("/")} aria-label="Go to home">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+            </button>
+            <h2 className="audio-loop-title">{sectionName}</h2>
+          </div>
+          <p className="no-cards">No cards found for this section</p>
+        </div>
+      </div>
+    );
+  }
+
+  const currentCard = cards[currentIndex];
+  const { pinyin, hanzi, meaning } = parseCard(currentCard);
+
+  return (
+    <div className={`audio-loop ${theme}`}>
+      <div className="audio-loop-content">
+        <div className="audio-loop-header">
+          <button className="home-icon" onClick={() => {
+            handleStop();
+            navigate("/");
+          }} aria-label="Go to home">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          </button>
+          <h2 className="audio-loop-title">{sectionName}</h2>
+        </div>
+
+        <div className="audio-loop-card">
+          <div className="card-counter">
+            {currentIndex + 1} / {cards.length}
+          </div>
+          <div className="card-pinyin">{pinyin}</div>
+          <div className="card-hanzi">{hanzi}</div>
+          <div className="card-meaning">{meaning}</div>
+        </div>
+
+        <div className="audio-controls">
+          {!isPlaying || isPaused ? (
+            <button className="control-button play-button" onClick={handlePlay}>
+              ▶️ Play
+            </button>
+          ) : (
+            <button className="control-button pause-button" onClick={handlePause}>
+              ⏸️ Pause
+            </button>
+          )}
+          <button className="control-button stop-button" onClick={handleStop}>
+            ⏹️ Stop
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}

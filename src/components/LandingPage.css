@@ -100,6 +100,31 @@
   color: var(--text-secondary);
 }
 
+.play-audio-button {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background: #6c63ff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(108, 99, 255, 0.3);
+}
+
+.play-audio-button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(108, 99, 255, 0.4);
+}
+
+.play-audio-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(108, 99, 255, 0.3);
+}
+
 .blocks-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

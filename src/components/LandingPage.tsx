@@ -106,6 +106,15 @@ export default function LandingPage() {
             </span>
           </div>
           
+          <button 
+            className="play-audio-button"
+            onClick={() => {
+              navigate('/audio-loop?section=Foundation');
+            }}
+          >
+            🔊 Play Audio
+          </button>
+          
           <div className="blocks-grid">
             <div 
               className={`block-card ${
