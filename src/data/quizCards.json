@@ -781,6 +781,7 @@
     "id": "hsk1-035",
     "kind": "phrase",
     "level": "HSK1",
+    "deck": "Greetings 1",
     "promptLine": "duì bu qǐ — 对不起",
     "question": "What does this phrase mean?",
     "choices": {
@@ -803,6 +804,7 @@
     "id": "hsk1-036",
     "kind": "phrase",
     "level": "HSK1",
+    "deck": "Greetings 1",
     "promptLine": "méi guān xi — 没关系",
     "question": "What does this phrase mean?",
     "choices": {
@@ -825,6 +827,7 @@
     "id": "hsk1-037",
     "kind": "sentence",
     "level": "HSK1",
+    "deck": "Greetings 1",
     "promptLine": "wǒ ài nǐ — 我爱你",
     "question": "What does this sentence mean?",
     "choices": {
@@ -1067,6 +1070,7 @@
     "id": "hsk1-048",
     "kind": "sentence",
     "level": "HSK1",
+    "deck": "Greetings 1",
     "promptLine": "nǐ hǎo ma — 你好吗",
     "question": "What does this sentence mean?",
     "choices": {
@@ -1089,6 +1093,7 @@
     "id": "hsk1-049",
     "kind": "sentence",
     "level": "HSK1",
+    "deck": "Greetings 1",
     "promptLine": "wǒ hěn hǎo — 我很好",
     "question": "What does this sentence mean?",
     "choices": {
@@ -1111,6 +1116,7 @@
     "id": "hsk1-050",
     "kind": "phrase",
     "level": "HSK1",
+    "deck": "Greetings 1",
     "promptLine": "bú kè qi — 不客气",
     "question": "What does this phrase mean?",
     "choices": {
@@ -1859,6 +1865,7 @@
     "id": "hsk1-084",
     "kind": "vocab",
     "level": "HSK1",
+    "deck": "Time 1",
     "promptLine": "jīn tiān — 今天",
     "question": "What does this mean?",
     "choices": {
@@ -1881,6 +1888,7 @@
     "id": "hsk1-085",
     "kind": "vocab",
     "level": "HSK1",
+    "deck": "Time 1",
     "promptLine": "míng tiān — 明天",
     "question": "What does this mean?",
     "choices": {
@@ -1903,6 +1911,7 @@
     "id": "hsk1-086",
     "kind": "vocab",
     "level": "HSK1",
+    "deck": "Time 1",
     "promptLine": "zuó tiān — 昨天",
     "question": "What does this mean?",
     "choices": {
@@ -1925,6 +1934,7 @@
     "id": "hsk1-087",
     "kind": "vocab",
     "level": "HSK1",
+    "deck": "Time 1",
     "promptLine": "xiàn zài — 现在",
     "question": "What does this mean?",
     "choices": {
@@ -1947,6 +1957,7 @@
     "id": "hsk1-088",
     "kind": "vocab",
     "level": "HSK1",
+    "deck": "Time 1",
     "promptLine": "nián — 年",
     "question": "What does this mean?",
     "choices": {
@@ -1969,6 +1980,7 @@
     "id": "hsk1-089",
     "kind": "vocab",
     "level": "HSK1",
+    "deck": "Time 1",
     "promptLine": "yuè — 月",
     "question": "What does this mean?",
     "choices": {
@@ -1991,6 +2003,7 @@
     "id": "hsk1-090",
     "kind": "vocab",
     "level": "HSK1",
+    "deck": "Time 1",
     "promptLine": "tiān — 天",
     "question": "What does this mean?",
     "choices": {
@@ -2013,6 +2026,7 @@
     "id": "hsk1-091",
     "kind": "vocab",
     "level": "HSK1",
+    "deck": "Time 1",
     "promptLine": "xīng qī — 星期",
     "question": "What does this mean?",
     "choices": {
@@ -2035,6 +2049,7 @@
     "id": "hsk1-092",
     "kind": "vocab",
     "level": "HSK1",
+    "deck": "Time 1",
     "promptLine": "shàng wǔ — 上午",
     "question": "What does this mean?",
     "choices": {
@@ -2057,6 +2072,7 @@
     "id": "hsk1-093",
     "kind": "vocab",
     "level": "HSK1",
+    "deck": "Time 1",
     "promptLine": "xià wǔ — 下午",
     "question": "What does this mean?",
     "choices": {
@@ -2079,6 +2095,7 @@
     "id": "hsk1-094",
     "kind": "contrast",
     "level": "HSK1",
+    "deck": "Time 1",
     "promptLine": "shàng wǔ vs xià wǔ — 上午 vs 下午",
     "question": "What's the relationship?",
     "choices": {
@@ -2101,6 +2118,7 @@
     "id": "hsk1-095",
     "kind": "sentence",
     "level": "HSK1",
+    "deck": "Time 1",
     "promptLine": "nǐ chī fàn le ma — 你吃饭了吗",
     "question": "What does this sentence mean?",
     "choices": {
@@ -3333,6 +3351,7 @@
     "id": "hsk1-151",
     "kind": "phrase",
     "level": "HSK1",
+    "deck": "Greetings 1",
     "promptLine": "nǐ jiào shén me míng zi — 你叫什么名字",
     "question": "What does this phrase mean?",
     "choices": {
@@ -3355,6 +3374,7 @@
     "id": "hsk1-152",
     "kind": "sentence",
     "level": "HSK1",
+    "deck": "Greetings 1",
     "promptLine": "wǒ jiào... — 我叫...",
     "question": "What does this sentence pattern mean?",
     "choices": {
@@ -3377,6 +3397,7 @@
     "id": "hsk1-153",
     "kind": "phrase",
     "level": "HSK1",
+    "deck": "Greetings 1",
     "promptLine": "zài nǎ lǐ — 在哪里",
     "question": "What does this phrase mean?",
     "choices": {
@@ -3399,6 +3420,7 @@
     "id": "hsk1-154",
     "kind": "sentence",
     "level": "HSK1",
+    "deck": "Greetings 1",
     "promptLine": "wǒ yào... — 我要...",
     "question": "What does this sentence pattern mean?",
     "choices": {
@@ -3421,6 +3443,7 @@
     "id": "hsk1-155",
     "kind": "sentence",
     "level": "HSK1",
+    "deck": "Greetings 1",
     "promptLine": "wǒ méi yǒu... — 我没有...",
     "question": "What does this sentence pattern mean?",
     "choices": {
@@ -3443,6 +3466,7 @@
     "id": "hsk1-156",
     "kind": "phrase",
     "level": "HSK1",
+    "deck": "Greetings 1",
     "promptLine": "zhè shì shén me — 这是什么",
     "question": "What does this phrase mean?",
     "choices": {
@@ -3487,6 +3511,7 @@
     "id": "hsk1-158",
     "kind": "phrase",
     "level": "HSK1",
+    "deck": "Greetings 1",
     "promptLine": "rèn shi nǐ hěn gāo xìng — 认识你很高兴",
     "question": "What does this phrase mean?",
     "choices": {
@@ -3531,6 +3556,7 @@
     "id": "hsk1-160",
     "kind": "phrase",
     "level": "HSK1",
+    "deck": "Greetings 1",
     "promptLine": "qǐng wèn — 请问",
     "question": "What does this phrase mean?",
     "choices": {

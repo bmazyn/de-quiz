@@ -1,4 +1,4 @@
-id,level,unit,kind,promptLine,correct,correctText
+﻿id,level,unit,kind,promptLine,correct,correctText
 hsk1-001,HSK1,,vocab,nǐ hǎo — 你好,A,Hello
 hsk1-002,HSK1,,vocab,zài jiàn — 再见,B,Goodbye
 hsk1-003,HSK1,,vocab,xiè xie — 谢谢,C,Thank you
