@@ -150,6 +150,7 @@ export default function LandingPage() {
           
           <button 
             className="speedrun-button"
+            onClick={() => navigate('/speedrun?section=Foundation')}
             disabled={
               ![
                 masteredSections["Foundation 1"],
