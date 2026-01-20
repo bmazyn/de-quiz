@@ -39,16 +39,41 @@ export default function Speedrun() {
     if (sectionParam === "Foundation") {
       // Load all Foundation decks
       const foundationDecks = ["Foundation 1", "Numbers", "Time 1", "Greetings 1"];
-      sectionCards = quizCardsData.filter((card) => 
-        foundationDecks.includes(card.deck || "")
-      ) as QuizCardType[];
+      sectionCards = quizCardsData.filter((card) => {
+        const isValidKind = card.kind === 'vocab' || card.kind === 'sentence' || card.kind === 'phrase';
+        return isValidKind && foundationDecks.includes(card.deck || "");
+      }) as QuizCardType[];
     } else {
       // Load specific deck
-      sectionCards = quizCardsData.filter((card) => card.deck === sectionParam) as QuizCardType[];
+      sectionCards = quizCardsData.filter((card) => {
+        const isValidKind = card.kind === 'vocab' || card.kind === 'sentence' || card.kind === 'phrase';
+        return isValidKind && card.deck === sectionParam;
+      }) as QuizCardType[];
     }
     
     setCards(sectionCards);
   }, [sectionParam]);
+
+  // Auto-play Chinese audio on card change (sound on next)
+  useEffect(() => {
+    if (!isStarted || shuffledDeck.length === 0 || currentIndex >= shuffledDeck.length) return;
+    if (answerState.selectedChoice !== null) return; // Only play when waiting for answer
+    if (!('speechSynthesis' in window)) return;
+
+    const currentCard = shuffledDeck[currentIndex];
+    const hanzi = currentCard.promptLine.split(' — ')[1];
+    if (!hanzi) return;
+
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(hanzi);
+    utterance.lang = 'zh-CN';
+    utterance.rate = 0.9;
+    window.speechSynthesis.speak(utterance);
+
+    return () => {
+      window.speechSynthesis.cancel();
+    };
+  }, [isStarted, shuffledDeck, currentIndex, answerState.selectedChoice]);
 
   const handleStart = () => {
     const shuffled = shuffleArray(cards);
