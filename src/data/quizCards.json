@@ -1,9 +1,10 @@
 [
   {
-    "id": "hsk1-001",
+    "id": "foundation1-001",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Foundation 1",
+    "level": "HSK1",
     "promptLine": "nǐ hǎo — 你好",
     "question": "What does this mean?",
     "choices": {
@@ -23,14 +24,14 @@
       "greeting",
       "basic"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-002",
+    "id": "foundation1-002",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Foundation 1",
+    "level": "HSK1",
     "promptLine": "zài jiàn — 再见",
     "question": "What does this mean?",
     "choices": {
@@ -50,14 +51,14 @@
       "greeting",
       "basic"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-003",
+    "id": "foundation1-003",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Foundation 1",
+    "level": "HSK1",
     "promptLine": "xiè xie — 谢谢",
     "question": "What does this mean?",
     "choices": {
@@ -77,14 +78,14 @@
       "courtesy",
       "basic"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-004",
+    "id": "foundation1-004",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Foundation 1",
+    "level": "HSK1",
     "promptLine": "wǒ — 我",
     "question": "What does this mean?",
     "choices": {
@@ -104,14 +105,14 @@
       "pronoun",
       "basic"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-005",
+    "id": "foundation1-005",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Foundation 1",
+    "level": "HSK1",
     "promptLine": "nǐ — 你",
     "question": "What does this mean?",
     "choices": {
@@ -131,14 +132,14 @@
       "pronoun",
       "basic"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-006",
+    "id": "foundation1-006",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Foundation 1",
+    "level": "HSK1",
     "promptLine": "tā — 他",
     "question": "What does this mean?",
     "choices": {
@@ -158,14 +159,14 @@
       "pronoun",
       "basic"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-007",
+    "id": "foundation1-007",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Foundation 1",
+    "level": "HSK1",
     "promptLine": "shì — 是",
     "question": "What does this mean?",
     "choices": {
@@ -185,14 +186,14 @@
       "verb",
       "basic"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-008",
+    "id": "foundation1-008",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Foundation 1",
+    "level": "HSK1",
     "promptLine": "yǒu — 有",
     "question": "What does this mean?",
     "choices": {
@@ -212,14 +213,14 @@
       "verb",
       "basic"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-009",
+    "id": "foundation1-009",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Foundation 1",
+    "level": "HSK1",
     "promptLine": "bù — 不",
     "question": "What does this mean?",
     "choices": {
@@ -239,14 +240,14 @@
       "adverb",
       "basic"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-010",
+    "id": "foundation1-010",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Foundation 1",
+    "level": "HSK1",
     "promptLine": "de — 的",
     "question": "What does this particle do?",
     "choices": {
@@ -266,14 +267,14 @@
       "particle",
       "grammar"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-011",
+    "id": "foundation1-011",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Foundation 1",
+    "level": "HSK1",
     "promptLine": "men — 们",
     "question": "What does this character do?",
     "choices": {
@@ -293,14 +294,14 @@
       "particle",
       "grammar"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-012",
+    "id": "foundation1-012",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Foundation 1",
+    "level": "HSK1",
     "promptLine": "hěn — 很",
     "question": "What does this mean?",
     "choices": {
@@ -320,14 +321,14 @@
       "adverb",
       "basic"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-013",
+    "id": "foundation1-013",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Foundation 1",
+    "level": "HSK1",
     "promptLine": "yě — 也",
     "question": "What does this mean?",
     "choices": {
@@ -347,14 +348,14 @@
       "adverb",
       "basic"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-014",
+    "id": "foundation1-014",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Foundation 1",
+    "level": "HSK1",
     "promptLine": "rén — 人",
     "question": "What does this mean?",
     "choices": {
@@ -374,14 +375,14 @@
       "noun",
       "basic"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-016",
+    "id": "foundation1-015",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Foundation 1",
+    "level": "HSK1",
     "promptLine": "míng zi — 名字",
     "question": "What does this mean?",
     "choices": {
@@ -401,14 +402,14 @@
       "noun",
       "basic"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-017",
+    "id": "foundation1-016",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Foundation 1",
+    "level": "HSK1",
     "promptLine": "shén me — 什么",
     "question": "What does this mean?",
     "choices": {
@@ -428,14 +429,14 @@
       "question",
       "pronoun"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-018",
+    "id": "foundation1-017",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Foundation 1",
+    "level": "HSK1",
     "promptLine": "shuí — 谁",
     "question": "What does this mean?",
     "choices": {
@@ -455,14 +456,14 @@
       "question",
       "pronoun"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-019",
+    "id": "foundation1-018",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Foundation 1",
+    "level": "HSK1",
     "promptLine": "nǎ — 哪",
     "question": "What does this mean?",
     "choices": {
@@ -482,14 +483,14 @@
       "question",
       "pronoun"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-020",
+    "id": "foundation1-019",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Foundation 1",
+    "level": "HSK1",
     "promptLine": "zhè — 这",
     "question": "What does this mean?",
     "choices": {
@@ -509,14 +510,14 @@
       "pronoun",
       "basic"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-021",
+    "id": "foundation1-020",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Foundation 1",
+    "level": "HSK1",
     "promptLine": "nà — 那",
     "question": "What does this mean?",
     "choices": {
@@ -536,14 +537,14 @@
       "pronoun",
       "basic"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-022",
+    "id": "numbers-001",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Numbers",
+    "level": "HSK1",
     "promptLine": "yī — 一",
     "question": "What number is this?",
     "choices": {
@@ -563,14 +564,14 @@
       "number",
       "basic"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-023",
+    "id": "numbers-002",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Numbers",
+    "level": "HSK1",
     "promptLine": "èr — 二",
     "question": "What number is this?",
     "choices": {
@@ -590,14 +591,14 @@
       "number",
       "basic"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-024",
+    "id": "numbers-003",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Numbers",
+    "level": "HSK1",
     "promptLine": "sān — 三",
     "question": "What number is this?",
     "choices": {
@@ -617,14 +618,14 @@
       "number",
       "basic"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-025",
+    "id": "numbers-004",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Numbers",
+    "level": "HSK1",
     "promptLine": "sì — 四",
     "question": "What number is this?",
     "choices": {
@@ -644,14 +645,14 @@
       "number",
       "basic"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-026",
+    "id": "numbers-005",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Numbers",
+    "level": "HSK1",
     "promptLine": "wǔ — 五",
     "question": "What number is this?",
     "choices": {
@@ -671,14 +672,14 @@
       "number",
       "basic"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-027",
+    "id": "numbers-006",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Numbers",
+    "level": "HSK1",
     "promptLine": "liù — 六",
     "question": "What number is this?",
     "choices": {
@@ -698,14 +699,14 @@
       "number",
       "basic"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-028",
+    "id": "numbers-007",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Numbers",
+    "level": "HSK1",
     "promptLine": "qī — 七",
     "question": "What number is this?",
     "choices": {
@@ -725,14 +726,14 @@
       "number",
       "basic"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-029",
+    "id": "numbers-008",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Numbers",
+    "level": "HSK1",
     "promptLine": "bā — 八",
     "question": "What number is this?",
     "choices": {
@@ -752,14 +753,14 @@
       "number",
       "basic"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-030",
+    "id": "numbers-009",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Numbers",
+    "level": "HSK1",
     "promptLine": "jiǔ — 九",
     "question": "What number is this?",
     "choices": {
@@ -779,14 +780,14 @@
       "number",
       "basic"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-031",
+    "id": "numbers-010",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Numbers",
+    "level": "HSK1",
     "promptLine": "shí — 十",
     "question": "What number is this?",
     "choices": {
@@ -806,14 +807,14 @@
       "number",
       "basic"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-035",
+    "id": "greetings1-001",
     "kind": "phrase",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Greetings 1",
+    "level": "HSK1",
     "promptLine": "duì bu qǐ — 对不起",
     "question": "What does this phrase mean?",
     "choices": {
@@ -833,14 +834,14 @@
       "courtesy",
       "phrase"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-036",
+    "id": "greetings1-002",
     "kind": "phrase",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Greetings 1",
+    "level": "HSK1",
     "promptLine": "méi guān xi — 没关系",
     "question": "What does this phrase mean?",
     "choices": {
@@ -860,14 +861,14 @@
       "courtesy",
       "phrase"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-037",
+    "id": "greetings1-003",
     "kind": "sentence",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Greetings 1",
+    "level": "HSK1",
     "promptLine": "wǒ ài nǐ — 我爱你",
     "question": "What does this sentence mean?",
     "choices": {
@@ -887,14 +888,14 @@
       "sentence",
       "emotion"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-048",
+    "id": "greetings1-004",
     "kind": "sentence",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Greetings 1",
+    "level": "HSK1",
     "promptLine": "nǐ hǎo ma — 你好吗",
     "question": "What does this sentence mean?",
     "choices": {
@@ -914,14 +915,14 @@
       "sentence",
       "greeting"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-049",
+    "id": "greetings1-005",
     "kind": "sentence",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Greetings 1",
+    "level": "HSK1",
     "promptLine": "wǒ hěn hǎo — 我很好",
     "question": "What does this sentence mean?",
     "choices": {
@@ -941,14 +942,14 @@
       "sentence",
       "response"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-050",
+    "id": "greetings1-006",
     "kind": "phrase",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Greetings 1",
+    "level": "HSK1",
     "promptLine": "bú kè qi — 不客气",
     "question": "What does this phrase mean?",
     "choices": {
@@ -968,14 +969,14 @@
       "courtesy",
       "phrase"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-084",
+    "id": "time1-001",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Time 1",
+    "level": "HSK1",
     "promptLine": "jīn tiān — 今天",
     "question": "What does this mean?",
     "choices": {
@@ -995,14 +996,14 @@
       "time",
       "noun"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-085",
+    "id": "time1-002",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Time 1",
+    "level": "HSK1",
     "promptLine": "míng tiān — 明天",
     "question": "What does this mean?",
     "choices": {
@@ -1022,14 +1023,14 @@
       "time",
       "noun"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-086",
+    "id": "time1-003",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Time 1",
+    "level": "HSK1",
     "promptLine": "zuó tiān — 昨天",
     "question": "What does this mean?",
     "choices": {
@@ -1049,14 +1050,14 @@
       "time",
       "noun"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-087",
+    "id": "time1-004",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Time 1",
+    "level": "HSK1",
     "promptLine": "xiàn zài — 现在",
     "question": "What does this mean?",
     "choices": {
@@ -1076,14 +1077,14 @@
       "time",
       "adverb"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-088",
+    "id": "time1-005",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Time 1",
+    "level": "HSK1",
     "promptLine": "nián — 年",
     "question": "What does this mean?",
     "choices": {
@@ -1103,14 +1104,14 @@
       "time",
       "noun"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-089",
+    "id": "time1-006",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Time 1",
+    "level": "HSK1",
     "promptLine": "yuè — 月",
     "question": "What does this mean?",
     "choices": {
@@ -1130,14 +1131,14 @@
       "time",
       "noun"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-090",
+    "id": "time1-007",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Time 1",
+    "level": "HSK1",
     "promptLine": "tiān — 天",
     "question": "What does this mean?",
     "choices": {
@@ -1157,14 +1158,14 @@
       "time",
       "noun"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-091",
+    "id": "time1-008",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Time 1",
+    "level": "HSK1",
     "promptLine": "xīng qī — 星期",
     "question": "What does this mean?",
     "choices": {
@@ -1184,14 +1185,14 @@
       "time",
       "noun"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-092",
+    "id": "time1-009",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Time 1",
+    "level": "HSK1",
     "promptLine": "shàng wǔ — 上午",
     "question": "What does this mean?",
     "choices": {
@@ -1211,14 +1212,14 @@
       "time",
       "noun"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-093",
+    "id": "time1-010",
     "kind": "vocab",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Time 1",
+    "level": "HSK1",
     "promptLine": "xià wǔ — 下午",
     "question": "What does this mean?",
     "choices": {
@@ -1238,14 +1239,14 @@
       "time",
       "noun"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-094",
+    "id": "time1-011",
     "kind": "contrast",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Time 1",
+    "level": "HSK1",
     "promptLine": "shàng wǔ vs xià wǔ — 上午 vs 下午",
     "question": "What's the relationship?",
     "choices": {
@@ -1265,14 +1266,14 @@
       "contrast",
       "time"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-095",
+    "id": "time1-012",
     "kind": "sentence",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Time 1",
+    "level": "HSK1",
     "promptLine": "nǐ chī fàn le ma — 你吃饭了吗",
     "question": "What does this sentence mean?",
     "choices": {
@@ -1292,14 +1293,14 @@
       "sentence",
       "greeting"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-151",
+    "id": "greetings1-007",
     "kind": "phrase",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Greetings 1",
+    "level": "HSK1",
     "promptLine": "nǐ jiào shén me míng zi — 你叫什么名字",
     "question": "What does this phrase mean?",
     "choices": {
@@ -1320,14 +1321,14 @@
       "greeting",
       "introduction"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-152",
+    "id": "greetings1-008",
     "kind": "sentence",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Greetings 1",
+    "level": "HSK1",
     "promptLine": "wǒ jiào... — 我叫...",
     "question": "What does this sentence pattern mean?",
     "choices": {
@@ -1347,14 +1348,14 @@
       "sentence",
       "introduction"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-153",
+    "id": "greetings1-009",
     "kind": "phrase",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Greetings 1",
+    "level": "HSK1",
     "promptLine": "zài nǎ lǐ — 在哪里",
     "question": "What does this phrase mean?",
     "choices": {
@@ -1375,14 +1376,14 @@
       "question",
       "location"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-154",
+    "id": "greetings1-010",
     "kind": "sentence",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Greetings 1",
+    "level": "HSK1",
     "promptLine": "wǒ yào... — 我要...",
     "question": "What does this sentence pattern mean?",
     "choices": {
@@ -1402,14 +1403,14 @@
       "sentence",
       "request"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-155",
+    "id": "greetings1-011",
     "kind": "sentence",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Greetings 1",
+    "level": "HSK1",
     "promptLine": "wǒ méi yǒu... — 我没有...",
     "question": "What does this sentence pattern mean?",
     "choices": {
@@ -1429,14 +1430,14 @@
       "sentence",
       "negation"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-156",
+    "id": "greetings1-012",
     "kind": "phrase",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Greetings 1",
+    "level": "HSK1",
     "promptLine": "zhè shì shén me — 这是什么",
     "question": "What does this phrase mean?",
     "choices": {
@@ -1456,14 +1457,14 @@
       "phrase",
       "question"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-158",
+    "id": "greetings1-013",
     "kind": "phrase",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Greetings 1",
+    "level": "HSK1",
     "promptLine": "rèn shi nǐ hěn gāo xìng — 认识你很高兴",
     "question": "What does this phrase mean?",
     "choices": {
@@ -1484,14 +1485,14 @@
       "greeting",
       "courtesy"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   },
   {
-    "id": "hsk1-160",
+    "id": "greetings1-014",
     "kind": "phrase",
-    "level": "HSK1",
+    "section": "Foundation",
     "deck": "Greetings 1",
+    "level": "HSK1",
     "promptLine": "qǐng wèn — 请问",
     "question": "What does this phrase mean?",
     "choices": {
@@ -1512,7 +1513,6 @@
       "courtesy",
       "question"
     ],
-    "difficulty": 1,
-    "section": "Foundation"
+    "difficulty": 1
   }
 ]
