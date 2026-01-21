@@ -5,35 +5,20 @@
   background: var(--bg-gradient);
 }
 
-.landing-content {
+.landing-scrollable {
   flex: 1;
   overflow-y: auto;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 20px;
+  padding: 40px 20px 20px;
+  gap: 24px;
 }
 
-.landing-content > * {
+.landing-scrollable > * {
   width: 100%;
   max-width: 400px;
-}
-
-.landing-content > :first-child {
-  margin-top: auto;
-}
-
-.landing-content > :last-child {
-  margin-bottom: auto;
-}
-
-.landing-content-inner {
-  width: 100%;
-  max-width: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
 }
 
 .landing-title {
@@ -82,8 +67,9 @@
 }
 
 .section-header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 12px;
   align-items: center;
   padding: 0 8px;
   margin-bottom: 10px;
@@ -100,14 +86,14 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  flex: 1;
+  min-width: 0;
 }
 
 .section-chevron {
   font-size: 0.875rem;
   color: var(--text-secondary);
   width: 16px;
-  display: inline-block;
+  flex-shrink: 0;
 }
 
 .section-title {
@@ -115,20 +101,25 @@
   font-weight: 600;
   color: var(--text-primary);
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .section-time {
   font-size: 0.875rem;
   font-weight: 600;
   color: var(--accent-color);
-  flex: 1;
-  text-align: center;
+  white-space: nowrap;
+  text-align: right;
 }
 
 .section-mastery {
   font-size: 0.875rem;
   font-weight: 500;
   color: var(--text-secondary);
+  white-space: nowrap;
+  text-align: right;
 }
 
 .play-audio-button {
@@ -293,9 +284,10 @@
 }
 
 .start-button-footer {
-  position: relative;
+  position: sticky;
+  bottom: 0;
   width: 100%;
-  padding: 20px;
+  padding: 16px 20px;
   background: var(--bg-primary);
   border-top: 1px solid var(--border-color);
   box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
@@ -303,11 +295,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0;
+  gap: 8px;
   flex-shrink: 0;
 }
 
-.start-button-footer > .start-button {
+.start-button-footer > * {
+  width: 100%;
   max-width: 400px;
 }
 

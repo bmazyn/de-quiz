@@ -89,7 +89,7 @@ export default function LandingPage() {
 
   return (
     <div className="landing-page">
-      <div className="landing-content">
+      <div className="landing-scrollable">
         <h1 className="landing-title">QuickCard</h1>
         
         <div className="theme-toggle-section">
@@ -151,25 +151,25 @@ export default function LandingPage() {
             </div>
           );
         })}
+      </div>
 
-        <div className="start-button-footer">
-          <button 
-            className="play-audio-button"
-            onClick={() => {
-              navigate(`/audio-loop?decks=${encodeURIComponent(selectedDecks.join(','))}`);
-            }}
-            disabled={selectedDecks.length === 0}
-          >
-            🔊 Play Audio
-          </button>
-          <button 
-            className="start-button"
-            onClick={handleStart}
-            disabled={selectedDecks.length === 0}
-          >
-            Start
-          </button>
-        </div>
+      <div className="start-button-footer">
+        <button 
+          className="play-audio-button"
+          onClick={() => {
+            navigate(`/audio-loop?decks=${encodeURIComponent(selectedDecks.join(','))}`);
+          }}
+          disabled={selectedDecks.length === 0}
+        >
+          🔊 Play Audio
+        </button>
+        <button 
+          className="start-button"
+          onClick={handleStart}
+          disabled={selectedDecks.length === 0}
+        >
+          Start
+        </button>
       </div>
     </div>
   );
