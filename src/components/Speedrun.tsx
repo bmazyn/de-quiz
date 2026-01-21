@@ -32,25 +32,24 @@ export default function Speedrun() {
     isCorrect: null,
   });
   const [penaltyCountdown, setPenaltyCountdown] = useState(0);
+  const [elapsedSeconds, setElapsedSeconds] = useState(0);
+
+  // Format time as mm:ss
+  const formatTime = (seconds: number): string => {
+    const mins = Math.floor(seconds / 60);
+    const secs = seconds % 60;
+    return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+  };
 
   // Load cards for the section
   useEffect(() => {
     let sectionCards: QuizCardType[] = [];
     
-    if (sectionParam === "Foundation") {
-      // Load all Foundation decks
-      const foundationDecks = ["Foundation 1", "Numbers", "Time 1", "Greetings 1"];
-      sectionCards = quizCardsData.filter((card) => {
-        const isValidKind = card.kind === 'vocab' || card.kind === 'sentence' || card.kind === 'phrase';
-        return isValidKind && foundationDecks.includes(card.deck || "");
-      }) as QuizCardType[];
-    } else {
-      // Load specific deck
-      sectionCards = quizCardsData.filter((card) => {
-        const isValidKind = card.kind === 'vocab' || card.kind === 'sentence' || card.kind === 'phrase';
-        return isValidKind && card.deck === sectionParam;
-      }) as QuizCardType[];
-    }
+    // Filter cards by section field
+    sectionCards = quizCardsData.filter((card) => {
+      const isValidKind = card.kind === 'vocab' || card.kind === 'sentence' || card.kind === 'phrase';
+      return isValidKind && card.section === sectionParam;
+    }) as QuizCardType[];
     
     setCards(sectionCards);
   }, [sectionParam]);
@@ -76,12 +75,24 @@ export default function Speedrun() {
     };
   }, [isStarted, shuffledDeck, currentIndex, answerState.selectedChoice]);
 
+  // Timer: Increment elapsed seconds while speedrun is active
+  useEffect(() => {
+    if (!isStarted || isComplete) return;
+
+    const interval = setInterval(() => {
+      setElapsedSeconds((prev) => prev + 1);
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [isStarted, isComplete]);
+
   const handleStart = () => {
     const shuffled = shuffleArray(cards);
     setShuffledDeck(shuffled);
     setCurrentIndex(0);
     setIsStarted(true);
     setIsComplete(false);
+    setElapsedSeconds(0); // Reset timer
     setAnswerState({
       selectedChoice: null,
       isCorrect: null,
@@ -229,6 +240,7 @@ export default function Speedrun() {
           <div className="speedrun-complete">
             <div className="complete-icon">✅</div>
             <h3 className="complete-title">Section Cleared!</h3>
+            <p className="complete-time">Time: {formatTime(elapsedSeconds)}</p>
             <div className="complete-buttons">
               <button className="run-again-button" onClick={handleRunAgain}>
                 🔄 Run Again
@@ -263,6 +275,10 @@ export default function Speedrun() {
         </button>
         
         <div className="speedrun-stats">
+          <div className="stat">
+            <span className="stat-label">Time</span>
+            <span className="stat-value">{formatTime(elapsedSeconds)}</span>
+          </div>
           <div className="stat">
             <span className="stat-label">Progress</span>
             <span className="stat-value">{currentIndex + 1} / {shuffledDeck.length}</span>
