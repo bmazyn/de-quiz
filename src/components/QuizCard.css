@@ -74,6 +74,13 @@
   width: 100%;
   flex-shrink: 0;
   color: var(--text-primary);
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+.choice-button:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
 }
 
 .choice-button:not(:disabled):hover {
