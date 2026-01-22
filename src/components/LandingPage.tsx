@@ -40,7 +40,9 @@ export default function LandingPage() {
   };
 
   // Get speedrun best time from localStorage
-  const getSpeedrunTime = (section: string): string => {
+  const getSpeedrunTime = (section: string, isLocked: boolean): string => {
+    if (isLocked) return "—:—";
+    
     try {
       const key = `qc_speedrun_best_seconds:${section}`;
       const saved = localStorage.getItem(key);
@@ -73,6 +75,13 @@ export default function LandingPage() {
       ...prev,
       [section]: !prev[section]
     }));
+  };
+
+  const handleSpeedrunClick = (section: string, isLocked: boolean, e: React.MouseEvent) => {
+    e.stopPropagation(); // Prevent section collapse toggle
+    if (!isLocked) {
+      navigate(`/speedrun?section=${encodeURIComponent(section)}`);
+    }
   };
 
   const handleStart = () => {
@@ -119,6 +128,7 @@ export default function LandingPage() {
           const masteredCount = decks.filter(deck => masteredSections[deck]).length;
           const allMastered = decks.length > 0 && masteredCount === decks.length;
           const isCollapsed = collapsedSections[section] || false;
+          const speedrunLocked = !allMastered;
 
           return (
             <div className="section" key={section}>
@@ -127,37 +137,33 @@ export default function LandingPage() {
                   <span className="section-chevron">{isCollapsed ? '▶' : '▼'}</span>
                   <h2 className="section-title">{section}</h2>
                 </div>
-                <span className="section-time">{getSpeedrunTime(section)}</span>
+                <span 
+                  className={`section-time ${speedrunLocked ? 'locked' : 'unlocked'}`}
+                  onClick={(e) => handleSpeedrunClick(section, speedrunLocked, e)}
+                  title={speedrunLocked ? "Speedrun unlocks after mastering all decks" : "Start speedrun"}
+                >
+                  {getSpeedrunTime(section, speedrunLocked)}
+                </span>
                 <span className="section-mastery">
                   {masteredCount} / {decks.length} mastered
                 </span>
               </div>
               
               {!isCollapsed && (
-                <>
-                  <div className="blocks-grid">
-                    {decks.map(deck => (
-                      <div 
-                        key={deck}
-                        className={`block-card ${
-                          selectedDecks.includes(deck) ? "selected" : ""
-                        }`}
-                        onClick={() => handleDeckToggle(deck)}
-                      >
-                        <span className="block-name">{deck}</span>
-                        {masteredSections[deck] && <span className="block-mastery">💯</span>}
-                      </div>
-                    ))}
-                  </div>
-                  
-                  <button 
-                    className="speedrun-button"
-                    onClick={() => navigate(`/speedrun?section=${encodeURIComponent(section)}`)}
-                    disabled={!allMastered}
-                  >
-                    🏃 Speedrun
-                  </button>
-                </>
+                <div className="blocks-grid">
+                  {decks.map(deck => (
+                    <div 
+                      key={deck}
+                      className={`block-card ${
+                        selectedDecks.includes(deck) ? "selected" : ""
+                      }`}
+                      onClick={() => handleDeckToggle(deck)}
+                    >
+                      <span className="block-name">{deck}</span>
+                      {masteredSections[deck] && <span className="block-mastery">💯</span>}
+                    </div>
+                  ))}
+                </div>
               )}
             </div>
           );

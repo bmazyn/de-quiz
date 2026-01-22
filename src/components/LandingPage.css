@@ -111,7 +111,28 @@
   font-weight: 600;
   color: var(--accent-color);
   white-space: nowrap;
-  text-align: right;
+  text-align: center;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.section-time.unlocked {
+  cursor: pointer;
+}
+
+.section-time.unlocked:hover {
+  background: var(--bg-hover);
+  transform: scale(1.05);
+}
+
+.section-time.unlocked:active {
+  transform: scale(0.98);
+}
+
+.section-time.locked {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .section-mastery {
@@ -204,38 +225,8 @@
   pointer-events: none;
 }
 
-.speedrun-button {
-  width: 100%;
-  padding: 8px 18px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: white;
-  background: var(--accent-color);
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: opacity 0.2s, transform 0.2s;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 4px;
-  padding-top: 14px;
-  border-top: 1px solid var(--border-color);
-  height: 36px;
-  line-height: 1;
-}
-
-.speedrun-button:hover:not(:disabled) {
-  opacity: 0.9;
-  transform: translateY(-1px);
-}
-
-.speedrun-button:active:not(:disabled) {
-  transform: translateY(0);
-}
-
-.speedrun-button:disabled {
-  opacity: 0.3;
-  cursor: not-allowed;
-}
+/* Speedrun button removed - time display now serves as entry point */
+/* .speedrun-button { ... } - REMOVED */
 
 .level-selection {
   width: 100%;
