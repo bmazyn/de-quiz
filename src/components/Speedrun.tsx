@@ -34,7 +34,8 @@ export default function Speedrun() {
   const [penaltyCountdown, setPenaltyCountdown] = useState(0);
   const [elapsedSeconds, setElapsedSeconds] = useState(0);
   const [missedCards, setMissedCards] = useState<QuizCardType[]>([]);
-  const [isReviewMode, setIsReviewMode] = useState(false);
+  const [mode, setMode] = useState<"speedrun" | "review">("speedrun");
+  const [isPlayingReinforcement, setIsPlayingReinforcement] = useState(false);
 
   // Format time as mm:ss
   const formatTime = (seconds: number): string => {
@@ -79,14 +80,14 @@ export default function Speedrun() {
 
   // Timer: Increment elapsed seconds while speedrun is active (not in review mode)
   useEffect(() => {
-    if (!isStarted || isComplete || isReviewMode) return;
+    if (!isStarted || isComplete || mode === "review") return;
 
     const interval = setInterval(() => {
       setElapsedSeconds((prev) => prev + 1);
     }, 1000);
 
     return () => clearInterval(interval);
-  }, [isStarted, isComplete, isReviewMode]);
+  }, [isStarted, isComplete, mode]);
 
   const handleStart = () => {
     const shuffled = shuffleArray(cards);
@@ -96,7 +97,7 @@ export default function Speedrun() {
     setIsComplete(false);
     setElapsedSeconds(0); // Reset timer
     setMissedCards([]); // Reset missed cards
-    setIsReviewMode(false); // Exit review mode
+    setMode("speedrun"); // Set to speedrun mode
     setAnswerState({
       selectedChoice: null,
       isCorrect: null,
@@ -112,21 +113,19 @@ export default function Speedrun() {
       isCorrect,
     });
 
-    // Miss penalty: start 3-second countdown on wrong answer
-    if (!isCorrect) {
+    // Miss penalty: only apply in speedrun mode
+    if (!isCorrect && mode === "speedrun") {
       setPenaltyCountdown(3);
       
-      // Track missed cards (only during speedrun, not review)
-      if (!isReviewMode) {
-        setMissedCards((prev) => {
-          // Add only if not already in the missed cards array
-          const isAlreadyMissed = prev.some((card) => card.id === currentCard.id);
-          if (!isAlreadyMissed) {
-            return [...prev, currentCard];
-          }
-          return prev;
-        });
-      }
+      // Track missed cards
+      setMissedCards((prev) => {
+        // Add only if not already in the missed cards array
+        const isAlreadyMissed = prev.some((card) => card.id === currentCard.id);
+        if (!isAlreadyMissed) {
+          return [...prev, currentCard];
+        }
+        return prev;
+      });
     }
   };
 
@@ -163,11 +162,53 @@ export default function Speedrun() {
     setCurrentIndex(0);
     setIsStarted(true);
     setIsComplete(false);
-    setIsReviewMode(true);
+    setMode("review");
+    setPenaltyCountdown(0); // Clear any penalties
     setAnswerState({
       selectedChoice: null,
       isCorrect: null,
     });
+  };
+
+  const handleReinforcementAudio = () => {
+    if (!('speechSynthesis' in window)) return;
+    if (isPlayingReinforcement) return;
+    if (answerState.selectedChoice === null) return;
+    
+    window.speechSynthesis.cancel();
+    setIsPlayingReinforcement(true);
+    
+    const currentCard = shuffledDeck[currentIndex];
+    const hanzi = currentCard.promptLine.split(' — ')[1];
+    
+    const chineseUtterance = new SpeechSynthesisUtterance(hanzi);
+    chineseUtterance.lang = 'zh-CN';
+    chineseUtterance.rate = 0.9;
+    
+    chineseUtterance.onend = () => {
+      setTimeout(() => {
+        const englishText = currentCard.choices[currentCard.correct];
+        const englishUtterance = new SpeechSynthesisUtterance(englishText);
+        englishUtterance.lang = 'en-US';
+        englishUtterance.rate = 0.9;
+        
+        englishUtterance.onend = () => {
+          setIsPlayingReinforcement(false);
+        };
+        
+        englishUtterance.onerror = () => {
+          setIsPlayingReinforcement(false);
+        };
+        
+        window.speechSynthesis.speak(englishUtterance);
+      }, 0);
+    };
+    
+    chineseUtterance.onerror = () => {
+      setIsPlayingReinforcement(false);
+    };
+    
+    window.speechSynthesis.speak(chineseUtterance);
   };
 
   // Countdown timer effect - ticks down every second
@@ -256,18 +297,18 @@ export default function Speedrun() {
 
           <div className="speedrun-complete">
             <div className="complete-icon">✅</div>
-            <h3 className="complete-title">{isReviewMode ? 'Review Complete!' : 'Section Cleared!'}</h3>
-            {!isReviewMode && <p className="complete-time">Time: {formatTime(elapsedSeconds)}</p>}
-            {!isReviewMode && missedCards.length > 0 && (
+            <h3 className="complete-title">{mode === "review" ? 'Review Complete!' : 'Section Cleared!'}</h3>
+            {mode === "speedrun" && <p className="complete-time">Time: {formatTime(elapsedSeconds)}</p>}
+            {mode === "speedrun" && missedCards.length > 0 && (
               <p className="missed-count">Missed: {missedCards.length} card{missedCards.length !== 1 ? 's' : ''}</p>
             )}
             <div className="complete-buttons">
-              {!isReviewMode && missedCards.length > 0 && (
+              {mode === "speedrun" && missedCards.length > 0 && (
                 <button className="review-missed-button" onClick={handleReviewMissed}>
                   📝 Review Missed
                 </button>
               )}
-              {!isReviewMode && (
+              {mode === "speedrun" && (
                 <button className="run-again-button" onClick={handleRunAgain}>
                   🔄 Run Again
                 </button>
@@ -288,7 +329,7 @@ export default function Speedrun() {
   }
 
   const currentCard = shuffledDeck[currentIndex];
-  const isPenaltyActive = penaltyCountdown > 0;
+  const isPenaltyActive = mode === "speedrun" && penaltyCountdown > 0;
   const nextButtonText = isPenaltyActive ? `Next (${penaltyCountdown})` : "Next →";
 
   return (
@@ -302,13 +343,13 @@ export default function Speedrun() {
         </button>
         
         <div className="speedrun-stats">
-          {!isReviewMode && (
+          {mode === "speedrun" && (
             <div className="stat">
               <span className="stat-label">Time</span>
               <span className="stat-value">{formatTime(elapsedSeconds)}</span>
             </div>
           )}
-          {isReviewMode && (
+          {mode === "review" && (
             <div className="stat">
               <span className="stat-label">Review</span>
               <span className="stat-value">📝</span>
@@ -319,6 +360,17 @@ export default function Speedrun() {
             <span className="stat-value">{currentIndex + 1} / {shuffledDeck.length}</span>
           </div>
         </div>
+
+        {mode === "review" && answerState.selectedChoice !== null && (
+          <button 
+            className="reinforcement-audio-button-header"
+            onClick={handleReinforcementAudio}
+            disabled={isPlayingReinforcement}
+            aria-label="Play reinforcement audio"
+          >
+            🔊
+          </button>
+        )}
       </div>
 
       <QuizCard
