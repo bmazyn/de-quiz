@@ -412,6 +412,7 @@ export default function QuizFeed() {
       </div>
 
       <QuizCard
+        key={currentCard.id}
         card={currentCard}
         answerState={answerState}
         onAnswer={handleAnswer}

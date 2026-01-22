@@ -440,6 +440,7 @@ export default function Speedrun() {
       </div>
 
       <QuizCard
+        key={currentCard.id}
         card={currentCard}
         answerState={answerState}
         onAnswer={handleAnswer}
