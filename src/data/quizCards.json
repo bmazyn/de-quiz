@@ -3149,5 +3149,1631 @@
       "hsk1"
     ],
     "difficulty": 1
+  },
+  {
+    "id": "dailyactions1-001",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Common Verbs",
+    "level": "HSK1",
+    "promptLine": "qù — 去",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To come",
+      "B": "To go",
+      "C": "To leave",
+      "D": "To return"
+    },
+    "correct": "B",
+    "explanations": {
+      "A": "To come is 来 (lái)",
+      "B": "Correct! 去 (qù) means 'to go'",
+      "C": "To leave is 走 (zǒu)",
+      "D": "To return is 回 (huí)"
+    },
+    "tags": [
+      "verb",
+      "movement"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions1-002",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Common Verbs",
+    "level": "HSK1",
+    "promptLine": "lái — 来",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To go",
+      "B": "To leave",
+      "C": "To come",
+      "D": "To arrive"
+    },
+    "correct": "C",
+    "explanations": {
+      "A": "To go is 去 (qù)",
+      "B": "To leave is 走 (zǒu)",
+      "C": "Correct! 来 (lái) means 'to come'",
+      "D": "To arrive is 到 (dào)"
+    },
+    "tags": [
+      "verb",
+      "movement"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions1-003",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Common Verbs",
+    "level": "HSK1",
+    "promptLine": "chī — 吃",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To eat",
+      "B": "To drink",
+      "C": "To cook",
+      "D": "To taste"
+    },
+    "correct": "A",
+    "explanations": {
+      "A": "Correct! 吃 (chī) means 'to eat'",
+      "B": "To drink is 喝 (hē)",
+      "C": "To cook is 做饭 (zuò fàn)",
+      "D": "To taste is 尝 (cháng)"
+    },
+    "tags": [
+      "verb",
+      "food"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions1-004",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Common Verbs",
+    "level": "HSK1",
+    "promptLine": "hē — 喝",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To cook",
+      "B": "To eat",
+      "C": "To taste",
+      "D": "To drink"
+    },
+    "correct": "D",
+    "explanations": {
+      "A": "To cook is 做饭 (zuò fàn)",
+      "B": "To eat is 吃 (chī)",
+      "C": "To taste is 尝 (cháng)",
+      "D": "Correct! 喝 (hē) means 'to drink'"
+    },
+    "tags": [
+      "verb",
+      "food"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions1-005",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Common Verbs",
+    "level": "HSK1",
+    "promptLine": "kàn — 看",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To listen",
+      "B": "To see/watch",
+      "C": "To read",
+      "D": "To look for"
+    },
+    "correct": "B",
+    "explanations": {
+      "A": "To listen is 听 (tīng)",
+      "B": "Correct! 看 (kàn) means 'to see/watch'",
+      "C": "To read is also 看 (kàn), but context matters",
+      "D": "To look for is 找 (zhǎo)"
+    },
+    "tags": [
+      "verb",
+      "perception"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions1-006",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Common Verbs",
+    "level": "HSK1",
+    "promptLine": "xiǎng — 想",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To need",
+      "B": "To have",
+      "C": "To want/think",
+      "D": "To do"
+    },
+    "correct": "C",
+    "explanations": {
+      "A": "To need is 需要 (xū yào)",
+      "B": "To have is 有 (yǒu)",
+      "C": "Correct! 想 (xiǎng) means 'to want' or 'to think'",
+      "D": "To do is 做 (zuò)"
+    },
+    "tags": [
+      "verb",
+      "mental"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions1-007",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Common Verbs",
+    "level": "HSK1",
+    "promptLine": "xǐ huān — 喜欢",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To like",
+      "B": "To love",
+      "C": "To hate",
+      "D": "To prefer"
+    },
+    "correct": "A",
+    "explanations": {
+      "A": "Correct! 喜欢 (xǐ huān) means 'to like'",
+      "B": "To love is 爱 (ài)",
+      "C": "To hate is 讨厌 (tǎo yàn)",
+      "D": "To prefer is 更喜欢 (gèng xǐ huān)"
+    },
+    "tags": [
+      "verb",
+      "emotion"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions1-008",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Common Verbs",
+    "level": "HSK1",
+    "promptLine": "yǒu — 有",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To be",
+      "B": "To want",
+      "C": "To have",
+      "D": "To get"
+    },
+    "correct": "C",
+    "explanations": {
+      "A": "To be is 是 (shì)",
+      "B": "To want is 想 (xiǎng) or 要 (yào)",
+      "C": "Correct! 有 (yǒu) means 'to have'",
+      "D": "To get is 得到 (dé dào)"
+    },
+    "tags": [
+      "verb",
+      "possession"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions1-009",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Common Verbs",
+    "level": "HSK1",
+    "promptLine": "zuò — 做",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To sit",
+      "B": "To make/do",
+      "C": "To go",
+      "D": "To work"
+    },
+    "correct": "B",
+    "explanations": {
+      "A": "To sit is 坐 (zuò, same sound, different tone)",
+      "B": "Correct! 做 (zuò) means 'to make' or 'to do'",
+      "C": "To go is 去 (qù)",
+      "D": "To work is 工作 (gōng zuò)"
+    },
+    "tags": [
+      "verb",
+      "action"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions1-010",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Common Verbs",
+    "level": "HSK1",
+    "promptLine": "mǎi — 买",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To sell",
+      "B": "To buy",
+      "C": "To pay",
+      "D": "To shop"
+    },
+    "correct": "B",
+    "explanations": {
+      "A": "To sell is 卖 (mài)",
+      "B": "Correct! 买 (mǎi) means 'to buy'",
+      "C": "To pay is 付钱 (fù qián)",
+      "D": "To shop is 购物 (gòu wù)"
+    },
+    "tags": [
+      "verb",
+      "shopping"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions1-011",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Common Verbs",
+    "level": "HSK1",
+    "promptLine": "yòng — 用",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To have",
+      "B": "To need",
+      "C": "To use",
+      "D": "To make"
+    },
+    "correct": "C",
+    "explanations": {
+      "A": "To have is 有 (yǒu)",
+      "B": "To need is 需要 (xū yào)",
+      "C": "Correct! 用 (yòng) means 'to use'",
+      "D": "To make is 做 (zuò)"
+    },
+    "tags": [
+      "verb",
+      "action"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions1-012",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Common Verbs",
+    "level": "HSK1",
+    "promptLine": "gōng zuò — 工作",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To study",
+      "B": "To rest",
+      "C": "To play",
+      "D": "To work"
+    },
+    "correct": "D",
+    "explanations": {
+      "A": "To study is 学习 (xué xí)",
+      "B": "To rest is 休息 (xiū xi)",
+      "C": "To play is 玩 (wán)",
+      "D": "Correct! 工作 (gōng zuò) means 'to work' or 'work/job'"
+    },
+    "tags": [
+      "verb",
+      "work"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions1-013",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Common Verbs",
+    "level": "HSK1",
+    "promptLine": "xué xí — 学习",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To work",
+      "B": "To teach",
+      "C": "To study",
+      "D": "To practice"
+    },
+    "correct": "C",
+    "explanations": {
+      "A": "To work is 工作 (gōng zuò)",
+      "B": "To teach is 教 (jiāo)",
+      "C": "Correct! 学习 (xué xí) means 'to study'",
+      "D": "To practice is 练习 (liàn xí)"
+    },
+    "tags": [
+      "verb",
+      "education"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions1-014",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Common Verbs",
+    "level": "HSK1",
+    "promptLine": "shuì jiào — 睡觉",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To wake up",
+      "B": "To sleep",
+      "C": "To rest",
+      "D": "To lie down"
+    },
+    "correct": "B",
+    "explanations": {
+      "A": "To wake up is 起床 (qǐ chuáng) or 醒 (xǐng)",
+      "B": "Correct! 睡觉 (shuì jiào) means 'to sleep'",
+      "C": "To rest is 休息 (xiū xi)",
+      "D": "To lie down is 躺 (tǎng)"
+    },
+    "tags": [
+      "verb",
+      "daily routine"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions1-015",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Common Verbs",
+    "level": "HSK1",
+    "promptLine": "zuò — 坐",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To stand",
+      "B": "To walk",
+      "C": "To sit",
+      "D": "To lie down"
+    },
+    "correct": "C",
+    "explanations": {
+      "A": "To stand is 站 (zhàn)",
+      "B": "To walk is 走 (zǒu)",
+      "C": "Correct! 坐 (zuò) means 'to sit'",
+      "D": "To lie down is 躺 (tǎng)"
+    },
+    "tags": [
+      "verb",
+      "position"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions2-001",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Daily Routines",
+    "level": "HSK1",
+    "promptLine": "qǐ chuáng — 起床",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To sleep",
+      "B": "To wake up/get up",
+      "C": "To go to bed",
+      "D": "To rest"
+    },
+    "correct": "B",
+    "explanations": {
+      "A": "To sleep is 睡觉 (shuì jiào)",
+      "B": "Correct! 起床 (qǐ chuáng) means 'to wake up/get up'",
+      "C": "To go to bed is 上床睡觉 (shàng chuáng shuì jiào)",
+      "D": "To rest is 休息 (xiū xi)"
+    },
+    "tags": [
+      "phrase",
+      "daily routine"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions2-002",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Daily Routines",
+    "level": "HSK1",
+    "promptLine": "shàng bān — 上班",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To go to work",
+      "B": "To finish work",
+      "C": "To go to school",
+      "D": "To start work"
+    },
+    "correct": "A",
+    "explanations": {
+      "A": "Correct! 上班 (shàng bān) means 'to go to work'",
+      "B": "To finish work is 下班 (xià bān)",
+      "C": "To go to school is 上学 (shàng xué)",
+      "D": "While it can mean start work, 'go to work' is more common"
+    },
+    "tags": [
+      "phrase",
+      "work"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions2-003",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Daily Routines",
+    "level": "HSK1",
+    "promptLine": "huí jiā — 回家",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To leave home",
+      "B": "To go home",
+      "C": "To arrive home",
+      "D": "To return"
+    },
+    "correct": "B",
+    "explanations": {
+      "A": "To leave home is 离开家 (lí kāi jiā)",
+      "B": "Correct! 回家 (huí jiā) means 'to go home/return home'",
+      "C": "To arrive home is 到家 (dào jiā)",
+      "D": "To return is 回 (huí), but 回家 specifically means home"
+    },
+    "tags": [
+      "phrase",
+      "movement"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions2-004",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Daily Routines",
+    "level": "HSK1",
+    "promptLine": "chī zǎo fàn — 吃早饭",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To eat lunch",
+      "B": "To cook breakfast",
+      "C": "To eat dinner",
+      "D": "To eat breakfast"
+    },
+    "correct": "D",
+    "explanations": {
+      "A": "To eat lunch is 吃午饭 (chī wǔ fàn)",
+      "B": "To cook breakfast is 做早饭 (zuò zǎo fàn)",
+      "C": "To eat dinner is 吃晚饭 (chī wǎn fàn)",
+      "D": "Correct! 吃早饭 (chī zǎo fàn) means 'to eat breakfast'"
+    },
+    "tags": [
+      "phrase",
+      "food",
+      "daily routine"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions2-005",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Daily Routines",
+    "level": "HSK1",
+    "promptLine": "chī wǎn fàn — 吃晚饭",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To cook dinner",
+      "B": "To eat breakfast",
+      "C": "To eat dinner",
+      "D": "To eat lunch"
+    },
+    "correct": "C",
+    "explanations": {
+      "A": "To cook dinner is 做晚饭 (zuò wǎn fàn)",
+      "B": "To eat breakfast is 吃早饭 (chī zǎo fàn)",
+      "C": "Correct! 吃晚饭 (chī wǎn fàn) means 'to eat dinner'",
+      "D": "To eat lunch is 吃午饭 (chī wǔ fàn)"
+    },
+    "tags": [
+      "phrase",
+      "food",
+      "daily routine"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions2-006",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Daily Routines",
+    "level": "HSK1",
+    "promptLine": "kàn diàn shì — 看电视",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To watch TV",
+      "B": "To listen to radio",
+      "C": "To watch movies",
+      "D": "To read"
+    },
+    "correct": "A",
+    "explanations": {
+      "A": "Correct! 看电视 (kàn diàn shì) means 'to watch TV'",
+      "B": "To listen to radio is 听广播 (tīng guǎng bō)",
+      "C": "To watch movies is 看电影 (kàn diàn yǐng)",
+      "D": "To read is 读书 (dú shū) or 看书 (kàn shū)"
+    },
+    "tags": [
+      "phrase",
+      "entertainment"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions2-007",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Daily Routines",
+    "level": "HSK1",
+    "promptLine": "xiū xi — 休息",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To work",
+      "B": "To rest",
+      "C": "To sleep",
+      "D": "To relax"
+    },
+    "correct": "B",
+    "explanations": {
+      "A": "To work is 工作 (gōng zuò)",
+      "B": "Correct! 休息 (xiū xi) means 'to rest'",
+      "C": "To sleep is 睡觉 (shuì jiào)",
+      "D": "To relax is 放松 (fàng sōng), rest is more general"
+    },
+    "tags": [
+      "verb",
+      "daily routine"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions2-008",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Daily Routines",
+    "level": "HSK1",
+    "promptLine": "yùn dòng — 运动",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To run",
+      "B": "To walk",
+      "C": "To exercise",
+      "D": "To play sports"
+    },
+    "correct": "C",
+    "explanations": {
+      "A": "To run is 跑步 (pǎo bù)",
+      "B": "To walk is 走路 (zǒu lù)",
+      "C": "Correct! 运动 (yùn dòng) means 'to exercise'",
+      "D": "To play sports is 打球 (dǎ qiú) or similar"
+    },
+    "tags": [
+      "verb",
+      "health"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions2-009",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Daily Routines",
+    "level": "HSK1",
+    "promptLine": "xǐ zǎo — 洗澡",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To wash face",
+      "B": "To take a shower",
+      "C": "To brush teeth",
+      "D": "To wash hands"
+    },
+    "correct": "B",
+    "explanations": {
+      "A": "To wash face is 洗脸 (xǐ liǎn)",
+      "B": "Correct! 洗澡 (xǐ zǎo) means 'to take a shower/bath'",
+      "C": "To brush teeth is 刷牙 (shuā yá)",
+      "D": "To wash hands is 洗手 (xǐ shǒu)"
+    },
+    "tags": [
+      "phrase",
+      "hygiene"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions2-010",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Daily Routines",
+    "level": "HSK1",
+    "promptLine": "dú shū — 读书",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To write",
+      "B": "To study",
+      "C": "To read",
+      "D": "To learn"
+    },
+    "correct": "C",
+    "explanations": {
+      "A": "To write is 写 (xiě)",
+      "B": "To study is 学习 (xué xí)",
+      "C": "Correct! 读书 (dú shū) means 'to read' or 'to study'",
+      "D": "To learn is 学 (xué)"
+    },
+    "tags": [
+      "phrase",
+      "education"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions2-011",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Daily Routines",
+    "level": "HSK1",
+    "promptLine": "zuò fàn — 做饭",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To eat",
+      "B": "To cook",
+      "C": "To order food",
+      "D": "To serve food"
+    },
+    "correct": "B",
+    "explanations": {
+      "A": "To eat is 吃 (chī) or 吃饭 (chī fàn)",
+      "B": "Correct! 做饭 (zuò fàn) means 'to cook'",
+      "C": "To order food is 点菜 (diǎn cài)",
+      "D": "To serve food is 上菜 (shàng cài)"
+    },
+    "tags": [
+      "phrase",
+      "food"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions2-012",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Daily Routines",
+    "level": "HSK1",
+    "promptLine": "xià bān — 下班",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To go to work",
+      "B": "To finish work",
+      "C": "To start work",
+      "D": "To work"
+    },
+    "correct": "B",
+    "explanations": {
+      "A": "To go to work is 上班 (shàng bān)",
+      "B": "Correct! 下班 (xià bān) means 'to finish work/get off work'",
+      "C": "To start work is 上班 (shàng bān)",
+      "D": "To work is 工作 (gōng zuò)"
+    },
+    "tags": [
+      "phrase",
+      "work"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions2-013",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Daily Routines",
+    "level": "HSK1",
+    "promptLine": "chū qù — 出去",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To come in",
+      "B": "To go out",
+      "C": "To come back",
+      "D": "To arrive"
+    },
+    "correct": "B",
+    "explanations": {
+      "A": "To come in is 进来 (jìn lái)",
+      "B": "Correct! 出去 (chū qù) means 'to go out'",
+      "C": "To come back is 回来 (huí lái)",
+      "D": "To arrive is 到 (dào)"
+    },
+    "tags": [
+      "phrase",
+      "movement"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions2-014",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Daily Routines",
+    "level": "HSK1",
+    "promptLine": "dào — 到",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To leave",
+      "B": "To go",
+      "C": "To arrive",
+      "D": "To depart"
+    },
+    "correct": "C",
+    "explanations": {
+      "A": "To leave is 离开 (lí kāi) or 走 (zǒu)",
+      "B": "To go is 去 (qù)",
+      "C": "Correct! 到 (dào) means 'to arrive'",
+      "D": "To depart is 出发 (chū fā)"
+    },
+    "tags": [
+      "verb",
+      "movement"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions2-015",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Daily Routines",
+    "level": "HSK1",
+    "promptLine": "chī wǔ fàn — 吃午饭",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To eat breakfast",
+      "B": "To eat snack",
+      "C": "To eat lunch",
+      "D": "To eat dinner"
+    },
+    "correct": "C",
+    "explanations": {
+      "A": "To eat breakfast is 吃早饭 (chī zǎo fàn)",
+      "B": "To eat snack is 吃零食 (chī líng shí)",
+      "C": "Correct! 吃午饭 (chī wǔ fàn) means 'to eat lunch'",
+      "D": "To eat dinner is 吃晚饭 (chī wǎn fàn)"
+    },
+    "tags": [
+      "phrase",
+      "food",
+      "daily routine"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions3-001",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Needs & Wants",
+    "level": "HSK1",
+    "promptLine": "xū yào — 需要",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To need",
+      "B": "To want",
+      "C": "To have",
+      "D": "To like"
+    },
+    "correct": "A",
+    "explanations": {
+      "A": "Correct! 需要 (xū yào) means 'to need'",
+      "B": "To want is 要 (yào) or 想要 (xiǎng yào)",
+      "C": "To have is 有 (yǒu)",
+      "D": "To like is 喜欢 (xǐ huān)"
+    },
+    "tags": [
+      "verb",
+      "need"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": "dailyactions3-002",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Needs & Wants",
+    "level": "HSK1",
+    "promptLine": "yào — 要",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To have",
+      "B": "To like",
+      "C": "To want",
+      "D": "To need"
+    },
+    "correct": "C",
+    "explanations": {
+      "A": "To have is 有 (yǒu)",
+      "B": "To like is 喜欢 (xǐ huān)",
+      "C": "Correct! 要 (yào) means 'to want' or 'will'",
+      "D": "To need is 需要 (xū yào)"
+    },
+    "tags": [
+      "verb",
+      "want"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions3-003",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Needs & Wants",
+    "level": "HSK1",
+    "promptLine": "néng — 能",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To must",
+      "B": "To should",
+      "C": "To can/be able to",
+      "D": "To may"
+    },
+    "correct": "C",
+    "explanations": {
+      "A": "Must is 必须 (bì xū)",
+      "B": "Should is 应该 (yīng gāi)",
+      "C": "Correct! 能 (néng) means 'can/be able to'",
+      "D": "May is 可能 (kě néng) or 可以 (kě yǐ)"
+    },
+    "tags": [
+      "modal verb",
+      "ability"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions3-004",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Needs & Wants",
+    "level": "HSK1",
+    "promptLine": "kě yǐ — 可以",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "Must",
+      "B": "Can/may",
+      "C": "Should",
+      "D": "Will"
+    },
+    "correct": "B",
+    "explanations": {
+      "A": "Must is 必须 (bì xū)",
+      "B": "Correct! 可以 (kě yǐ) means 'can/may' (permission)",
+      "C": "Should is 应该 (yīng gāi)",
+      "D": "Will is 会 (huì) or 要 (yào)"
+    },
+    "tags": [
+      "modal verb",
+      "permission"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions3-005",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Needs & Wants",
+    "level": "HSK1",
+    "promptLine": "huì — 会",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To can (able to)",
+      "B": "To will/know how to",
+      "C": "To may",
+      "D": "To must"
+    },
+    "correct": "B",
+    "explanations": {
+      "A": "To can (able to) is 能 (néng)",
+      "B": "Correct! 会 (huì) means 'will' or 'know how to'",
+      "C": "To may is 可以 (kě yǐ)",
+      "D": "To must is 必须 (bì xū)"
+    },
+    "tags": [
+      "modal verb",
+      "ability"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions3-006",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Needs & Wants",
+    "level": "HSK1",
+    "promptLine": "bù yào — 不要",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To want",
+      "B": "To need",
+      "C": "Don't want/don't",
+      "D": "Can't"
+    },
+    "correct": "C",
+    "explanations": {
+      "A": "To want is 要 (yào)",
+      "B": "To need is 需要 (xū yào)",
+      "C": "Correct! 不要 (bù yào) means 'don't want' or 'don't'",
+      "D": "Can't is 不能 (bù néng)"
+    },
+    "tags": [
+      "phrase",
+      "negation"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions3-007",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Needs & Wants",
+    "level": "HSK1",
+    "promptLine": "bù xǐ huān — 不喜欢",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To like",
+      "B": "Don't like",
+      "C": "To hate",
+      "D": "Don't want"
+    },
+    "correct": "B",
+    "explanations": {
+      "A": "To like is 喜欢 (xǐ huān)",
+      "B": "Correct! 不喜欢 (bù xǐ huān) means 'don't like'",
+      "C": "To hate is 讨厌 (tǎo yàn)",
+      "D": "Don't want is 不要 (bù yào)"
+    },
+    "tags": [
+      "phrase",
+      "emotion",
+      "negation"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions3-008",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Needs & Wants",
+    "level": "HSK1",
+    "promptLine": "bāng zhù — 帮助",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To need",
+      "B": "To ask",
+      "C": "To help",
+      "D": "To teach"
+    },
+    "correct": "C",
+    "explanations": {
+      "A": "To need is 需要 (xū yào)",
+      "B": "To ask is 问 (wèn)",
+      "C": "Correct! 帮助 (bāng zhù) means 'to help'",
+      "D": "To teach is 教 (jiāo)"
+    },
+    "tags": [
+      "verb",
+      "help"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions3-009",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Needs & Wants",
+    "level": "HSK1",
+    "promptLine": "dǒng — 懂",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To know",
+      "B": "To understand",
+      "C": "To think",
+      "D": "To remember"
+    },
+    "correct": "B",
+    "explanations": {
+      "A": "To know is 知道 (zhī dào)",
+      "B": "Correct! 懂 (dǒng) means 'to understand'",
+      "C": "To think is 想 (xiǎng)",
+      "D": "To remember is 记得 (jì de)"
+    },
+    "tags": [
+      "verb",
+      "understanding"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions3-010",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Needs & Wants",
+    "level": "HSK1",
+    "promptLine": "bù dǒng — 不懂",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To understand",
+      "B": "To know",
+      "C": "Don't understand",
+      "D": "Don't know"
+    },
+    "correct": "C",
+    "explanations": {
+      "A": "To understand is 懂 (dǒng)",
+      "B": "To know is 知道 (zhī dào)",
+      "C": "Correct! 不懂 (bù dǒng) means 'don't understand'",
+      "D": "Don't know is 不知道 (bù zhī dào)"
+    },
+    "tags": [
+      "phrase",
+      "understanding",
+      "negation"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions3-011",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Needs & Wants",
+    "level": "HSK1",
+    "promptLine": "zhī dào — 知道",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To understand",
+      "B": "To think",
+      "C": "To know",
+      "D": "To remember"
+    },
+    "correct": "C",
+    "explanations": {
+      "A": "To understand is 懂 (dǒng)",
+      "B": "To think is 想 (xiǎng)",
+      "C": "Correct! 知道 (zhī dào) means 'to know'",
+      "D": "To remember is 记得 (jì de)"
+    },
+    "tags": [
+      "verb",
+      "knowledge"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions3-012",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Needs & Wants",
+    "level": "HSK1",
+    "promptLine": "yǒu shí jiān — 有时间",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "No time",
+      "B": "Have time",
+      "C": "Need time",
+      "D": "What time"
+    },
+    "correct": "B",
+    "explanations": {
+      "A": "No time is 没时间 (méi shí jiān)",
+      "B": "Correct! 有时间 (yǒu shí jiān) means 'have time'",
+      "C": "Need time is 需要时间 (xū yào shí jiān)",
+      "D": "What time is 几点 (jǐ diǎn)"
+    },
+    "tags": [
+      "phrase",
+      "time"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions3-013",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Needs & Wants",
+    "level": "HSK1",
+    "promptLine": "méi shí jiān — 没时间",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "Have time",
+      "B": "What time",
+      "C": "No time",
+      "D": "Need time"
+    },
+    "correct": "C",
+    "explanations": {
+      "A": "Have time is 有时间 (yǒu shí jiān)",
+      "B": "What time is 几点 (jǐ diǎn)",
+      "C": "Correct! 没时间 (méi shí jiān) means 'no time'",
+      "D": "Need time is 需要时间 (xū yào shí jiān)"
+    },
+    "tags": [
+      "phrase",
+      "time",
+      "negation"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions3-014",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Needs & Wants",
+    "level": "HSK1",
+    "promptLine": "hǎo — 好",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "Bad",
+      "B": "Okay/good",
+      "C": "Very",
+      "D": "Not good"
+    },
+    "correct": "B",
+    "explanations": {
+      "A": "Bad is 坏 (huài) or 不好 (bù hǎo)",
+      "B": "Correct! 好 (hǎo) means 'okay/good'",
+      "C": "Very is 很 (hěn)",
+      "D": "Not good is 不好 (bù hǎo)"
+    },
+    "tags": [
+      "adjective",
+      "common"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions3-015",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Needs & Wants",
+    "level": "HSK1",
+    "promptLine": "xiǎng yào — 想要",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "To need",
+      "B": "To have",
+      "C": "To want",
+      "D": "Don't want"
+    },
+    "correct": "C",
+    "explanations": {
+      "A": "To need is 需要 (xū yào)",
+      "B": "To have is 有 (yǒu)",
+      "C": "Correct! 想要 (xiǎng yào) means 'to want' (desire)",
+      "D": "Don't want is 不要 (bù yào)"
+    },
+    "tags": [
+      "phrase",
+      "want"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions4-001",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Simple Objects",
+    "level": "HSK1",
+    "promptLine": "shuǐ — 水",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "Tea",
+      "B": "Water",
+      "C": "Juice",
+      "D": "Milk"
+    },
+    "correct": "B",
+    "explanations": {
+      "A": "Tea is 茶 (chá)",
+      "B": "Correct! 水 (shuǐ) means 'water'",
+      "C": "Juice is 果汁 (guǒ zhī)",
+      "D": "Milk is 牛奶 (niú nǎi)"
+    },
+    "tags": [
+      "noun",
+      "drink"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions4-002",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Simple Objects",
+    "level": "HSK1",
+    "promptLine": "fàn — 饭",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "Bread",
+      "B": "Noodles",
+      "C": "Rice/meal",
+      "D": "Dish"
+    },
+    "correct": "C",
+    "explanations": {
+      "A": "Bread is 面包 (miàn bāo)",
+      "B": "Noodles is 面条 (miàn tiáo)",
+      "C": "Correct! 饭 (fàn) means 'rice' or 'meal'",
+      "D": "Dish is 菜 (cài)"
+    },
+    "tags": [
+      "noun",
+      "food"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions4-003",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Simple Objects",
+    "level": "HSK1",
+    "promptLine": "shǒu jī — 手机",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "Computer",
+      "B": "Phone/cellphone",
+      "C": "Tablet",
+      "D": "Camera"
+    },
+    "correct": "B",
+    "explanations": {
+      "A": "Computer is 电脑 (diàn nǎo)",
+      "B": "Correct! 手机 (shǒu jī) means 'phone/cellphone'",
+      "C": "Tablet is 平板电脑 (píng bǎn diàn nǎo)",
+      "D": "Camera is 相机 (xiàng jī)"
+    },
+    "tags": [
+      "noun",
+      "technology"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions4-004",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Simple Objects",
+    "level": "HSK1",
+    "promptLine": "qián — 钱",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "Money",
+      "B": "Card",
+      "C": "Wallet",
+      "D": "Price"
+    },
+    "correct": "A",
+    "explanations": {
+      "A": "Correct! 钱 (qián) means 'money'",
+      "B": "Card is 卡 (kǎ)",
+      "C": "Wallet is 钱包 (qián bāo)",
+      "D": "Price is 价格 (jià gé)"
+    },
+    "tags": [
+      "noun",
+      "money"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions4-005",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Simple Objects",
+    "level": "HSK1",
+    "promptLine": "chē — 车",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "Bicycle",
+      "B": "Train",
+      "C": "Car/vehicle",
+      "D": "Bus"
+    },
+    "correct": "C",
+    "explanations": {
+      "A": "Bicycle is 自行车 (zì xíng chē)",
+      "B": "Train is 火车 (huǒ chē)",
+      "C": "Correct! 车 (chē) means 'car/vehicle'",
+      "D": "Bus is 公交车 (gōng jiāo chē)"
+    },
+    "tags": [
+      "noun",
+      "transport"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions4-006",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Simple Objects",
+    "level": "HSK1",
+    "promptLine": "gōng jiāo chē — 公交车",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "Taxi",
+      "B": "Train",
+      "C": "Bus",
+      "D": "Subway"
+    },
+    "correct": "C",
+    "explanations": {
+      "A": "Taxi is 出租车 (chū zū chē)",
+      "B": "Train is 火车 (huǒ chē)",
+      "C": "Correct! 公交车 (gōng jiāo chē) means 'bus'",
+      "D": "Subway is 地铁 (dì tiě)"
+    },
+    "tags": [
+      "noun",
+      "transport"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions4-007",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Simple Objects",
+    "level": "HSK1",
+    "promptLine": "diàn nǎo — 电脑",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "Phone",
+      "B": "Computer",
+      "C": "TV",
+      "D": "Tablet"
+    },
+    "correct": "B",
+    "explanations": {
+      "A": "Phone is 手机 (shǒu jī)",
+      "B": "Correct! 电脑 (diàn nǎo) means 'computer'",
+      "C": "TV is 电视 (diàn shì)",
+      "D": "Tablet is 平板电脑 (píng bǎn diàn nǎo)"
+    },
+    "tags": [
+      "noun",
+      "technology"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions4-008",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Simple Objects",
+    "level": "HSK1",
+    "promptLine": "shū — 书",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "Notebook",
+      "B": "Book",
+      "C": "Magazine",
+      "D": "Paper"
+    },
+    "correct": "B",
+    "explanations": {
+      "A": "Notebook is 笔记本 (bǐ jì běn)",
+      "B": "Correct! 书 (shū) means 'book'",
+      "C": "Magazine is 杂志 (zá zhì)",
+      "D": "Paper is 纸 (zhǐ)"
+    },
+    "tags": [
+      "noun",
+      "education"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions4-009",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Simple Objects",
+    "level": "HSK1",
+    "promptLine": "zhuō zi — 桌子",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "Chair",
+      "B": "Desk",
+      "C": "Table",
+      "D": "Shelf"
+    },
+    "correct": "C",
+    "explanations": {
+      "A": "Chair is 椅子 (yǐ zi)",
+      "B": "Desk is also 桌子 or 书桌 (shū zhuō)",
+      "C": "Correct! 桌子 (zhuō zi) means 'table'",
+      "D": "Shelf is 架子 (jià zi)"
+    },
+    "tags": [
+      "noun",
+      "furniture"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions4-010",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Simple Objects",
+    "level": "HSK1",
+    "promptLine": "yǐ zi — 椅子",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "Table",
+      "B": "Sofa",
+      "C": "Chair",
+      "D": "Bench"
+    },
+    "correct": "C",
+    "explanations": {
+      "A": "Table is 桌子 (zhuō zi)",
+      "B": "Sofa is 沙发 (shā fā)",
+      "C": "Correct! 椅子 (yǐ zi) means 'chair'",
+      "D": "Bench is 长凳 (cháng dèng)"
+    },
+    "tags": [
+      "noun",
+      "furniture"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions4-011",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Simple Objects",
+    "level": "HSK1",
+    "promptLine": "chuáng — 床",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "Sofa",
+      "B": "Bed",
+      "C": "Chair",
+      "D": "Pillow"
+    },
+    "correct": "B",
+    "explanations": {
+      "A": "Sofa is 沙发 (shā fā)",
+      "B": "Correct! 床 (chuáng) means 'bed'",
+      "C": "Chair is 椅子 (yǐ zi)",
+      "D": "Pillow is 枕头 (zhěn tou)"
+    },
+    "tags": [
+      "noun",
+      "furniture"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions4-012",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Simple Objects",
+    "level": "HSK1",
+    "promptLine": "mén — 门",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "Window",
+      "B": "Wall",
+      "C": "Door",
+      "D": "Gate"
+    },
+    "correct": "C",
+    "explanations": {
+      "A": "Window is 窗户 (chuāng hu)",
+      "B": "Wall is 墙 (qiáng)",
+      "C": "Correct! 门 (mén) means 'door'",
+      "D": "Gate is also 门 (mén) or 大门 (dà mén)"
+    },
+    "tags": [
+      "noun",
+      "house"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions4-013",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Simple Objects",
+    "level": "HSK1",
+    "promptLine": "diàn shì — 电视",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "Computer",
+      "B": "Radio",
+      "C": "TV",
+      "D": "Phone"
+    },
+    "correct": "C",
+    "explanations": {
+      "A": "Computer is 电脑 (diàn nǎo)",
+      "B": "Radio is 收音机 (shōu yīn jī)",
+      "C": "Correct! 电视 (diàn shì) means 'TV'",
+      "D": "Phone is 手机 (shǒu jī) or 电话 (diàn huà)"
+    },
+    "tags": [
+      "noun",
+      "technology"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions4-014",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Simple Objects",
+    "level": "HSK1",
+    "promptLine": "bāo — 包",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "Wallet",
+      "B": "Bag",
+      "C": "Pocket",
+      "D": "Box"
+    },
+    "correct": "B",
+    "explanations": {
+      "A": "Wallet is 钱包 (qián bāo)",
+      "B": "Correct! 包 (bāo) means 'bag'",
+      "C": "Pocket is 口袋 (kǒu dài)",
+      "D": "Box is 盒子 (hé zi) or 箱子 (xiāng zi)"
+    },
+    "tags": [
+      "noun",
+      "object"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "dailyactions4-015",
+    "kind": "vocab",
+    "section": "Daily Actions",
+    "deck": "Simple Objects",
+    "level": "HSK1",
+    "promptLine": "yào shi — 钥匙",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "Lock",
+      "B": "Key",
+      "C": "Card",
+      "D": "Wallet"
+    },
+    "correct": "B",
+    "explanations": {
+      "A": "Lock is 锁 (suǒ)",
+      "B": "Correct! 钥匙 (yào shi) means 'key'",
+      "C": "Card is 卡 (kǎ)",
+      "D": "Wallet is 钱包 (qián bāo)"
+    },
+    "tags": [
+      "noun",
+      "object"
+    ],
+    "difficulty": 1
   }
 ]
