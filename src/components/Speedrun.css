@@ -161,6 +161,20 @@
   margin: 0;
 }
 
+.complete-time {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.missed-count {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
 .complete-buttons {
   width: 100%;
   display: flex;
@@ -170,6 +184,7 @@
 }
 
 .run-again-button,
+.review-missed-button,
 .back-home-button {
   width: 100%;
   padding: 14px 24px;
@@ -179,6 +194,21 @@
   border-radius: 10px;
   cursor: pointer;
   transition: opacity 0.2s, transform 0.2s;
+}
+
+.review-missed-button {
+  color: white;
+  background: #f59e0b;
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
+}
+
+.review-missed-button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.review-missed-button:active {
+  transform: translateY(0);
 }
 
 .run-again-button {

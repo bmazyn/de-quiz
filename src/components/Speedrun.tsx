@@ -33,6 +33,8 @@ export default function Speedrun() {
   });
   const [penaltyCountdown, setPenaltyCountdown] = useState(0);
   const [elapsedSeconds, setElapsedSeconds] = useState(0);
+  const [missedCards, setMissedCards] = useState<QuizCardType[]>([]);
+  const [isReviewMode, setIsReviewMode] = useState(false);
 
   // Format time as mm:ss
   const formatTime = (seconds: number): string => {
@@ -75,16 +77,16 @@ export default function Speedrun() {
     };
   }, [isStarted, shuffledDeck, currentIndex, answerState.selectedChoice]);
 
-  // Timer: Increment elapsed seconds while speedrun is active
+  // Timer: Increment elapsed seconds while speedrun is active (not in review mode)
   useEffect(() => {
-    if (!isStarted || isComplete) return;
+    if (!isStarted || isComplete || isReviewMode) return;
 
     const interval = setInterval(() => {
       setElapsedSeconds((prev) => prev + 1);
     }, 1000);
 
     return () => clearInterval(interval);
-  }, [isStarted, isComplete]);
+  }, [isStarted, isComplete, isReviewMode]);
 
   const handleStart = () => {
     const shuffled = shuffleArray(cards);
@@ -93,6 +95,8 @@ export default function Speedrun() {
     setIsStarted(true);
     setIsComplete(false);
     setElapsedSeconds(0); // Reset timer
+    setMissedCards([]); // Reset missed cards
+    setIsReviewMode(false); // Exit review mode
     setAnswerState({
       selectedChoice: null,
       isCorrect: null,
@@ -112,13 +116,16 @@ export default function Speedrun() {
     if (!isCorrect) {
       setPenaltyCountdown(3);
       
-      // Reinsertion logic: reinsert card at the middle of remaining cards
-      const remainingCards = shuffledDeck.length - currentIndex - 1;
-      if (remainingCards > 0) {
-        const insertPosition = currentIndex + 1 + Math.floor(remainingCards / 2);
-        const newDeck = [...shuffledDeck];
-        newDeck.splice(insertPosition, 0, currentCard);
-        setShuffledDeck(newDeck);
+      // Track missed cards (only during speedrun, not review)
+      if (!isReviewMode) {
+        setMissedCards((prev) => {
+          // Add only if not already in the missed cards array
+          const isAlreadyMissed = prev.some((card) => card.id === currentCard.id);
+          if (!isAlreadyMissed) {
+            return [...prev, currentCard];
+          }
+          return prev;
+        });
       }
     }
   };
@@ -127,7 +134,7 @@ export default function Speedrun() {
     const nextIndex = currentIndex + 1;
 
     if (nextIndex >= shuffledDeck.length) {
-      // End of speedrun
+      // End of speedrun or review
       setIsComplete(true);
       setIsStarted(false);
     } else {
@@ -138,9 +145,6 @@ export default function Speedrun() {
       });
       setPenaltyCountdown(0); // Clear penalty countdown on next
     }
-
-    // TODO: Timer tracking - track time from start to finish
-    // Placeholder for future implementation
   };
 
   const handleRunAgain = () => {
@@ -151,6 +155,19 @@ export default function Speedrun() {
     window.speechSynthesis?.cancel();
     setPenaltyCountdown(0); // Clear penalty countdown
     navigate("/");
+  };
+
+  const handleReviewMissed = () => {
+    const shuffled = shuffleArray(missedCards);
+    setShuffledDeck(shuffled);
+    setCurrentIndex(0);
+    setIsStarted(true);
+    setIsComplete(false);
+    setIsReviewMode(true);
+    setAnswerState({
+      selectedChoice: null,
+      isCorrect: null,
+    });
   };
 
   // Countdown timer effect - ticks down every second
@@ -239,12 +256,22 @@ export default function Speedrun() {
 
           <div className="speedrun-complete">
             <div className="complete-icon">✅</div>
-            <h3 className="complete-title">Section Cleared!</h3>
-            <p className="complete-time">Time: {formatTime(elapsedSeconds)}</p>
+            <h3 className="complete-title">{isReviewMode ? 'Review Complete!' : 'Section Cleared!'}</h3>
+            {!isReviewMode && <p className="complete-time">Time: {formatTime(elapsedSeconds)}</p>}
+            {!isReviewMode && missedCards.length > 0 && (
+              <p className="missed-count">Missed: {missedCards.length} card{missedCards.length !== 1 ? 's' : ''}</p>
+            )}
             <div className="complete-buttons">
-              <button className="run-again-button" onClick={handleRunAgain}>
-                🔄 Run Again
-              </button>
+              {!isReviewMode && missedCards.length > 0 && (
+                <button className="review-missed-button" onClick={handleReviewMissed}>
+                  📝 Review Missed
+                </button>
+              )}
+              {!isReviewMode && (
+                <button className="run-again-button" onClick={handleRunAgain}>
+                  🔄 Run Again
+                </button>
+              )}
               <button className="back-home-button" onClick={handleBackToHome}>
                 ← Back to Home
               </button>
@@ -275,10 +302,18 @@ export default function Speedrun() {
         </button>
         
         <div className="speedrun-stats">
-          <div className="stat">
-            <span className="stat-label">Time</span>
-            <span className="stat-value">{formatTime(elapsedSeconds)}</span>
-          </div>
+          {!isReviewMode && (
+            <div className="stat">
+              <span className="stat-label">Time</span>
+              <span className="stat-value">{formatTime(elapsedSeconds)}</span>
+            </div>
+          )}
+          {isReviewMode && (
+            <div className="stat">
+              <span className="stat-label">Review</span>
+              <span className="stat-value">📝</span>
+            </div>
+          )}
           <div className="stat">
             <span className="stat-label">Progress</span>
             <span className="stat-value">{currentIndex + 1} / {shuffledDeck.length}</span>
