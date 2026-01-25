@@ -60,11 +60,24 @@ export default function QuizFeed() {
   useEffect(() => {
     const allCards = quizCardsData as QuizCardType[];
     
-    const filtered = allCards.filter(card => {
-      const isValidKind = card.kind === 'vocab' || card.kind === 'sentence' || card.kind === 'phrase';
-      // Filter by deck only
-      return isValidKind && card.deck && selectedDecks.includes(card.deck);
-    });
+    // Check if we're in practice mode (from speedrun)
+    const practiceCardIds = localStorage.getItem('qc_practice_cards');
+    const practiceSource = localStorage.getItem('qc_practice_source');
+    
+    let filtered: QuizCardType[];
+    
+    if (practiceCardIds && practiceSource === 'speedrun') {
+      // Practice mode: load only the specified cards
+      const ids = JSON.parse(practiceCardIds) as string[];
+      filtered = allCards.filter(card => ids.includes(card.id));
+    } else {
+      // Normal mode: filter by selected decks
+      filtered = allCards.filter(card => {
+        const isValidKind = card.kind === 'vocab' || card.kind === 'sentence' || card.kind === 'phrase';
+        // Filter by deck only
+        return isValidKind && card.deck && selectedDecks.includes(card.deck);
+      });
+    }
     
     setFilteredCards(filtered);
     setShuffledDeck(shuffleArray(filtered));
@@ -328,51 +341,109 @@ export default function QuizFeed() {
             gap: '8px'
           }}>
             <div style={{ fontSize: '3rem' }}>✅</div>
-            <div style={{ fontSize: '1.5rem', fontWeight: 600, color: 'var(--text-primary)' }}>100% Mastered!</div>
+            <div style={{ fontSize: '1.5rem', fontWeight: 600, color: 'var(--text-primary)' }}>
+              {localStorage.getItem('qc_practice_source') === 'speedrun' ? 'Practice Complete!' : '100% Mastered!'}
+            </div>
           </div>
           <div style={{
             display: 'flex',
             gap: '12px',
             width: '100%'
           }}>
-            <button
-              onClick={() => navigate("/")}
-              style={{
-                flex: 1,
-                padding: '12px 20px',
-                fontSize: '1rem',
-                fontWeight: 500,
-                color: 'var(--text-primary)',
-                backgroundColor: 'var(--bg-hover)',
-                border: 'none',
-                borderRadius: '8px',
-                cursor: 'pointer',
-                transition: 'opacity 0.2s'
-              }}
-              onMouseOver={(e) => e.currentTarget.style.opacity = '0.8'}
-              onMouseOut={(e) => e.currentTarget.style.opacity = '1'}
-            >
-              Back to Home
-            </button>
-            <button
-              onClick={handleContinueMastery}
-              style={{
-                flex: 1,
-                padding: '12px 20px',
-                fontSize: '1rem',
-                fontWeight: 600,
-                color: 'white',
-                backgroundColor: 'var(--accent-color)',
-                border: 'none',
-                borderRadius: '8px',
-                cursor: 'pointer',
-                transition: 'opacity 0.2s'
-              }}
-              onMouseOver={(e) => e.currentTarget.style.opacity = '0.9'}
-              onMouseOut={(e) => e.currentTarget.style.opacity = '1'}
-            >
-              Continue
-            </button>
+            {localStorage.getItem('qc_practice_source') === 'speedrun' ? (
+              <>
+                <button
+                  onClick={() => {
+                    const section = localStorage.getItem('qc_practice_section') || '';
+                    localStorage.removeItem('qc_practice_cards');
+                    localStorage.removeItem('qc_practice_source');
+                    localStorage.removeItem('qc_practice_section');
+                    navigate(`/speedrun?section=${encodeURIComponent(section)}`);
+                  }}
+                  style={{
+                    flex: 1,
+                    padding: '12px 20px',
+                    fontSize: '1rem',
+                    fontWeight: 600,
+                    color: 'white',
+                    backgroundColor: 'var(--accent-color)',
+                    border: 'none',
+                    borderRadius: '8px',
+                    cursor: 'pointer',
+                    transition: 'opacity 0.2s'
+                  }}
+                  onMouseOver={(e) => e.currentTarget.style.opacity = '0.9'}
+                  onMouseOut={(e) => e.currentTarget.style.opacity = '1'}
+                >
+                  🔄 Restart Speedrun
+                </button>
+                <button
+                  onClick={() => {
+                    localStorage.removeItem('qc_practice_cards');
+                    localStorage.removeItem('qc_practice_source');
+                    localStorage.removeItem('qc_practice_section');
+                    navigate('/');
+                  }}
+                  style={{
+                    flex: 1,
+                    padding: '12px 20px',
+                    fontSize: '1rem',
+                    fontWeight: 500,
+                    color: 'var(--text-primary)',
+                    backgroundColor: 'var(--bg-hover)',
+                    border: 'none',
+                    borderRadius: '8px',
+                    cursor: 'pointer',
+                    transition: 'opacity 0.2s'
+                  }}
+                  onMouseOver={(e) => e.currentTarget.style.opacity = '0.8'}
+                  onMouseOut={(e) => e.currentTarget.style.opacity = '1'}
+                >
+                  ← Home
+                </button>
+              </>
+            ) : (
+              <>
+                <button
+                  onClick={() => navigate("/")}
+                  style={{
+                    flex: 1,
+                    padding: '12px 20px',
+                    fontSize: '1rem',
+                    fontWeight: 500,
+                    color: 'var(--text-primary)',
+                    backgroundColor: 'var(--bg-hover)',
+                    border: 'none',
+                    borderRadius: '8px',
+                    cursor: 'pointer',
+                    transition: 'opacity 0.2s'
+                  }}
+                  onMouseOver={(e) => e.currentTarget.style.opacity = '0.8'}
+                  onMouseOut={(e) => e.currentTarget.style.opacity = '1'}
+                >
+                  Back to Home
+                </button>
+                <button
+                  onClick={handleContinueMastery}
+                  style={{
+                    flex: 1,
+                    padding: '12px 20px',
+                    fontSize: '1rem',
+                    fontWeight: 600,
+                    color: 'white',
+                    backgroundColor: 'var(--accent-color)',
+                    border: 'none',
+                    borderRadius: '8px',
+                    cursor: 'pointer',
+                    transition: 'opacity 0.2s'
+                  }}
+                  onMouseOver={(e) => e.currentTarget.style.opacity = '0.9'}
+                  onMouseOut={(e) => e.currentTarget.style.opacity = '1'}
+                >
+                  Continue
+                </button>
+              </>
+            )}
           </div>
         </div>
       )}

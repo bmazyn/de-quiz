@@ -184,39 +184,55 @@ export default function LandingPage() {
     }
   };
 
+  const handleBackToStart = () => {
+    // Clear the visited flag so user can return to Start Page
+    localStorage.removeItem("qc_has_visited");
+    navigate("/");
+  };
+
   return (
     <div className="landing-page">
       <div className="landing-scrollable">
         
-        <div className="header-actions">
-          <button 
-            className={`multi-select-toggle ${isMultiSelectMode ? 'active' : ''}`}
-            onClick={handleToggleMultiSelect}
-            aria-label="Toggle multi-select mode"
-          >
-            <span className="multi-select-icon">{isMultiSelectMode ? '☑️' : '☐'}</span>
-            <span className="multi-select-label">Multi-Select</span>
+        <div className="header-grid">
+          <button className="landing-home-icon" onClick={handleBackToStart} aria-label="Back to start page">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
           </button>
-          {isMultiSelectMode && (
-            <>
-              <button 
-                className="header-action-button"
-                onClick={handleMultiSelectAudioLoop}
-                disabled={selectedDecks.length === 0}
-                aria-label="Play audio loop"
-              >
-                🎧
-              </button>
-              <button 
-                className="header-action-button"
-                onClick={handleMultiSelectQuiz}
-                disabled={selectedDecks.length === 0}
-                aria-label="Start quiz"
-              >
-                ▶️
-              </button>
-            </>
-          )}
+          
+          <div className="header-actions">
+            <button 
+              className={`multi-select-toggle ${isMultiSelectMode ? 'active' : ''}`}
+              onClick={handleToggleMultiSelect}
+              aria-label="Toggle multi-select mode">
+              <span className="multi-select-icon">{isMultiSelectMode ? '☑️' : '☐'}</span>
+              <span className="multi-select-label">Multi-Select</span>
+            </button>
+            {isMultiSelectMode && (
+              <>
+                <button 
+                  className="header-action-button"
+                  onClick={handleMultiSelectAudioLoop}
+                  disabled={selectedDecks.length === 0}
+                  aria-label="Play audio loop"
+                >
+                  🎧
+                </button>
+                <button 
+                  className="header-action-button"
+                  onClick={handleMultiSelectQuiz}
+                  disabled={selectedDecks.length === 0}
+                  aria-label="Start quiz"
+                >
+                  ▶️
+                </button>
+              </>
+            )}
+          </div>
+          
+          <div className="header-spacer"></div>
         </div>
 
         {/* Dynamic Sections */}

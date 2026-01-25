@@ -249,6 +249,20 @@ export default function Speedrun() {
     });
   };
 
+  const handlePracticeMisses = () => {
+    // Store missed cards temporarily in localStorage for QuizFeed
+    try {
+      const missedIds = missedCards.map(card => card.id);
+      localStorage.setItem('qc_practice_cards', JSON.stringify(missedIds));
+      localStorage.setItem('qc_practice_source', 'speedrun');
+      localStorage.setItem('qc_practice_section', sectionParam);
+    } catch {
+      // Fail silently
+    }
+    // Navigate to quiz feed
+    navigate('/quiz');
+  };
+
   const handleReinforcementAudio = () => {
     if (!('speechSynthesis' in window)) return;
     if (isPlayingReinforcement) return;
@@ -396,9 +410,14 @@ export default function Speedrun() {
             )}
             <div className="complete-buttons">
               {mode === "speedrun" && speedrunFailed && (
-                <button className="run-again-button" onClick={handleRunAgain}>
-                  🔄 Restart Speedrun
-                </button>
+                <>
+                  <button className="review-missed-button" onClick={handlePracticeMisses}>
+                    🎯 Practice Misses
+                  </button>
+                  <button className="run-again-button" onClick={handleRunAgain}>
+                    🔄 Restart Speedrun
+                  </button>
+                </>
               )}
               {mode === "speedrun" && !speedrunFailed && missedCards.length > 0 && (
                 <button className="review-missed-button" onClick={handleReviewMissed}>
@@ -471,7 +490,7 @@ export default function Speedrun() {
       </div>
 
       <QuizCard
-        key={currentCard.id}
+        key={`${currentCard.id}-${currentIndex}`}
         card={currentCard}
         answerState={answerState}
         onAnswer={handleAnswer}
