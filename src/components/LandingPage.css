@@ -278,9 +278,10 @@
 }
 
 .block-speedrun-time.has-time {
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   font-weight: 600;
   color: var(--accent-color);
+  filter: brightness(1.1);
 }
 
 .block-speedrun-time.locked {
