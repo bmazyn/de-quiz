@@ -92,9 +92,6 @@ export default function QuizCard({ card, answerState, onAnswer, onNext, isDisabl
             key={choice}
             className={getChoiceClassName(choice)}
             onClick={(e) => handleAnswerClick(choice, e)}
-            tabIndex={isSpeedrunMode ? -1 : 0}
-            onMouseUp={isSpeedrunMode ? (e) => (e.currentTarget as HTMLElement).blur() : undefined}
-            onTouchEnd={isSpeedrunMode ? (e) => (e.currentTarget as HTMLElement).blur() : undefined}
             disabled={isAnswered || isDisabled}
           >
             {/* Answer text comes directly from card.choices - no modifications */}
