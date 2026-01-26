@@ -82,11 +82,13 @@
 .choice-button:focus {
   outline: none;
   box-shadow: none;
+  background: var(--bg-card);
 }
 
 .choice-button:focus-visible {
   outline: 2px solid var(--accent-color);
   outline-offset: 2px;
+  background: var(--bg-card);
 }
 
 .choice-button:not(:disabled):hover {
