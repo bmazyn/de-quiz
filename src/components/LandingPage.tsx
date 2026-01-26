@@ -288,9 +288,9 @@ export default function LandingPage() {
                     >
                       <div className="block-header">
                         <span className="block-name">{deck}</span>
-                        {masteredSections[deck] && <span className="block-mastery">✓</span>}
                       </div>
                       <div className="block-footer">
+                        {masteredSections[deck] && <span className="block-mastery">✓</span>}
                         <span 
                           className={`block-speedrun-time ${
                             getDeckBestTime(deck) !== null ? 'has-time' : ''
