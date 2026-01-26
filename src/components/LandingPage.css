@@ -186,9 +186,10 @@
 }
 
 .section-time {
-  font-size: 0.875rem;
-  font-weight: 600;
+  font-size: 0.95rem;
+  font-weight: 500;
   color: var(--accent-color);
+  filter: brightness(1.1);
   white-space: nowrap;
   text-align: center;
   padding: 4px 8px;
@@ -279,7 +280,7 @@
 
 .block-speedrun-time.has-time {
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--accent-color);
   filter: brightness(1.1);
 }
