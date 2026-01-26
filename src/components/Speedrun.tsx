@@ -62,16 +62,18 @@ export default function Speedrun() {
   });
   const [penaltyCountdown, setPenaltyCountdown] = useState(0);
   const [elapsedSeconds, setElapsedSeconds] = useState(0);
+  const [startTime, setStartTime] = useState<number | null>(null);
   const [totalPenalties, setTotalPenalties] = useState(0);
   const [missedCards, setMissedCards] = useState<QuizCardType[]>([]);
   const [mode, setMode] = useState<"speedrun" | "review">("speedrun");
   const [isPlayingReinforcement, setIsPlayingReinforcement] = useState(false);
   const [bestTime, setBestTime] = useState<number | null>(null);
 
-  // Format time as mm:ss
+  // Format time as mm:ss (always round up fractional seconds)
   const formatTime = (seconds: number): string => {
-    const mins = Math.floor(seconds / 60);
-    const secs = seconds % 60;
+    const roundedSeconds = Math.ceil(seconds);
+    const mins = Math.floor(roundedSeconds / 60);
+    const secs = roundedSeconds % 60;
     return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
   };
 
@@ -112,16 +114,19 @@ export default function Speedrun() {
     };
   }, [isStarted, shuffledDeck, currentIndex, answerState.selectedChoice]);
 
-  // Timer: Increment elapsed seconds while speedrun is active (not in review mode)
+  // Timer: Track elapsed time with millisecond precision
   useEffect(() => {
     if (!isStarted || isComplete || mode === "review") return;
 
     const interval = setInterval(() => {
-      setElapsedSeconds((prev) => prev + 1);
-    }, 1000);
+      if (startTime !== null) {
+        const elapsed = (Date.now() - startTime) / 1000; // Convert ms to seconds
+        setElapsedSeconds(elapsed);
+      }
+    }, 100); // Update every 100ms for smooth display
 
     return () => clearInterval(interval);
-  }, [isStarted, isComplete, mode]);
+  }, [isStarted, isComplete, mode, startTime]);
 
   const handleStart = () => {
     const shuffled = shuffleArray(cards);
@@ -130,6 +135,7 @@ export default function Speedrun() {
     setIsStarted(true);
     setIsComplete(false);
     setElapsedSeconds(0);
+    setStartTime(Date.now());
     setTotalPenalties(0);
     setMissedCards([]);
     setMode("speedrun");
@@ -183,9 +189,9 @@ export default function Speedrun() {
       setIsComplete(true);
       setIsStarted(false);
       
-      // Save best time only in speedrun mode (elapsed + penalties)
+      // Save best time only in speedrun mode (elapsed + penalties, always round up)
       if (mode === "speedrun") {
-        const finalTime = elapsedSeconds + totalPenalties;
+        const finalTime = Math.ceil(elapsedSeconds) + totalPenalties;
         saveDeckBestTime(deckParam, finalTime);
         // Update displayed best time if this was a new best
         const currentBest = getDeckBestTime(deckParam);
@@ -355,7 +361,7 @@ export default function Speedrun() {
 
   // End screen
   if (isComplete) {
-    const finalTime = elapsedSeconds + totalPenalties;
+    const finalTime = Math.ceil(elapsedSeconds) + totalPenalties;
     
     return (
       <div className={`speedrun ${theme}`}>
@@ -381,7 +387,7 @@ export default function Speedrun() {
                   Time: {formatTime(finalTime)}
                   {totalPenalties > 0 && (
                     <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginLeft: '8px' }}>
-                      ({formatTime(elapsedSeconds)} + {totalPenalties}s)
+                      ({formatTime(Math.ceil(elapsedSeconds))} + {totalPenalties}s)
                     </span>
                   )}
                 </p>

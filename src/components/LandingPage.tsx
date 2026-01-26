@@ -206,7 +206,11 @@ export default function LandingPage() {
 
   const handleDeckSpeedrunClick = (deck: string, e: React.MouseEvent) => {
     e.stopPropagation(); // Prevent deck card click
-    navigate(`/speedrun?deck=${encodeURIComponent(deck)}`);
+    
+    // Only allow speedrun if deck is mastered
+    if (masteredSections[deck]) {
+      navigate(`/speedrun?deck=${encodeURIComponent(deck)}`);
+    }
   };
 
   const handleBackToStart = () => {
@@ -297,9 +301,12 @@ export default function LandingPage() {
                       </div>
                       <div className="block-footer">
                         <span 
-                          className={`block-speedrun-time ${getDeckBestTime(deck) !== null ? 'has-time' : ''}`}
-                          onClick={(e) => handleDeckSpeedrunClick(deck, e)}
-                          title="Start deck speedrun"
+                          className={`block-speedrun-time ${
+                            getDeckBestTime(deck) !== null ? 'has-time' : ''
+                          } ${
+                            !masteredSections[deck] ? 'locked' : ''
+                          }`}
+                          title={masteredSections[deck] ? "Best time" : "Master deck to unlock speedrun"}
                         >
                           ⏱️ {getDeckSpeedrunTime(deck)}
                         </span>
@@ -325,11 +332,21 @@ export default function LandingPage() {
               <button className="modal-button" onClick={handleModalQuiz}>
                 ▶️ Quiz
               </button>
-              <button className="modal-button" onClick={() => {
-                setShowDeckModal(false);
-                navigate(`/speedrun?deck=${encodeURIComponent(modalDeck)}`);
-              }}>
-                ⏱️ Deck Run
+              <button 
+                className="modal-button" 
+                onClick={() => {
+                  if (masteredSections[modalDeck]) {
+                    setShowDeckModal(false);
+                    navigate(`/speedrun?deck=${encodeURIComponent(modalDeck)}`);
+                  }
+                }}
+                disabled={!masteredSections[modalDeck]}
+                style={{
+                  opacity: masteredSections[modalDeck] ? 1 : 0.5,
+                  cursor: masteredSections[modalDeck] ? 'pointer' : 'not-allowed'
+                }}
+              >
+                {masteredSections[modalDeck] ? '⏱️ Deck Run' : '🔒 Deck Run (Master first)'}
               </button>
             </div>
             <button className="modal-cancel" onClick={() => setShowDeckModal(false)}>

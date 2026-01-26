@@ -272,7 +272,8 @@
   border-radius: 4px;
   background: var(--bg-surface);
   transition: all 0.2s;
-  cursor: pointer;
+  cursor: default;
+  pointer-events: none;
 }
 
 .block-speedrun-time.has-time {
@@ -281,10 +282,8 @@
   color: var(--accent-color);
 }
 
-.block-speedrun-time:hover {
-  background: var(--accent-color);
-  color: white;
-  transform: scale(1.05);
+.block-speedrun-time.locked {
+  opacity: 0.4;
 }
 
 /* Speedrun button removed - time display now serves as entry point */
