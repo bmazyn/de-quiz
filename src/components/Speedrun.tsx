@@ -154,6 +154,11 @@ export default function Speedrun() {
     // Prevent answering if speedrun has failed
     if (speedrunFailed) return;
     
+    // Immediately blur to clear iOS active state
+    if (document.activeElement instanceof HTMLElement) {
+      document.activeElement.blur();
+    }
+    
     const currentCard = shuffledDeck[currentIndex];
     const isCorrect = choice === currentCard.correct;
 
@@ -189,8 +194,10 @@ export default function Speedrun() {
       // 300ms feedback delay
       setTimeout(() => {
         if (isCorrect) {
-          // Correct: advance immediately
-          handleNext();
+          // Correct: delay advance by one frame to ensure iOS clears active state
+          requestAnimationFrame(() => {
+            handleNext();
+          });
         } else {
           // Wrong: start 3-second countdown
           setPenaltyCountdown(3);
