@@ -255,45 +255,47 @@ export default function ChapterDetail() {
 
           return (
             <div className="section" key={section}>
-              <div className="section-header">
-                <div className="section-header-left">
-                  <h2 className="section-title">{section}</h2>
-                </div>
-                <span className="section-time">
-                  {getSectionTime(decks)}
-                </span>
-                <span className="section-mastery">
-                  {masteredCount} / {decks.length} mastered
-                </span>
-              </div>
-              
-              <div className="blocks-grid">
-                {decks.map(deck => (
-                  <div 
-                    key={deck}
-                    className={`block-card ${
-                      selectedDecks.includes(deck) && isMultiSelectMode ? "selected" : ""
-                    }`}
-                    onClick={() => handleDeckClick(deck)}
-                  >
-                    <div className="block-header">
-                      <span className="block-name">{deck}</span>
-                    </div>
-                    <div className="block-footer">
-                      {masteredSections[deck] && <span className="block-mastery">✓</span>}
-                      <span 
-                        className={`block-speedrun-time ${
-                          getDeckBestTime(deck) !== null ? 'has-time' : ''
-                        } ${
-                          !masteredSections[deck] ? 'locked' : ''
-                        }`}
-                        title={masteredSections[deck] ? "Best time" : "Master deck to unlock speedrun"}
-                      >
-                        ⏱️ {getDeckSpeedrunTime(deck)}
-                      </span>
-                    </div>
+              <div className="section-group-container">
+                <div className="section-header">
+                  <div className="section-header-left">
+                    <h2 className="section-title">{section}</h2>
                   </div>
-                ))}
+                  <span className="section-time">
+                    {getSectionTime(decks)}
+                  </span>
+                  <span className="section-mastery">
+                    {masteredCount} / {decks.length} mastered
+                  </span>
+                </div>
+                
+                <div className="blocks-grid">
+                  {decks.map(deck => (
+                    <div 
+                      key={deck}
+                      className={`block-card ${
+                        selectedDecks.includes(deck) && isMultiSelectMode ? "selected" : ""
+                      }`}
+                      onClick={() => handleDeckClick(deck)}
+                    >
+                      <div className="block-header">
+                        <span className="block-name">{deck}</span>
+                      </div>
+                      <div className="block-footer">
+                        {masteredSections[deck] && <span className="block-mastery">✓</span>}
+                        <span 
+                          className={`block-speedrun-time ${
+                            getDeckBestTime(deck) !== null ? 'has-time' : ''
+                          } ${
+                            !masteredSections[deck] ? 'locked' : ''
+                          }`}
+                          title={masteredSections[deck] ? "Best time" : "Master deck to unlock speedrun"}
+                        >
+                          ⏱️ {getDeckSpeedrunTime(deck)}
+                        </span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           );

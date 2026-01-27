@@ -171,13 +171,23 @@
   margin-bottom: 4px;
 }
 
+.section-group-container {
+  background: rgba(0, 0, 0, 0.12);
+  border-radius: 14px;
+  padding: 16px;
+}
+
+[data-theme="dark"] .section-group-container {
+  background: rgba(255, 255, 255, 0.04);
+}
+
 .section-header {
   display: grid;
   grid-template-columns: 1fr auto auto;
   gap: 12px;
   align-items: center;
-  padding: 0 8px;
-  margin-bottom: 4px;
+  padding: 0;
+  margin-bottom: 12px;
   cursor: pointer;
   user-select: none;
   transition: opacity 0.2s;
@@ -253,6 +263,11 @@
   user-select: none;
   min-height: 60px;
   gap: 8px;
+  filter: brightness(1.08);
+}
+
+[data-theme="dark"] .block-card {
+  filter: brightness(1.12);
 }
 
 .block-card:hover {
