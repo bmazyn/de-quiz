@@ -6183,5 +6183,365 @@
       "shopping"
     ],
     "difficulty": 1
+  },
+  {
+    "id": "corevocab-nouns-001",
+    "kind": "vocab",
+    "deckId": "corevocab-nouns",
+    "deck": "Core Nouns",
+    "level": "HSK1",
+    "promptLine": "xuéxiào — 学校",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "school",
+      "B": "student",
+      "C": "teacher",
+      "D": "classroom"
+    },
+    "correct": "A",
+    "explanations": {
+      "A": "Correct! 学校 (xuéxiào) means 'school'",
+      "B": "student is 学生 (xuésheng)",
+      "C": "teacher is 老师 (lǎoshī)",
+      "D": "classroom is 教室 (jiàoshì)"
+    },
+    "tags": ["noun", "place"],
+    "difficulty": 1
+  },
+  {
+    "id": "corevocab-nouns-002",
+    "kind": "vocab",
+    "deckId": "corevocab-nouns",
+    "deck": "Core Nouns",
+    "level": "HSK1",
+    "promptLine": "péngyǒu — 朋友",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "family",
+      "B": "friend",
+      "C": "stranger",
+      "D": "colleague"
+    },
+    "correct": "B",
+    "explanations": {
+      "A": "family is 家人 (jiārén)",
+      "B": "Correct! 朋友 (péngyǒu) means 'friend'",
+      "C": "stranger is 陌生人 (mòshēngrén)",
+      "D": "colleague is 同事 (tóngshì)"
+    },
+    "tags": ["noun", "person"],
+    "difficulty": 1
+  },
+  {
+    "id": "corevocab-nouns-003",
+    "kind": "vocab",
+    "deckId": "corevocab-nouns",
+    "deck": "Core Nouns",
+    "level": "HSK1",
+    "promptLine": "fángjiān — 房间",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "house",
+      "B": "room",
+      "C": "door",
+      "D": "window"
+    },
+    "correct": "B",
+    "explanations": {
+      "A": "house is 房子 (fángzi)",
+      "B": "Correct! 房间 (fángjiān) means 'room'",
+      "C": "door is 门 (mén)",
+      "D": "window is 窗户 (chuānghu)"
+    },
+    "tags": ["noun", "place"],
+    "difficulty": 1
+  },
+  {
+    "id": "corevocab-nouns-004",
+    "kind": "vocab",
+    "deckId": "corevocab-nouns",
+    "deck": "Core Nouns",
+    "level": "HSK1",
+    "promptLine": "shíjiān — 时间",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "space",
+      "B": "hour",
+      "C": "time",
+      "D": "clock"
+    },
+    "correct": "C",
+    "explanations": {
+      "A": "space is 空间 (kōngjiān)",
+      "B": "hour is 小时 (xiǎoshí)",
+      "C": "Correct! 时间 (shíjiān) means 'time'",
+      "D": "clock is 钟 (zhōng)"
+    },
+    "tags": ["noun", "time"],
+    "difficulty": 1
+  },
+  {
+    "id": "corevocab-nouns-005",
+    "kind": "vocab",
+    "deckId": "corevocab-nouns",
+    "deck": "Core Nouns",
+    "level": "HSK1",
+    "promptLine": "diànyǐng — 电影",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "television",
+      "B": "movie",
+      "C": "video",
+      "D": "picture"
+    },
+    "correct": "B",
+    "explanations": {
+      "A": "television is 电视 (diànshì)",
+      "B": "Correct! 电影 (diànyǐng) means 'movie'",
+      "C": "video is 视频 (shìpín)",
+      "D": "picture is 图片 (túpiàn)"
+    },
+    "tags": ["noun", "entertainment"],
+    "difficulty": 1
+  },
+  {
+    "id": "corevocab-nouns-006",
+    "kind": "vocab",
+    "deckId": "corevocab-nouns",
+    "deck": "Core Nouns",
+    "level": "HSK1",
+    "promptLine": "shǒujī — 手机",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "computer",
+      "B": "tablet",
+      "C": "phone",
+      "D": "camera"
+    },
+    "correct": "C",
+    "explanations": {
+      "A": "computer is 电脑 (diànnǎo)",
+      "B": "tablet is 平板电脑 (píngbǎn diànnǎo)",
+      "C": "Correct! 手机 (shǒujī) means 'phone'",
+      "D": "camera is 相机 (xiàngjī)"
+    },
+    "tags": ["noun", "technology"],
+    "difficulty": 1
+  },
+  {
+    "id": "corevocab-nouns-007",
+    "kind": "vocab",
+    "deckId": "corevocab-nouns",
+    "deck": "Core Nouns",
+    "level": "HSK1",
+    "promptLine": "dìfāng — 地方",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "person",
+      "B": "place",
+      "C": "thing",
+      "D": "direction"
+    },
+    "correct": "B",
+    "explanations": {
+      "A": "person is 人 (rén)",
+      "B": "Correct! 地方 (dìfāng) means 'place'",
+      "C": "thing is 东西 (dōngxi)",
+      "D": "direction is 方向 (fāngxiàng)"
+    },
+    "tags": ["noun", "location"],
+    "difficulty": 1
+  },
+  {
+    "id": "corevocab-nouns-008",
+    "kind": "vocab",
+    "deckId": "corevocab-nouns",
+    "deck": "Core Nouns",
+    "level": "HSK1",
+    "promptLine": "lù — 路",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "road / way",
+      "B": "car",
+      "C": "street sign",
+      "D": "map"
+    },
+    "correct": "A",
+    "explanations": {
+      "A": "Correct! 路 (lù) means 'road / way'",
+      "B": "car is 车 (chē)",
+      "C": "street sign is 路标 (lùbiāo)",
+      "D": "map is 地图 (dìtú)"
+    },
+    "tags": ["noun", "location"],
+    "difficulty": 1
+  },
+  {
+    "id": "corevocab-nouns-009",
+    "kind": "vocab",
+    "deckId": "corevocab-nouns",
+    "deck": "Core Nouns",
+    "level": "HSK1",
+    "promptLine": "jiànbǐng — 煎饼",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "bread",
+      "B": "noodles",
+      "C": "pancake / crepe",
+      "D": "dumpling"
+    },
+    "correct": "C",
+    "explanations": {
+      "A": "bread is 面包 (miànbāo)",
+      "B": "noodles is 面条 (miàntiáo)",
+      "C": "Correct! 煎饼 (jiànbǐng) means 'pancake / crepe'",
+      "D": "dumpling is 饺子 (jiǎozi)"
+    },
+    "tags": ["noun", "food"],
+    "difficulty": 1
+  },
+  {
+    "id": "corevocab-nouns-010",
+    "kind": "vocab",
+    "deckId": "corevocab-nouns",
+    "deck": "Core Nouns",
+    "level": "HSK1",
+    "promptLine": "shìqíng — 事情",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "event",
+      "B": "thing / matter",
+      "C": "problem",
+      "D": "situation"
+    },
+    "correct": "B",
+    "explanations": {
+      "A": "event is 活动 (huódòng)",
+      "B": "Correct! 事情 (shìqíng) means 'thing / matter'",
+      "C": "problem is 问题 (wèntí)",
+      "D": "situation is 情况 (qíngkuàng)"
+    },
+    "tags": ["noun", "abstract"],
+    "difficulty": 1
+  },
+  {
+    "id": "corevocab-nouns-011",
+    "kind": "vocab",
+    "deckId": "corevocab-nouns",
+    "deck": "Core Nouns",
+    "level": "HSK1",
+    "promptLine": "zuótiān — 昨天",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "today",
+      "B": "tomorrow",
+      "C": "yesterday",
+      "D": "last week"
+    },
+    "correct": "C",
+    "explanations": {
+      "A": "today is 今天 (jīntiān)",
+      "B": "tomorrow is 明天 (míngtiān)",
+      "C": "Correct! 昨天 (zuótiān) means 'yesterday'",
+      "D": "last week is 上周 (shàngzhōu)"
+    },
+    "tags": ["noun", "time"],
+    "difficulty": 1
+  },
+  {
+    "id": "corevocab-nouns-012",
+    "kind": "vocab",
+    "deckId": "corevocab-nouns",
+    "deck": "Core Nouns",
+    "level": "HSK1",
+    "promptLine": "míngtiān — 明天",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "yesterday",
+      "B": "today",
+      "C": "next week",
+      "D": "tomorrow"
+    },
+    "correct": "D",
+    "explanations": {
+      "A": "yesterday is 昨天 (zuótiān)",
+      "B": "today is 今天 (jīntiān)",
+      "C": "next week is 下周 (xiàzhōu)",
+      "D": "Correct! 明天 (míngtiān) means 'tomorrow'"
+    },
+    "tags": ["noun", "time"],
+    "difficulty": 1
+  },
+  {
+    "id": "corevocab-nouns-013",
+    "kind": "vocab",
+    "deckId": "corevocab-nouns",
+    "deck": "Core Nouns",
+    "level": "HSK1",
+    "promptLine": "diàn — 店",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "market",
+      "B": "shop",
+      "C": "restaurant",
+      "D": "mall"
+    },
+    "correct": "B",
+    "explanations": {
+      "A": "market is 市场 (shìchǎng)",
+      "B": "Correct! 店 (diàn) means 'shop'",
+      "C": "restaurant is 餐厅 (cāntīng)",
+      "D": "mall is 商场 (shāngchǎng)"
+    },
+    "tags": ["noun", "place"],
+    "difficulty": 1
+  },
+  {
+    "id": "corevocab-nouns-014",
+    "kind": "vocab",
+    "deckId": "corevocab-nouns",
+    "deck": "Core Nouns",
+    "level": "HSK1",
+    "promptLine": "zài — 在",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "go",
+      "B": "at / in / ongoing",
+      "C": "come",
+      "D": "from"
+    },
+    "correct": "B",
+    "explanations": {
+      "A": "go is 去 (qù)",
+      "B": "Correct! 在 (zài) means 'at / in / ongoing'",
+      "C": "come is 来 (lái)",
+      "D": "from is 从 (cóng)"
+    },
+    "tags": ["noun", "location"],
+    "difficulty": 1
+  },
+  {
+    "id": "corevocab-nouns-015",
+    "kind": "vocab",
+    "deckId": "corevocab-nouns",
+    "deck": "Core Nouns",
+    "level": "HSK1",
+    "promptLine": "shíhou — 时候",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "moment",
+      "B": "period",
+      "C": "time / when",
+      "D": "clock"
+    },
+    "correct": "C",
+    "explanations": {
+      "A": "moment is 时刻 (shíkè)",
+      "B": "period is 期间 (qījiān)",
+      "C": "Correct! 时候 (shíhou) means 'time / when'",
+      "D": "clock is 钟 (zhōng)"
+    },
+    "tags": ["noun", "time"],
+    "difficulty": 1
   }
 ]

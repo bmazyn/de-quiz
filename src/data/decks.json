@@ -71,6 +71,30 @@
     "deckName": "Simple Objects",
     "order": 4
   },
+  "corevocab-nouns": {
+    "chapter": 2,
+    "section": "Core Vocab",
+    "deckName": "Core Nouns",
+    "order": 1
+  },
+  "corevocab-verbs": {
+    "chapter": 2,
+    "section": "Core Vocab",
+    "deckName": "Core Verbs",
+    "order": 2
+  },
+  "corevocab-nounphrases": {
+    "chapter": 2,
+    "section": "Core Vocab",
+    "deckName": "Noun Phrases",
+    "order": 3
+  },
+  "corevocab-verbphrases": {
+    "chapter": 2,
+    "section": "Core Vocab",
+    "deckName": "Verb Phrases",
+    "order": 4
+  },
   "simplesentences1": {
     "chapter": 2,
     "section": "Simple Sentences",
