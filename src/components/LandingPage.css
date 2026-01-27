@@ -137,6 +137,32 @@
   cursor: not-allowed;
 }
 
+.chapter-header {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-top: 24px;
+  margin-bottom: 12px;
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+  transition: opacity 0.2s;
+}
+
+.chapter-header:hover {
+  opacity: 0.8;
+}
+
+.chapter-chevron {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  width: 16px;
+  flex-shrink: 0;
+}
+
 .section {
   width: 100%;
   display: flex;

@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import { getSections, getDecksForSection } from "../utils/decks";
+import { getSections, getDecksForSection, getChapterStructure } from "../utils/decks";
 import "./LandingPage.css";
 // comment to test
 
@@ -44,6 +44,7 @@ const decksPerSection: Record<string, string[]> = {};
 sections.forEach(section => {
   decksPerSection[section] = getDecksForSection(section);
 });
+const chapterStructure = getChapterStructure();
 
 export default function LandingPage() {
   const navigate = useNavigate();
@@ -62,6 +63,7 @@ export default function LandingPage() {
   });
 
   const [collapsedSections, setCollapsedSections] = useState<Record<string, boolean>>({});
+  const [collapsedChapters, setCollapsedChapters] = useState<Record<number, boolean>>({});
   const [isMultiSelectMode, setIsMultiSelectMode] = useState(false);
   const [showDeckModal, setShowDeckModal] = useState(false);
   const [modalDeck, setModalDeck] = useState<string | null>(null);
@@ -203,6 +205,13 @@ export default function LandingPage() {
     }));
   };
 
+  const toggleChapterCollapse = (chapter: number) => {
+    setCollapsedChapters(prev => ({
+      ...prev,
+      [chapter]: !prev[chapter]
+    }));
+  };
+
   const handleBackToStart = () => {
     // Clear the visited flag so user can return to Start Page
     localStorage.removeItem("qc_has_visited");
@@ -254,17 +263,26 @@ export default function LandingPage() {
           <div className="header-spacer"></div>
         </div>
 
-        {/* Dynamic Sections */}
-        {sections.map(section => {
-          const decks = decksPerSection[section];
-          const masteredCount = decks.filter(deck => masteredSections[deck]).length;
-          const isCollapsed = collapsedSections[section] || false;
-
+        {/* Dynamic Sections grouped by Chapter */}
+        {Object.keys(chapterStructure).sort((a, b) => Number(a) - Number(b)).map(chapterNum => {
+          const chapter = Number(chapterNum);
+          const sectionsInChapter = chapterStructure[chapter];
+          const isChapterCollapsed = collapsedChapters[chapter] || false;
+          
           return (
-            <div className="section" key={section}>
-              <div className="section-header" onClick={() => toggleSectionCollapse(section)}>
+            <div key={`chapter-${chapter}`}>
+              <div className="chapter-header" onClick={() => toggleChapterCollapse(chapter)}>
+                <span className="chapter-chevron">{isChapterCollapsed ? '▶' : '▼'}</span>
+                <span>Chapter {chapter}</span>
+              </div>
+              {!isChapterCollapsed && sectionsInChapter.map(section => {
+                const decks = decksPerSection[section];
+                const masteredCount = decks.filter(deck => masteredSections[deck]).length;
+
+                return (
+                  <div className="section" key={section}>
+              <div className="section-header">
                 <div className="section-header-left">
-                  <span className="section-chevron">{isCollapsed ? '▶' : '▼'}</span>
                   <h2 className="section-title">{section}</h2>
                 </div>
                 <span className="section-time">
@@ -275,36 +293,37 @@ export default function LandingPage() {
                 </span>
               </div>
               
-              {!isCollapsed && (
-                <div className="blocks-grid">
-                  {decks.map(deck => (
-                    <div 
-                      key={deck}
-                      className={`block-card ${
-                        selectedDecks.includes(deck) && isMultiSelectMode ? "selected" : ""
-                      }`}
-                      onClick={() => handleDeckClick(deck)}
-                    >
-                      <div className="block-header">
-                        <span className="block-name">{deck}</span>
-                      </div>
-                      <div className="block-footer">
-                        {masteredSections[deck] && <span className="block-mastery">✓</span>}
-                        <span 
-                          className={`block-speedrun-time ${
-                            getDeckBestTime(deck) !== null ? 'has-time' : ''
-                          } ${
-                            !masteredSections[deck] ? 'locked' : ''
-                          }`}
-                          title={masteredSections[deck] ? "Best time" : "Master deck to unlock speedrun"}
-                        >
-                          ⏱️ {getDeckSpeedrunTime(deck)}
-                        </span>
-                      </div>
+              <div className="blocks-grid">
+                {decks.map(deck => (
+                  <div 
+                    key={deck}
+                    className={`block-card ${
+                      selectedDecks.includes(deck) && isMultiSelectMode ? "selected" : ""
+                    }`}
+                    onClick={() => handleDeckClick(deck)}
+                  >
+                    <div className="block-header">
+                      <span className="block-name">{deck}</span>
                     </div>
-                  ))}
-                </div>
-              )}
+                    <div className="block-footer">
+                      {masteredSections[deck] && <span className="block-mastery">✓</span>}
+                      <span 
+                        className={`block-speedrun-time ${
+                          getDeckBestTime(deck) !== null ? 'has-time' : ''
+                        } ${
+                          !masteredSections[deck] ? 'locked' : ''
+                        }`}
+                        title={masteredSections[deck] ? "Best time" : "Master deck to unlock speedrun"}
+                      >
+                        ⏱️ {getDeckSpeedrunTime(deck)}
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+                  </div>
+                );
+              })}
             </div>
           );
         })}

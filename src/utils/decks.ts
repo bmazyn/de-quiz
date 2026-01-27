@@ -61,3 +61,25 @@ export function getDeckName(deckId: string): string | undefined {
 export function getSectionName(deckId: string): string | undefined {
   return decks[deckId]?.section;
 }
+
+/**
+ * Get sections grouped by chapter
+ */
+export function getChapterStructure(): Record<number, string[]> {
+  const chapterMap: Record<number, Set<string>> = {};
+  
+  Object.values(decks).forEach(deck => {
+    const chapter = deck.chapter;
+    if (!chapterMap[chapter]) {
+      chapterMap[chapter] = new Set();
+    }
+    chapterMap[chapter].add(deck.section);
+  });
+  
+  const result: Record<number, string[]> = {};
+  Object.entries(chapterMap).forEach(([chapter, sections]) => {
+    result[Number(chapter)] = Array.from(sections);
+  });
+  
+  return result;
+}
