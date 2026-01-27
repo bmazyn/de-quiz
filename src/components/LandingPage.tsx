@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { getSections, getDecksForSection } from "../utils/decks";
 import "./LandingPage.css";
+// comment to test
 
 // Get best time for a deck from localStorage
 function getDeckBestTime(deckName: string): number | null {
