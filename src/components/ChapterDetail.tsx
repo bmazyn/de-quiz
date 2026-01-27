@@ -207,14 +207,15 @@ export default function ChapterDetail() {
       <div className="chapter-detail-scrollable">
         
         <div className="detail-header-grid">
-          <button className="detail-back-button" onClick={handleBackToChapters} aria-label="Back to chapters">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <line x1="19" y1="12" x2="5" y2="12"></line>
-              <polyline points="12 19 5 12 12 5"></polyline>
-            </svg>
-          </button>
-          
-          <h1 className="detail-chapter-title">Chapter {chapter}</h1>
+          <div className="detail-header-top">
+            <button className="detail-back-button" onClick={handleBackToChapters} aria-label="Back to chapters">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+            </button>
+            <h1 className="detail-chapter-title">Chapter {chapter}</h1>
+          </div>
           
           <div className="detail-header-actions">
             <button 

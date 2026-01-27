@@ -27,13 +27,22 @@
 .detail-header-grid {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
   width: 100%;
   max-width: 400px;
   margin-bottom: 8px;
 }
 
+.detail-header-top {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 36px;
+}
+
 .detail-back-button {
+  position: relative;
+  z-index: 2;
   padding: 8px;
   background: transparent;
   border: none;
@@ -42,8 +51,8 @@
   transition: opacity 0.2s, transform 0.1s;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  align-self: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .detail-back-button:hover {
@@ -56,11 +65,15 @@
 }
 
 .detail-chapter-title {
-  font-size: 2rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--text-primary);
   margin: 0;
-  text-align: center;
+  white-space: nowrap;
+  pointer-events: none;
 }
 
 .detail-header-actions {
