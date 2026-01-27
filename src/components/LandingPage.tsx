@@ -62,7 +62,6 @@ export default function LandingPage() {
     return saved ? JSON.parse(saved) : {};
   });
 
-  const [collapsedSections, setCollapsedSections] = useState<Record<string, boolean>>({});
   const [collapsedChapters, setCollapsedChapters] = useState<Record<number, boolean>>({});
   const [isMultiSelectMode, setIsMultiSelectMode] = useState(false);
   const [showDeckModal, setShowDeckModal] = useState(false);
@@ -196,13 +195,6 @@ export default function LandingPage() {
     });
     
     navigate("/quiz");
-  };
-
-  const toggleSectionCollapse = (section: string) => {
-    setCollapsedSections(prev => ({
-      ...prev,
-      [section]: !prev[section]
-    }));
   };
 
   const toggleChapterCollapse = (chapter: number) => {
