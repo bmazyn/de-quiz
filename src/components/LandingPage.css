@@ -255,7 +255,7 @@
   align-items: stretch;
   justify-content: space-between;
   padding: 10px;
-  background: var(--bg-card);
+  background: #0a0a0a;
   border: 2px solid transparent;
   border-radius: 8px;
   cursor: pointer;
@@ -267,16 +267,17 @@
 }
 
 [data-theme="dark"] .block-card {
+  background: #0a0a0a;
   filter: brightness(1.12);
 }
 
 .block-card:hover {
-  background: var(--bg-hover);
+  background: #1a1a1a;
 }
 
 .block-card.selected {
   border-color: var(--accent-color);
-  background: var(--bg-hover);
+  background: #1a1a1a;
 }
 
 .block-header {
