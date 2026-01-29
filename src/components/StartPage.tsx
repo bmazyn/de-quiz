@@ -1,12 +1,9 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { useTheme } from "../hooks/useTheme";
-import ThemeToggle from "./ThemeToggle";
 import "./StartPage.css";
 
 export default function StartPage() {
   const navigate = useNavigate();
-  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     // Check if the user has already visited
@@ -26,8 +23,6 @@ export default function StartPage() {
 
   return (
     <div className="start-page">
-      <ThemeToggle theme={theme} onToggle={toggleTheme} />
-      
       <div className="start-content">
         <div className="start-logo">
           <div className="logo-character">快</div>

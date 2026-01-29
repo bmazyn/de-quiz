@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
-import { useTheme } from "../hooks/useTheme";
 import QuizCard from "./QuizCard";
 import type { QuizCard as QuizCardType, ChoiceKey, AnswerState } from "../types";
 import quizCardsData from "../data/quizCards.json";
@@ -47,7 +46,6 @@ function saveDeckBestTime(deckName: string, seconds: number): void {
 }
 
 export default function Speedrun() {
-  const { theme } = useTheme();
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const deckParam = searchParams.get("deck") || "";

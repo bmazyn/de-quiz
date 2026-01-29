@@ -1,13 +1,11 @@
 import { useState, useEffect, useRef } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
-import { useTheme } from "../hooks/useTheme";
 import type { QuizCard } from "../types";
 import quizCardsData from "../data/quizCards.json";
 import { getDeckIdByName } from "../utils/decks";
 import "./AudioLoop.css";
 
 export default function AudioLoop() {
-  const { theme } = useTheme();
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const decksParam = searchParams.get("decks") || "";
