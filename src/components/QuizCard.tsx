@@ -1,5 +1,6 @@
 import { useMemo } from "react";
 import type { QuizCard as QuizCardType, ChoiceKey, AnswerState } from "../types";
+import { extractToneNumbers } from "../utils/tones";
 import "./QuizCard.css";
 
 interface QuizCardProps {
@@ -78,11 +79,25 @@ export default function QuizCard({ card, answerState, onAnswer, onNext, isDisabl
 
   // Split promptLine from dataset - format: "pinyin — hanzi"
   const [pinyin, hanzi] = card.promptLine.split(' — ');
+  
+  // Split pinyin into syllables and extract tone for each
+  const syllables = pinyin.trim().split(/\s+/);
+  const syllableTones = syllables.map(syllable => ({
+    syllable,
+    tone: extractToneNumbers(syllable)
+  }));
 
   return (
     <div className="quiz-card">
       <div className="prompt-section">
-        <div className="pinyin">{pinyin}</div>
+        <div className="pinyin-container">
+          {syllableTones.map((item, index) => (
+            <div key={index} className="syllable-column">
+              <div className="pinyin">{item.syllable}</div>
+              <div className="tone-number">{item.tone}</div>
+            </div>
+          ))}
+        </div>
         <div className="hanzi" onClick={handlePronunciation}>{hanzi}</div>
       </div>
 
