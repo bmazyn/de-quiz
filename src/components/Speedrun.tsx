@@ -217,7 +217,7 @@ export default function Speedrun() {
   const handleBackToHome = () => {
     window.speechSynthesis?.cancel();
     setPenaltyCountdown(0); // Clear penalty countdown
-    navigate("/");
+    navigate(-1);
   };
 
   const handleReviewMissed = () => {
@@ -311,11 +311,8 @@ export default function Speedrun() {
       <div className="speedrun">
         <div className="speedrun-content">
           <div className="speedrun-header">
-            <button className="home-icon" onClick={handleBackToHome} aria-label="Go to home">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                <polyline points="9 22 9 12 15 12 15 22"></polyline>
-              </svg>
+            <button className="home-icon" onClick={handleBackToHome} aria-label="Go back">
+              ← Back
             </button>
             <h2 className="speedrun-title">Deck Run — {deckParam}</h2>
           </div>
@@ -331,11 +328,8 @@ export default function Speedrun() {
       <div className="speedrun">
         <div className="speedrun-content">
           <div className="speedrun-header">
-            <button className="home-icon" onClick={handleBackToHome} aria-label="Go to home">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                <polyline points="9 22 9 12 15 12 15 22"></polyline>
-              </svg>
+            <button className="home-icon" onClick={handleBackToHome} aria-label="Go back">
+              ← Back
             </button>
             <h2 className="speedrun-title">Deck Run — {deckParam}</h2>
           </div>
@@ -370,11 +364,8 @@ export default function Speedrun() {
       <div className="speedrun">
         <div className="speedrun-content">
           <div className="speedrun-header">
-            <button className="home-icon" onClick={handleBackToHome} aria-label="Go to home">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                <polyline points="9 22 9 12 15 12 15 22"></polyline>
-              </svg>
+            <button className="home-icon" onClick={handleBackToHome} aria-label="Go back">
+              ← Back
             </button>
             <h2 className="speedrun-title">Deck Run — {deckParam}</h2>
           </div>
@@ -422,7 +413,7 @@ export default function Speedrun() {
                 </button>
               )}
               <button className="back-home-button" onClick={handleBackToHome}>
-                ← Back to Home
+                ← Back
               </button>
             </div>
           </div>
@@ -443,11 +434,8 @@ export default function Speedrun() {
   return (
     <div className="speedrun">
       <div className="speedrun-header">
-        <button className="home-icon" onClick={handleBackToHome} aria-label="Go to home">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-            <polyline points="9 22 9 12 15 12 15 22"></polyline>
-          </svg>
+        <button className="home-icon" onClick={handleBackToHome} aria-label="Go back">
+          ← Back
         </button>
         
         <div className="speedrun-stats">

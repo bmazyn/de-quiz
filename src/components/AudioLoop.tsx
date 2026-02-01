@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams, useLocation } from "react-router-dom";
 import type { QuizCard } from "../types";
 import quizCardsData from "../data/quizCards.json";
 import { getDeckIdByName } from "../utils/decks";
@@ -7,10 +7,12 @@ import "./AudioLoop.css";
 
 export default function AudioLoop() {
   const navigate = useNavigate();
+  const location = useLocation();
   const [searchParams] = useSearchParams();
   const decksParam = searchParams.get("decks") || "";
   const levelsParam = searchParams.get("levels") || "";
   const sectionParam = searchParams.get("section") || "";
+  const chapterId = location.state?.chapterId;
 
   const [cards, setCards] = useState<QuizCard[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -210,11 +212,18 @@ export default function AudioLoop() {
       <div className="audio-loop">
         <div className="audio-loop-content">
           <div className="audio-loop-header">
-            <button className="home-icon" onClick={() => navigate("/")} aria-label="Go to home">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                <polyline points="9 22 9 12 15 12 15 22"></polyline>
-              </svg>
+          <button className="home-icon" onClick={() => {
+            try {
+              navigate(-1);
+            } catch {
+              if (chapterId) {
+                navigate(`/chapter/${chapterId}`);
+              } else {
+                navigate("/");
+              }
+            }
+          }} aria-label="Go back">
+            ← Back
             </button>
             <h2 className="audio-loop-title">{displayTitle}</h2>
           </div>
@@ -233,12 +242,17 @@ export default function AudioLoop() {
         <div className="audio-loop-header">
           <button className="home-icon" onClick={() => {
             handleStop();
-            navigate("/");
-          }} aria-label="Go to home">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-              <polyline points="9 22 9 12 15 12 15 22"></polyline>
-            </svg>
+            try {
+              navigate(-1);
+            } catch {
+              if (chapterId) {
+                navigate(`/chapter/${chapterId}`);
+              } else {
+                navigate("/");
+              }
+            }
+          }} aria-label="Go back">
+            ← Back
           </button>
           <h2 className="audio-loop-title">{displayTitle}</h2>
         </div>

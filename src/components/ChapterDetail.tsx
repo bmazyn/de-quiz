@@ -132,7 +132,7 @@ export default function ChapterDetail() {
       audio.currentTime = 0;
     });
     
-    navigate(`/audio-loop?decks=${encodeURIComponent(modalDeck)}`);
+    navigate(`/audio-loop?decks=${encodeURIComponent(modalDeck)}`, { state: { chapterId: chapter } });
   };
 
   const handleModalQuiz = () => {
@@ -155,7 +155,7 @@ export default function ChapterDetail() {
       audio.currentTime = 0;
     });
     
-    navigate("/quiz");
+    navigate("/quiz", { state: { chapterId: chapter } });
   };
 
   const handleMultiSelectAudioLoop = () => {
@@ -174,7 +174,7 @@ export default function ChapterDetail() {
       audio.currentTime = 0;
     });
     
-    navigate(`/audio-loop?decks=${encodeURIComponent(selectedDecks.join(','))}`);
+    navigate(`/audio-loop?decks=${encodeURIComponent(selectedDecks.join(','))}`, { state: { chapterId: chapter } });
   };
 
   const handleMultiSelectQuiz = () => {
@@ -193,7 +193,7 @@ export default function ChapterDetail() {
       audio.currentTime = 0;
     });
     
-    navigate("/quiz");
+    navigate("/quiz", { state: { chapterId: chapter } });
   };
 
   const handleBackToChapters = () => {
@@ -319,7 +319,7 @@ export default function ChapterDetail() {
                 onClick={() => {
                   if (masteredSections[modalDeck]) {
                     setShowDeckModal(false);
-                    navigate(`/speedrun?deck=${encodeURIComponent(modalDeck)}`);
+                    navigate(`/speedrun?deck=${encodeURIComponent(modalDeck)}`, { state: { chapterId: chapter } });
                   }
                 }}
                 disabled={!masteredSections[modalDeck]}

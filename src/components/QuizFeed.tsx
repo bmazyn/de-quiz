@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import QuizCard from "./QuizCard";
 import type { QuizCard as QuizCardType, ChoiceKey, AnswerState } from "../types";
 import { getDeckIdByName } from "../utils/decks";
@@ -19,6 +19,7 @@ function shuffleArray<T>(array: T[]): T[] {
 
 export default function QuizFeed() {
   const navigate = useNavigate();
+  const location = useLocation();
   const [selectedDecks] = useState<string[]>(() => {
     const saved = localStorage.getItem("selectedDecks");
     return saved ? JSON.parse(saved) : [];
@@ -26,6 +27,7 @@ export default function QuizFeed() {
   const [filteredCards, setFilteredCards] = useState<QuizCardType[]>([]);
   const [shuffledDeck, setShuffledDeck] = useState<QuizCardType[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const chapterId = location.state?.chapterId;
   const [answerState, setAnswerState] = useState<AnswerState>({
     selectedChoice: null,
     isCorrect: null,
@@ -410,7 +412,7 @@ export default function QuizFeed() {
             ) : (
               <>
                 <button
-                  onClick={() => navigate("/")}
+                  onClick={() => navigate(-1)}
                   style={{
                     flex: 1,
                     padding: '12px 20px',
@@ -426,7 +428,7 @@ export default function QuizFeed() {
                   onMouseOver={(e) => e.currentTarget.style.opacity = '0.8'}
                   onMouseOut={(e) => e.currentTarget.style.opacity = '1'}
                 >
-                  Back to Home
+                  ← Back
                 </button>
                 <button
                   onClick={handleContinueMastery}
@@ -453,22 +455,21 @@ export default function QuizFeed() {
         </div>
       )}
       <div className="header-container">
-        <button className="home-icon" onClick={() => navigate("/")} aria-label="Go to home">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-            <polyline points="9 22 9 12 15 12 15 22"></polyline>
-          </svg>
+        <button className="home-icon" onClick={() => {
+          try {
+            navigate(-1);
+          } catch {
+            if (chapterId) {
+              navigate(`/chapter/${chapterId}`);
+            } else {
+              navigate("/");
+            }
+          }
+        }} aria-label="Go back">
+          ← Back
         </button>
         
         <div className="stats-bar">
-          <div className="stat">
-            <span className="stat-label">Streak</span>
-            <span className="stat-value">{streak}</span>
-          </div>
-          <div className="stat">
-            <span className="stat-label">Best</span>
-            <span className="stat-value">{bestStreak}</span>
-          </div>
           <div className="stat">
             <span className="stat-label">Loop</span>
             <span className="stat-value">{Math.floor(100 * loopIndex / shuffledDeck.length)}%</span>
