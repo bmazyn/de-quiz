@@ -234,7 +234,7 @@ export default function Speedrun() {
     });
   };
 
-  const handlePracticeMisses = () => {
+  /*const handlePracticeMisses = () => {
     // Store missed cards temporarily in localStorage for QuizFeed
     try {
       const missedIds = missedCards.map(card => card.id);
@@ -246,7 +246,7 @@ export default function Speedrun() {
     }
     // Navigate to quiz feed
     navigate('/quiz');
-  };
+  };*/
 
   const handleReinforcementAudio = () => {
     if (!('speechSynthesis' in window)) return;
@@ -411,11 +411,11 @@ export default function Speedrun() {
                   📝 Review Missed
                 </button>
               )}
-              {mode === "speedrun" && missedCards.length > 0 && (
+{/*               {mode === "speedrun" && missedCards.length > 0 && (
                 <button className="review-missed-button" onClick={handlePracticeMisses}>
                   🎯 Practice Misses
                 </button>
-              )}
+              )} */}
               {mode === "speedrun" && (
                 <button className="run-again-button" onClick={handleRunAgain}>
                   🔄 Run Again
