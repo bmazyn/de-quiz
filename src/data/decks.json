@@ -214,5 +214,61 @@
   "section": "State & Experience",
   "deckName": "Experience Snt",
   "order": 4
+},
+"travel4-food1": {
+  "chapter": 4,
+  "section": "Food & Ordering",
+  "deckName": "Food",
+  "order": 1
+},
+"travel4-food2": {
+  "chapter": 4,
+  "section": "Food & Ordering",
+  "deckName": "Ordering",
+  "order": 2
+},
+"travel4-food3": {
+  "chapter": 4,
+  "section": "Food & Ordering",
+  "deckName": "Dining Words",
+  "order": 3
+},
+
+"travel4-daily1": {
+  "chapter": 4,
+  "section": "Daily Needs",
+  "deckName": "Services",
+  "order": 1
+},
+"travel4-daily2": {
+  "chapter": 4,
+  "section": "Daily Needs",
+  "deckName": "Money",
+  "order": 2
+},
+"travel4-daily3": {
+  "chapter": 4,
+  "section": "Daily Needs",
+  "deckName": "Help Words",
+  "order": 3
+},
+
+"travel4-move1": {
+  "chapter": 4,
+  "section": "Getting Around",
+  "deckName": "Transport",
+  "order": 1
+},
+"travel4-move2": {
+  "chapter": 4,
+  "section": "Getting Around",
+  "deckName": "Places",
+  "order": 2
+},
+"travel4-move3": {
+  "chapter": 4,
+  "section": "Getting Around",
+  "deckName": "Directions",
+  "order": 3
 }
 }

@@ -59,7 +59,11 @@ export default function AudioLoop() {
       title = "Foundation";
     }
     
-    setCards(sectionCards);
+    const chineseCards = sectionCards.filter((card) => 
+      /[\u4e00-\u9fff]/.test(card.promptLine)
+    );
+    
+    setCards(chineseCards);
     setDisplayTitle(title);
   }, [decksParam, levelsParam, sectionParam]);
 

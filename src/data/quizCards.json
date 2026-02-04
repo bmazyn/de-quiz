@@ -11019,5 +11019,836 @@
     },
     "tags": ["feeling", "reverse"],
     "difficulty": 1
+  },
+  {
+    "id": "travel4-food1-001",
+    "kind": "vocab",
+    "deckId": "travel4-food1",
+    "level": "HSK1",
+    "promptLine": "fàn — 饭",
+    "question": "What does this mean?",
+    "choices": { "A": "Rice / meal", "B": "Noodles", "C": "Meat", "D": "Dish / vegetables" },
+    "correct": "A",
+    "explanations": {
+      "A": "Correct! 饭 (fàn) means rice / meal.",
+      "B": "面 (miàn) means noodles.",
+      "C": "肉 (ròu) means meat.",
+      "D": "菜 (cài) means dish / vegetables."
+    },
+    "tags": ["travel", "food"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food1-002",
+    "kind": "vocab",
+    "deckId": "travel4-food1",
+    "level": "HSK1",
+    "promptLine": "miàn — 面",
+    "question": "What does this mean?",
+    "choices": { "A": "Rice / meal", "B": "Noodles", "C": "Tea", "D": "Coffee" },
+    "correct": "B",
+    "explanations": {
+      "A": "饭 (fàn) means rice / meal.",
+      "B": "Correct! 面 (miàn) means noodles.",
+      "C": "茶 (chá) means tea.",
+      "D": "咖啡 (kāfēi) means coffee."
+    },
+    "tags": ["travel", "food"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food1-003",
+    "kind": "vocab",
+    "deckId": "travel4-food1",
+    "level": "HSK1",
+    "promptLine": "ròu — 肉",
+    "question": "What does this mean?",
+    "choices": { "A": "Chicken", "B": "Beef", "C": "Meat", "D": "Dish / vegetables" },
+    "correct": "C",
+    "explanations": {
+      "A": "鸡 (jī) means chicken.",
+      "B": "牛 (niú) means beef.",
+      "C": "Correct! 肉 (ròu) means meat.",
+      "D": "菜 (cài) means dish / vegetables."
+    },
+    "tags": ["travel", "food"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food1-004",
+    "kind": "vocab",
+    "deckId": "travel4-food1",
+    "level": "HSK1",
+    "promptLine": "cài — 菜",
+    "question": "What does this mean?",
+    "choices": { "A": "Dish / vegetables", "B": "Rice / meal", "C": "Noodles", "D": "Meat" },
+    "correct": "A",
+    "explanations": {
+      "A": "Correct! 菜 (cài) means dish / vegetables.",
+      "B": "饭 (fàn) means rice / meal.",
+      "C": "面 (miàn) means noodles.",
+      "D": "肉 (ròu) means meat."
+    },
+    "tags": ["travel", "food"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food1-005",
+    "kind": "vocab",
+    "deckId": "travel4-food1",
+    "level": "HSK1",
+    "promptLine": "kāfēi — 咖啡",
+    "question": "What does this mean?",
+    "choices": { "A": "Tea", "B": "Coffee", "C": "Noodles", "D": "Rice / meal" },
+    "correct": "B",
+    "explanations": {
+      "A": "茶 (chá) means tea.",
+      "B": "Correct! 咖啡 (kāfēi) means coffee.",
+      "C": "面 (miàn) means noodles.",
+      "D": "饭 (fàn) means rice / meal."
+    },
+    "tags": ["travel", "food"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food1-006",
+    "kind": "vocab",
+    "deckId": "travel4-food1",
+    "level": "HSK1",
+    "promptLine": "chá — 茶",
+    "question": "What does this mean?",
+    "choices": { "A": "Coffee", "B": "Tea", "C": "Water", "D": "Beer" },
+    "correct": "B",
+    "explanations": {
+      "A": "咖啡 (kāfēi) means coffee.",
+      "B": "Correct! 茶 (chá) means tea.",
+      "C": "水 (shuǐ) means water.",
+      "D": "啤酒 (píjiǔ) means beer."
+    },
+    "tags": ["travel", "food"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food1-007",
+    "kind": "vocab",
+    "deckId": "travel4-food1",
+    "level": "HSK1",
+    "promptLine": "jī — 鸡",
+    "question": "What does this mean?",
+    "choices": { "A": "Chicken", "B": "Beef", "C": "Meat", "D": "Fish" },
+    "correct": "A",
+    "explanations": {
+      "A": "Correct! 鸡 (jī) means chicken.",
+      "B": "牛 (niú) means beef.",
+      "C": "肉 (ròu) means meat.",
+      "D": "鱼 (yú) means fish."
+    },
+    "tags": ["travel", "food"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food1-008",
+    "kind": "vocab",
+    "deckId": "travel4-food1",
+    "level": "HSK1",
+    "promptLine": "niú — 牛",
+    "question": "What does this mean?",
+    "choices": { "A": "Chicken", "B": "Beef", "C": "Meat", "D": "Pork" },
+    "correct": "B",
+    "explanations": {
+      "A": "鸡 (jī) means chicken.",
+      "B": "Correct! 牛 (niú) means beef.",
+      "C": "肉 (ròu) means meat.",
+      "D": "猪肉 (zhūròu) means pork."
+    },
+    "tags": ["travel", "food"],
+    "difficulty": 1
+  },
+
+  {
+    "id": "travel4-food1-009",
+    "kind": "vocab",
+    "deckId": "travel4-food1",
+    "level": "HSK1",
+    "promptLine": "Rice / meal",
+    "question": "Which is correct?",
+    "choices": { "A": "fàn — 饭", "B": "miàn — 面", "C": "ròu — 肉", "D": "cài — 菜" },
+    "correct": "A",
+    "explanations": {
+      "A": "Correct! Rice / meal is fàn — 饭.",
+      "B": "面 means noodles.",
+      "C": "肉 means meat.",
+      "D": "菜 means dish / vegetables."
+    },
+    "tags": ["travel", "food", "reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food1-010",
+    "kind": "vocab",
+    "deckId": "travel4-food1",
+    "level": "HSK1",
+    "promptLine": "Noodles",
+    "question": "Which is correct?",
+    "choices": { "A": "cài — 菜", "B": "miàn — 面", "C": "kāfēi — 咖啡", "D": "chá — 茶" },
+    "correct": "B",
+    "explanations": {
+      "A": "菜 means dish / vegetables.",
+      "B": "Correct! Noodles is miàn — 面.",
+      "C": "咖啡 means coffee.",
+      "D": "茶 means tea."
+    },
+    "tags": ["travel", "food", "reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food1-011",
+    "kind": "vocab",
+    "deckId": "travel4-food1",
+    "level": "HSK1",
+    "promptLine": "Meat",
+    "question": "Which is correct?",
+    "choices": { "A": "niú — 牛", "B": "jī — 鸡", "C": "ròu — 肉", "D": "fàn — 饭" },
+    "correct": "C",
+    "explanations": {
+      "A": "牛 means beef.",
+      "B": "鸡 means chicken.",
+      "C": "Correct! Meat is ròu — 肉.",
+      "D": "饭 means rice / meal."
+    },
+    "tags": ["travel", "food", "reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food1-012",
+    "kind": "vocab",
+    "deckId": "travel4-food1",
+    "level": "HSK1",
+    "promptLine": "Dish / vegetables",
+    "question": "Which is correct?",
+    "choices": { "A": "cài — 菜", "B": "miàn — 面", "C": "chá — 茶", "D": "kāfēi — 咖啡" },
+    "correct": "A",
+    "explanations": {
+      "A": "Correct! Dish / vegetables is cài — 菜.",
+      "B": "面 means noodles.",
+      "C": "茶 means tea.",
+      "D": "咖啡 means coffee."
+    },
+    "tags": ["travel", "food", "reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food1-013",
+    "kind": "vocab",
+    "deckId": "travel4-food1",
+    "level": "HSK1",
+    "promptLine": "Coffee",
+    "question": "Which is correct?",
+    "choices": { "A": "chá — 茶", "B": "kāfēi — 咖啡", "C": "miàn — 面", "D": "fàn — 饭" },
+    "correct": "B",
+    "explanations": {
+      "A": "茶 means tea.",
+      "B": "Correct! Coffee is kāfēi — 咖啡.",
+      "C": "面 means noodles.",
+      "D": "饭 means rice / meal."
+    },
+    "tags": ["travel", "food", "reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food1-014",
+    "kind": "vocab",
+    "deckId": "travel4-food1",
+    "level": "HSK1",
+    "promptLine": "Tea",
+    "question": "Which is correct?",
+    "choices": { "A": "chá — 茶", "B": "kāfēi — 咖啡", "C": "ròu — 肉", "D": "cài — 菜" },
+    "correct": "A",
+    "explanations": {
+      "A": "Correct! Tea is chá — 茶.",
+      "B": "咖啡 means coffee.",
+      "C": "肉 means meat.",
+      "D": "菜 means dish / vegetables."
+    },
+    "tags": ["travel", "food", "reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food1-015",
+    "kind": "vocab",
+    "deckId": "travel4-food1",
+    "level": "HSK1",
+    "promptLine": "Chicken",
+    "question": "Which is correct?",
+    "choices": { "A": "niú — 牛", "B": "jī — 鸡", "C": "ròu — 肉", "D": "fàn — 饭" },
+    "correct": "B",
+    "explanations": {
+      "A": "牛 means beef.",
+      "B": "Correct! Chicken is jī — 鸡.",
+      "C": "肉 means meat.",
+      "D": "饭 means rice / meal."
+    },
+    "tags": ["travel", "food", "reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food1-016",
+    "kind": "vocab",
+    "deckId": "travel4-food1",
+    "level": "HSK1",
+    "promptLine": "Beef",
+    "question": "Which is correct?",
+    "choices": { "A": "jī — 鸡", "B": "niú — 牛", "C": "cài — 菜", "D": "miàn — 面" },
+    "correct": "B",
+    "explanations": {
+      "A": "鸡 means chicken.",
+      "B": "Correct! Beef is niú — 牛.",
+      "C": "菜 means dish / vegetables.",
+      "D": "面 means noodles."
+    },
+    "tags": ["travel", "food", "reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food2-001",
+    "kind": "vocab",
+    "deckId": "travel4-food2",
+    "level": "HSK1",
+    "promptLine": "diǎn — 点",
+    "question": "What does this mean?",
+    "choices": { "A": "Order", "B": "Buy", "C": "Choose", "D": "Bring" },
+    "correct": "A",
+    "explanations": { "A": "Correct! 点 means to order." },
+    "tags": ["travel", "ordering"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food2-002",
+    "kind": "vocab",
+    "deckId": "travel4-food2",
+    "level": "HSK1",
+    "promptLine": "jiào — 叫",
+    "question": "What does this mean?",
+    "choices": { "A": "Call / order", "B": "Wait", "C": "Buy", "D": "Choose" },
+    "correct": "A",
+    "explanations": { "A": "Correct! 叫 means to call or order verbally." },
+    "tags": ["travel", "ordering"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food2-003",
+    "kind": "vocab",
+    "deckId": "travel4-food2",
+    "level": "HSK1",
+    "promptLine": "shì — 试",
+    "question": "What does this mean?",
+    "choices": { "A": "Try", "B": "Buy", "C": "Take", "D": "Wait" },
+    "correct": "A",
+    "explanations": { "A": "Correct! 试 means to try." },
+    "tags": ["travel", "ordering"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food2-004",
+    "kind": "vocab",
+    "deckId": "travel4-food2",
+    "level": "HSK1",
+    "promptLine": "ná — 拿",
+    "question": "What does this mean?",
+    "choices": { "A": "Take", "B": "Bring", "C": "Order", "D": "Choose" },
+    "correct": "A",
+    "explanations": { "A": "Correct! 拿 means to take." },
+    "tags": ["travel", "ordering"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food2-005",
+    "kind": "vocab",
+    "deckId": "travel4-food2",
+    "level": "HSK1",
+    "promptLine": "děng — 等",
+    "question": "What does this mean?",
+    "choices": { "A": "Wait", "B": "Look", "C": "Call", "D": "Buy" },
+    "correct": "A",
+    "explanations": { "A": "Correct! 等 means to wait." },
+    "tags": ["travel", "ordering"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food2-006",
+    "kind": "vocab",
+    "deckId": "travel4-food2",
+    "level": "HSK1",
+    "promptLine": "xuǎn — 选",
+    "question": "What does this mean?",
+    "choices": { "A": "Choose", "B": "Order", "C": "Try", "D": "Buy" },
+    "correct": "A",
+    "explanations": { "A": "Correct! 选 means to choose." },
+    "tags": ["travel", "ordering"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food2-007",
+    "kind": "vocab",
+    "deckId": "travel4-food2",
+    "level": "HSK1",
+    "promptLine": "lái — 来",
+    "question": "What does this mean?",
+    "choices": { "A": "Bring / have", "B": "Go", "C": "Wait", "D": "Take" },
+    "correct": "A",
+    "explanations": { "A": "Correct! 来 is used when ordering to mean bring or have." },
+    "tags": ["travel", "ordering"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food2-008",
+    "kind": "vocab",
+    "deckId": "travel4-food2",
+    "level": "HSK1",
+    "promptLine": "mǎi — 买",
+    "question": "What does this mean?",
+    "choices": { "A": "Buy", "B": "Order", "C": "Choose", "D": "Pay" },
+    "correct": "A",
+    "explanations": { "A": "Correct! 买 means to buy." },
+    "tags": ["travel", "ordering"],
+    "difficulty": 1
+  },
+
+  {
+    "id": "travel4-food2-009",
+    "kind": "vocab",
+    "deckId": "travel4-food2",
+    "level": "HSK1",
+    "promptLine": "Order",
+    "question": "Which is correct?",
+    "choices": { "A": "diǎn — 点", "B": "xuǎn — 选", "C": "mǎi — 买", "D": "ná — 拿" },
+    "correct": "A",
+    "explanations": { "A": "Correct! Order is diǎn — 点." },
+    "tags": ["travel", "ordering", "reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food2-010",
+    "kind": "vocab",
+    "deckId": "travel4-food2",
+    "level": "HSK1",
+    "promptLine": "Order",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "diǎn — 点",
+      "B": "mǎi — 买",
+      "C": "xuǎn — 选",
+      "D": "ná — 拿"
+    },
+    "correct": "A",
+    "explanations": {
+      "A": "Correct! Order is diǎn — 点."
+    },
+    "tags": ["travel", "ordering", "reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food2-011",
+    "kind": "vocab",
+    "deckId": "travel4-food2",
+    "level": "HSK1",
+    "promptLine": "Call / order",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "jiào — 叫",
+      "B": "lái — 来",
+      "C": "děng — 等",
+      "D": "mǎi — 买"
+    },
+    "correct": "A",
+    "explanations": {
+      "A": "Correct! Call / order is jiào — 叫."
+    },
+    "tags": ["travel", "ordering", "reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food2-012",
+    "kind": "vocab",
+    "deckId": "travel4-food2",
+    "level": "HSK1",
+    "promptLine": "Try",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "shì — 试",
+      "B": "xuǎn — 选",
+      "C": "ná — 拿",
+      "D": "děng — 等"
+    },
+    "correct": "A",
+    "explanations": {
+      "A": "Correct! Try is shì — 试."
+    },
+    "tags": ["travel", "ordering", "reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food2-013",
+    "kind": "vocab",
+    "deckId": "travel4-food2",
+    "level": "HSK1",
+    "promptLine": "Take",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "ná — 拿",
+      "B": "lái — 来",
+      "C": "mǎi — 买",
+      "D": "diǎn — 点"
+    },
+    "correct": "A",
+    "explanations": {
+      "A": "Correct! Take is ná — 拿."
+    },
+    "tags": ["travel", "ordering", "reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food2-014",
+    "kind": "vocab",
+    "deckId": "travel4-food2",
+    "level": "HSK1",
+    "promptLine": "Wait",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "děng — 等",
+      "B": "jiào — 叫",
+      "C": "xuǎn — 选",
+      "D": "lái — 来"
+    },
+    "correct": "A",
+    "explanations": {
+      "A": "Correct! Wait is děng — 等."
+    },
+    "tags": ["travel", "ordering", "reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food2-015",
+    "kind": "vocab",
+    "deckId": "travel4-food2",
+    "level": "HSK1",
+    "promptLine": "Choose",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "xuǎn — 选",
+      "B": "diǎn — 点",
+      "C": "shì — 试",
+      "D": "mǎi — 买"
+    },
+    "correct": "A",
+    "explanations": {
+      "A": "Correct! Choose is xuǎn — 选."
+    },
+    "tags": ["travel", "ordering", "reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food2-016",
+    "kind": "vocab",
+    "deckId": "travel4-food2",
+    "level": "HSK1",
+    "promptLine": "Bring / have",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "lái — 来",
+      "B": "ná — 拿",
+      "C": "jiào — 叫",
+      "D": "děng — 等"
+    },
+    "correct": "A",
+    "explanations": {
+      "A": "Correct! Bring / have is lái — 来."
+    },
+    "tags": ["travel", "ordering", "reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food2-017",
+    "kind": "vocab",
+    "deckId": "travel4-food2",
+    "level": "HSK1",
+    "promptLine": "Buy",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "mǎi — 买",
+      "B": "diǎn — 点",
+      "C": "xuǎn — 选",
+      "D": "ná — 拿"
+    },
+    "correct": "A",
+    "explanations": {
+      "A": "Correct! Buy is mǎi — 买."
+    },
+    "tags": ["travel", "ordering", "reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food3-001",
+    "kind": "vocab",
+    "deckId": "travel4-food3",
+    "level": "HSK1",
+    "promptLine": "càidān — 菜单",
+    "question": "What does this mean?",
+    "choices": { "A": "Menu", "B": "Table", "C": "Cup", "D": "Server" },
+    "correct": "A",
+    "explanations": { "A": "Correct! 菜单 means menu." },
+    "tags": ["travel", "dining"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food3-002",
+    "kind": "vocab",
+    "deckId": "travel4-food3",
+    "level": "HSK1",
+    "promptLine": "fúwùyuán — 服务员",
+    "question": "What does this mean?",
+    "choices": { "A": "Server", "B": "Customer", "C": "Cook", "D": "Manager" },
+    "correct": "A",
+    "explanations": { "A": "Correct! 服务员 means server." },
+    "tags": ["travel", "dining"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food3-003",
+    "kind": "vocab",
+    "deckId": "travel4-food3",
+    "level": "HSK1",
+    "promptLine": "kǒuwèi — 口味",
+    "question": "What does this mean?",
+    "choices": { "A": "Flavor", "B": "Taste test", "C": "Spicy", "D": "Sweet" },
+    "correct": "A",
+    "explanations": { "A": "Correct! 口味 means flavor." },
+    "tags": ["travel", "dining"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food3-004",
+    "kind": "vocab",
+    "deckId": "travel4-food3",
+    "level": "HSK1",
+    "promptLine": "là — 辣",
+    "question": "What does this mean?",
+    "choices": { "A": "Spicy", "B": "Sweet", "C": "Salty", "D": "Bitter" },
+    "correct": "A",
+    "explanations": { "A": "Correct! 辣 means spicy." },
+    "tags": ["travel", "dining"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food3-005",
+    "kind": "vocab",
+    "deckId": "travel4-food3",
+    "level": "HSK1",
+    "promptLine": "tián — 甜",
+    "question": "What does this mean?",
+    "choices": { "A": "Sweet", "B": "Salty", "C": "Spicy", "D": "Sour" },
+    "correct": "A",
+    "explanations": { "A": "Correct! 甜 means sweet." },
+    "tags": ["travel", "dining"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food3-006",
+    "kind": "vocab",
+    "deckId": "travel4-food3",
+    "level": "HSK1",
+    "promptLine": "xián — 咸",
+    "question": "What does this mean?",
+    "choices": { "A": "Salty", "B": "Sweet", "C": "Spicy", "D": "Bland" },
+    "correct": "A",
+    "explanations": { "A": "Correct! 咸 means salty." },
+    "tags": ["travel", "dining"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food3-007",
+    "kind": "vocab",
+    "deckId": "travel4-food3",
+    "level": "HSK1",
+    "promptLine": "bēizi — 杯子",
+    "question": "What does this mean?",
+    "choices": { "A": "Cup", "B": "Plate", "C": "Bowl", "D": "Glass" },
+    "correct": "A",
+    "explanations": { "A": "Correct! 杯子 means cup." },
+    "tags": ["travel", "dining"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food3-008",
+    "kind": "vocab",
+    "deckId": "travel4-food3",
+    "level": "HSK1",
+    "promptLine": "zhuōzi — 桌子",
+    "question": "What does this mean?",
+    "choices": { "A": "Table", "B": "Chair", "C": "Menu", "D": "Room" },
+    "correct": "A",
+    "explanations": { "A": "Correct! 桌子 means table." },
+    "tags": ["travel", "dining"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food3-009",
+    "kind": "vocab",
+    "deckId": "travel4-food3",
+    "level": "HSK1",
+    "promptLine": "Menu",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "càidān — 菜单",
+      "B": "zhuōzi — 桌子",
+      "C": "bēizi — 杯子",
+      "D": "fúwùyuán — 服务员"
+    },
+    "correct": "A",
+    "explanations": {
+      "A": "Correct! Menu is càidān — 菜单."
+    },
+    "tags": ["travel", "dining", "reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food3-010",
+    "kind": "vocab",
+    "deckId": "travel4-food3",
+    "level": "HSK1",
+    "promptLine": "Server",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "fúwùyuán — 服务员",
+      "B": "càidān — 菜单",
+      "C": "zhuōzi — 桌子",
+      "D": "bēizi — 杯子"
+    },
+    "correct": "A",
+    "explanations": {
+      "A": "Correct! Server is fúwùyuán — 服务员."
+    },
+    "tags": ["travel", "dining", "reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food3-011",
+    "kind": "vocab",
+    "deckId": "travel4-food3",
+    "level": "HSK1",
+    "promptLine": "Flavor",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "kǒuwèi — 口味",
+      "B": "là — 辣",
+      "C": "tián — 甜",
+      "D": "xián — 咸"
+    },
+    "correct": "A",
+    "explanations": {
+      "A": "Correct! Flavor is kǒuwèi — 口味."
+    },
+    "tags": ["travel", "dining", "reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food3-012",
+    "kind": "vocab",
+    "deckId": "travel4-food3",
+    "level": "HSK1",
+    "promptLine": "Spicy",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "là — 辣",
+      "B": "tián — 甜",
+      "C": "xián — 咸",
+      "D": "kǒuwèi — 口味"
+    },
+    "correct": "A",
+    "explanations": {
+      "A": "Correct! Spicy is là — 辣."
+    },
+    "tags": ["travel", "dining", "reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food3-013",
+    "kind": "vocab",
+    "deckId": "travel4-food3",
+    "level": "HSK1",
+    "promptLine": "Sweet",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "tián — 甜",
+      "B": "là — 辣",
+      "C": "xián — 咸",
+      "D": "kǒuwèi — 口味"
+    },
+    "correct": "A",
+    "explanations": {
+      "A": "Correct! Sweet is tián — 甜."
+    },
+    "tags": ["travel", "dining", "reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food3-014",
+    "kind": "vocab",
+    "deckId": "travel4-food3",
+    "level": "HSK1",
+    "promptLine": "Salty",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "xián — 咸",
+      "B": "tián — 甜",
+      "C": "là — 辣",
+      "D": "kǒuwèi — 口味"
+    },
+    "correct": "A",
+    "explanations": {
+      "A": "Correct! Salty is xián — 咸."
+    },
+    "tags": ["travel", "dining", "reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food3-015",
+    "kind": "vocab",
+    "deckId": "travel4-food3",
+    "level": "HSK1",
+    "promptLine": "Cup",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "bēizi — 杯子",
+      "B": "zhuōzi — 桌子",
+      "C": "càidān — 菜单",
+      "D": "fúwùyuán — 服务员"
+    },
+    "correct": "A",
+    "explanations": {
+      "A": "Correct! Cup is bēizi — 杯子."
+    },
+    "tags": ["travel", "dining", "reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "travel4-food3-016",
+    "kind": "vocab",
+    "deckId": "travel4-food3",
+    "level": "HSK1",
+    "promptLine": "Table",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "zhuōzi — 桌子",
+      "B": "bēizi — 杯子",
+      "C": "càidān — 菜单",
+      "D": "fúwùyuán — 服务员"
+    },
+    "correct": "A",
+    "explanations": {
+      "A": "Correct! Table is zhuōzi — 桌子."
+    },
+    "tags": ["travel", "dining", "reverse"],
+    "difficulty": 1
   }
 ]
