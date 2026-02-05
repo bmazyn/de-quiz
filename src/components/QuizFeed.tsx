@@ -256,6 +256,21 @@ export default function QuizFeed() {
     });
   };
 
+  // Helper to check if string contains Chinese characters
+  const hasChinese = (s: string): boolean => {
+    return /[\u4e00-\u9fff]/.test(s);
+  };
+
+  // Helper to extract hanzi from choice text formatted like "pinyin — 汉字"
+  const extractHanziFromChoice = (choiceText: string): string => {
+    if (choiceText.includes('—')) {
+      return choiceText.split('—')[1].trim();
+    }
+    // Fallback: extract first Chinese substring match
+    const match = choiceText.match(/[\u4e00-\u9fff]+/);
+    return match ? match[0] : '';
+  };
+
   const handleReinforcementAudio = () => {
     if (!('speechSynthesis' in window)) return;
     if (isPlayingReinforcement) return;
@@ -269,36 +284,79 @@ export default function QuizFeed() {
     setIsPlayingReinforcement(true);
     
     const currentCard = shuffledDeck[currentIndex];
-    const hanzi = currentCard.promptLine.split(' — ')[1];
+    const isReverse = currentCard.tags?.includes('reverse') || !hasChinese(currentCard.promptLine);
     
-    const chineseUtterance = new SpeechSynthesisUtterance(hanzi);
-    chineseUtterance.lang = 'zh-CN';
-    chineseUtterance.rate = 0.9;
-    
-    chineseUtterance.onend = () => {
-      reinforcementTimeoutRef.current = window.setTimeout(() => {
-        const englishText = currentCard.choices[currentCard.correct];
-        const englishUtterance = new SpeechSynthesisUtterance(englishText);
-        englishUtterance.lang = 'en-US';
-        englishUtterance.rate = 0.9;
-        
-        englishUtterance.onend = () => {
-          setIsPlayingReinforcement(false);
-        };
-        
-        englishUtterance.onerror = () => {
-          setIsPlayingReinforcement(false);
-        };
-        
-        window.speechSynthesis.speak(englishUtterance);
-      }, 0);
-    };
-    
-    chineseUtterance.onerror = () => {
-      setIsPlayingReinforcement(false);
-    };
-    
-    window.speechSynthesis.speak(chineseUtterance);
+    if (isReverse) {
+      // Reverse card: speak English first, then Chinese hanzi only
+      const englishText = currentCard.promptLine;
+      const englishUtterance = new SpeechSynthesisUtterance(englishText);
+      englishUtterance.lang = 'en-US';
+      englishUtterance.rate = 0.9;
+      
+      englishUtterance.onend = () => {
+        reinforcementTimeoutRef.current = window.setTimeout(() => {
+          const choiceText = currentCard.choices[currentCard.correct];
+          const hanzi = extractHanziFromChoice(choiceText);
+          
+          if (hanzi) {
+            const chineseUtterance = new SpeechSynthesisUtterance(hanzi);
+            chineseUtterance.lang = 'zh-CN';
+            chineseUtterance.rate = 0.9;
+            
+            chineseUtterance.onend = () => {
+              setIsPlayingReinforcement(false);
+            };
+            
+            chineseUtterance.onerror = () => {
+              setIsPlayingReinforcement(false);
+            };
+            
+            window.speechSynthesis.speak(chineseUtterance);
+          } else {
+            // No hanzi found, just clear the flag
+            setIsPlayingReinforcement(false);
+          }
+        }, 0);
+      };
+      
+      englishUtterance.onerror = () => {
+        setIsPlayingReinforcement(false);
+      };
+      
+      window.speechSynthesis.speak(englishUtterance);
+    } else {
+      // Normal card: speak Chinese first, then English
+      const hanzi = currentCard.promptLine.split(' — ')[1];
+      
+      const chineseUtterance = new SpeechSynthesisUtterance(hanzi);
+      chineseUtterance.lang = 'zh-CN';
+      chineseUtterance.rate = 0.9;
+      
+      chineseUtterance.onend = () => {
+        reinforcementTimeoutRef.current = window.setTimeout(() => {
+          const englishText = currentCard.choices[currentCard.correct];
+          const englishUtterance = new SpeechSynthesisUtterance(englishText);
+          englishUtterance.lang = 'en-US';
+          englishUtterance.rate = 0.9;
+          
+          englishUtterance.onend = () => {
+            setIsPlayingReinforcement(false);
+          };
+          
+          englishUtterance.onerror = () => {
+            setIsPlayingReinforcement(false);
+          };
+          
+          window.speechSynthesis.speak(englishUtterance);
+        }, 0);
+      };
+      
+      chineseUtterance.onerror = () => {
+        setIsPlayingReinforcement(false);
+      };
+      
+      window.speechSynthesis.speak(chineseUtterance);
+    }
   };
 
   if (shuffledDeck.length === 0) {
