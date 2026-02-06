@@ -87,8 +87,12 @@ export default function QuizCard({ card, answerState, onAnswer, onNext, isDisabl
     tone: extractToneNumbers(syllable)
   }));
 
+  // Check if promptLine contains Han characters (Chinese)
+  const hasHanCharacters = /[\u4e00-\u9fff]/.test(card.promptLine);
+  const cardClassName = hasHanCharacters ? "quiz-card" : "quiz-card englishPrompt";
+
   return (
-    <div className="quiz-card">
+    <div className={cardClassName}>
       <div className="prompt-section">
         <div className="pinyin-container">
           {syllableTones.map((item, index) => (

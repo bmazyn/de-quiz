@@ -12,6 +12,23 @@
   position: relative;
 }
 
+/* English-first card adjustments */
+.quiz-card.englishPrompt .pinyin {
+  font-size: 1.2rem; /* ~10% smaller than 1.33rem */
+}
+
+.quiz-card.englishPrompt .tone-number {
+  font-size: 0.95rem; /* ~10% smaller than 1.06rem */
+}
+
+.quiz-card.englishPrompt .hanzi {
+  font-size: 2.25rem; /* ~10% smaller than 2.5rem */
+}
+
+.quiz-card.englishPrompt .choice-text {
+  font-size: 1.16rem; /* ~10% larger than 1.05rem */
+}
+
 .prompt-section {
   display: flex;
   flex-direction: column;
@@ -301,6 +318,19 @@
   .choice-text {
     font-size: 1.15rem;
     line-height: 1.4;
+  }
+
+  /* English-first card mobile adjustments */
+  .quiz-card.englishPrompt .pinyin {
+    font-size: 1.3rem; /* ~10% smaller than 1.45rem */
+  }
+
+  .quiz-card.englishPrompt .hanzi {
+    font-size: 3.15rem; /* ~10% smaller than 3.5rem */
+  }
+
+  .quiz-card.englishPrompt .choice-text {
+    font-size: 1.27rem; /* ~10% larger than 1.15rem */
   }
 
   .feedback {

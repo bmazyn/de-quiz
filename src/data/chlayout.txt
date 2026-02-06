@@ -1,9 +1,9 @@
 CH 0   later move to 1
 
 Section 1 · Beginner
-    Beginner 1 – I / you / my / your / name / hello / thank you / sorry
+    Beginner 1 – I / you / my / your / name / hello / thank you / sorry /  de / men
     Beginner 2 – want / like / know / this / it / yes / no / please
-    Beginner 3 – who / what / where / how / is / are / am / not
+    Beginner 3 – who / what / where / how / is+am+are / / not
     Beginner Phrases – thank you / I don’t know / I want this / I like it / yes please / no thank you
     who is this / where is it / I’m sorry / how are you? / what is your name? / my name is ___
 

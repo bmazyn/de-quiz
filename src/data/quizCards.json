@@ -209,6 +209,47 @@
   "difficulty": 1
 },
 {
+  "id": "beginner1-017",
+  "kind": "vocab",
+  "deckId": "beginner1",
+  "level": "HSK1",
+  "promptLine": "de — 的",
+  "question": "What does this mean?",
+  "choices": {
+    "A": "possessive particle (’s / of)",
+    "B": "plural marker",
+    "C": "question word",
+    "D": "verb marker"
+  },
+  "correct": "A",
+  "explanations": {
+    "A": "Correct! 的 (de) shows possession or description, like ’s or of."
+  },
+  "tags": ["beginner"],
+  "difficulty": 1
+},
+{
+  "id": "beginner1-018",
+  "kind": "vocab",
+  "deckId": "beginner1",
+  "level": "HSK1",
+  "promptLine": "men — 们",
+  "question": "What does this mean?",
+  "choices": {
+    "A": "plural marker (people)",
+    "B": "past tense",
+    "C": "location word",
+    "D": "question marker"
+  },
+  "correct": "A",
+  "explanations": {
+    "A": "Correct! 们 (men) makes pronouns or people nouns plural."
+  },
+  "tags": ["beginner"],
+  "difficulty": 1
+},
+
+{
   "id": "beginner2-001",
   "kind": "vocab",
   "deckId": "beginner2",
@@ -477,38 +518,20 @@
   "level": "HSK1",
   "promptLine": "shì — 是",
   "question": "What does this mean?",
-  "choices": { "A": "is", "B": "are", "C": "am", "D": "be" },
+  "choices": {
+    "A": "be / is / are / am",
+    "B": "have",
+    "C": "do",
+    "D": "go"
+  },
   "correct": "A",
-  "explanations": { "A": "Correct! 是 (shì) means is." },
+  "explanations": {
+    "A": "Correct! 是 (shì) is the verb 'to be' in Chinese and covers is / are / am."
+  },
   "tags": ["beginner"],
   "difficulty": 1
 },
-{
-  "id": "beginner3-006",
-  "kind": "vocab",
-  "deckId": "beginner3",
-  "level": "HSK1",
-  "promptLine": "shì — 是",
-  "question": "What does this mean?",
-  "choices": { "A": "are", "B": "is", "C": "am", "D": "were" },
-  "correct": "A",
-  "explanations": { "A": "Correct! 是 (shì) is used for are." },
-  "tags": ["beginner"],
-  "difficulty": 1
-},
-{
-  "id": "beginner3-007",
-  "kind": "vocab",
-  "deckId": "beginner3",
-  "level": "HSK1",
-  "promptLine": "shì — 是",
-  "question": "What does this mean?",
-  "choices": { "A": "am", "B": "is", "C": "are", "D": "be" },
-  "correct": "A",
-  "explanations": { "A": "Correct! 是 (shì) is used for am." },
-  "tags": ["beginner"],
-  "difficulty": 1
-},
+
 {
   "id": "beginner3-008",
   "kind": "vocab",
