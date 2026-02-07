@@ -875,6 +875,376 @@
   "difficulty": 1
 },
 
+{
+  "id": "fundamentals1-001",
+  "kind": "vocab",
+  "deckId": "fundamentals1",
+  "level": "HSK1",
+  "promptLine": "hāi — 嗨",
+  "question": "What does this mean?",
+  "choices": { "A": "hi", "B": "hello", "C": "welcome", "D": "goodbye" },
+  "correct": "A",
+  "explanations": { "A": "Correct! 嗨 (hāi) means hi." },
+  "tags": ["beginner"],
+  "difficulty": 1
+},
+{
+  "id": "fundamentals1-003",
+  "kind": "vocab",
+  "deckId": "fundamentals1",
+  "level": "HSK1",
+  "promptLine": "zàijiàn — 再见",
+  "question": "What does this mean?",
+  "choices": { "A": "goodbye", "B": "see you", "C": "welcome", "D": "hi" },
+  "correct": "A",
+  "explanations": { "A": "Correct! 再见 means goodbye." },
+  "tags": ["beginner"],
+  "difficulty": 1
+},
+{
+  "id": "fundamentals1-004",
+  "kind": "vocab",
+  "deckId": "fundamentals1",
+  "level": "HSK1",
+  "promptLine": "huānyíng — 欢迎",
+  "question": "What does this mean?",
+  "choices": { "A": "welcome", "B": "please", "C": "thank you", "D": "hello" },
+  "correct": "A",
+  "explanations": { "A": "Correct! 欢迎 means welcome." },
+  "tags": ["beginner"],
+  "difficulty": 1
+},
+{
+  "id": "fundamentals1-005",
+  "kind": "vocab",
+  "deckId": "fundamentals1",
+  "level": "HSK1",
+  "promptLine": "rén — 人",
+  "question": "What does this mean?",
+  "choices": { "A": "people", "B": "person", "C": "someone", "D": "man" },
+  "correct": "A",
+  "explanations": { "A": "Correct! 人 (rén) means people." },
+  "tags": ["beginner"],
+  "difficulty": 1
+},
+{
+  "id": "fundamentals1-006",
+  "kind": "vocab",
+  "deckId": "fundamentals1",
+  "level": "HSK1",
+  "promptLine": "mǒurén — 某人",
+  "question": "What does this mean?",
+  "choices": { "A": "someone", "B": "everyone", "C": "people", "D": "person" },
+  "correct": "A",
+  "explanations": { "A": "Correct! 某人 means someone." },
+  "tags": ["beginner"],
+  "difficulty": 1
+},
+{
+  "id": "fundamentals1-007",
+  "kind": "vocab",
+  "deckId": "fundamentals1",
+  "level": "HSK1",
+  "promptLine": "tā — 他 / 她",
+  "question": "What does this mean?",
+  "choices": {
+    "A": "he / she",
+    "B": "they",
+    "C": "it",
+    "D": "someone"
+  },
+  "correct": "A",
+  "explanations": {
+    "A": "Correct! tā (他 / 她) means he or she in Chinese. They sound the same."
+  },
+  "tags": ["beginner"],
+  "difficulty": 1
+},
+
+
+{
+  "id": "fundamentals1-009",
+  "kind": "vocab",
+  "deckId": "fundamentals1",
+  "level": "HSK1",
+  "promptLine": "hi",
+  "question": "Which is correct?",
+  "choices": { "A": "hāi — 嗨", "B": "zàijiàn — 再见", "C": "huānyíng — 欢迎", "D": "xièxie — 谢谢" },
+  "correct": "A",
+  "explanations": { "A": "Correct! Hi is 嗨 (hāi)." },
+  "tags": ["beginner","reverse"],
+  "difficulty": 1
+},
+{
+  "id": "fundamentals1-011",
+  "kind": "vocab",
+  "deckId": "fundamentals1",
+  "level": "HSK1",
+  "promptLine": "goodbye",
+  "question": "Which is correct?",
+  "choices": { "A": "zàijiàn — 再见", "B": "huānyíng — 欢迎", "C": "hāi — 嗨", "D": "xièxie — 谢谢" },
+  "correct": "A",
+  "explanations": { "A": "Correct! Goodbye is 再见." },
+  "tags": ["beginner","reverse"],
+  "difficulty": 1
+},
+{
+  "id": "fundamentals1-012",
+  "kind": "vocab",
+  "deckId": "fundamentals1",
+  "level": "HSK1",
+  "promptLine": "welcome",
+  "question": "Which is correct?",
+  "choices": { "A": "huānyíng — 欢迎", "B": "zàijiàn — 再见", "C": "hāi — 嗨", "D": "qǐng — 请" },
+  "correct": "A",
+  "explanations": { "A": "Correct! Welcome is 欢迎." },
+  "tags": ["beginner","reverse"],
+  "difficulty": 1
+},
+{
+  "id": "fundamentals1-013",
+  "kind": "vocab",
+  "deckId": "fundamentals1",
+  "level": "HSK1",
+  "promptLine": "people",
+  "question": "Which is correct?",
+  "choices": { "A": "rén — 人", "B": "mǒurén — 某人", "C": "jiā — 家", "D": "péngyou — 朋友" },
+  "correct": "A",
+  "explanations": { "A": "Correct! People is 人." },
+  "tags": ["beginner","reverse"],
+  "difficulty": 1
+},
+{
+  "id": "fundamentals1-014",
+  "kind": "vocab",
+  "deckId": "fundamentals1",
+  "level": "HSK1",
+  "promptLine": "someone",
+  "question": "Which is correct?",
+  "choices": { "A": "mǒurén — 某人", "B": "rén — 人", "C": "nǐ — 你", "D": "tā — 他" },
+  "correct": "A",
+  "explanations": { "A": "Correct! Someone is 某人." },
+  "tags": ["beginner","reverse"],
+  "difficulty": 1
+},
+{
+  "id": "fundamentals1-015",
+  "kind": "vocab",
+  "deckId": "fundamentals1",
+  "level": "HSK1",
+  "promptLine": "he / she",
+  "question": "Which is correct?",
+  "choices": {
+    "A": "tā — 他 / 她",
+    "B": "tāmen — 他们",
+    "C": "tā — 它",
+    "D": "rén — 人"
+  },
+  "correct": "A",
+  "explanations": { "A": "Correct! He / she is tā — 他 / 她 (same sound)." },
+  "tags": ["beginner", "reverse"],
+  "difficulty": 1
+},
+
+{
+  "id": "fundamentals2-001",
+  "kind": "vocab",
+  "deckId": "fundamentals2",
+  "level": "HSK1",
+  "promptLine": "wǒmen — 我们",
+  "question": "What does this mean?",
+  "choices": { "A": "we", "B": "they", "C": "our", "D": "us" },
+  "correct": "A",
+  "explanations": { "A": "Correct! 我们 (wǒmen) means we." },
+  "tags": ["beginner"],
+  "difficulty": 1
+},
+{
+  "id": "fundamentals2-002",
+  "kind": "vocab",
+  "deckId": "fundamentals2",
+  "level": "HSK1",
+  "promptLine": "tā de — 他的 / 她的",
+  "question": "What does this mean?",
+  "choices": {
+    "A": "his / her",
+    "B": "their",
+    "C": "he / she",
+    "D": "someone’s"
+  },
+  "correct": "A",
+  "explanations": {
+    "A": "Correct! tā de (他的 / 她的) means his or her. The sound is the same."
+  },
+  "tags": ["beginner"],
+  "difficulty": 1
+}, 
+
+{
+  "id": "fundamentals2-004",
+  "kind": "vocab",
+  "deckId": "fundamentals2",
+  "level": "HSK1",
+  "promptLine": "tāmen — 他们",
+  "question": "What does this mean?",
+  "choices": { "A": "they", "B": "we", "C": "people", "D": "someone" },
+  "correct": "A",
+  "explanations": { "A": "Correct! 他们 (tāmen) means they." },
+  "tags": ["beginner"],
+  "difficulty": 1
+},
+{
+  "id": "fundamentals2-005",
+  "kind": "vocab",
+  "deckId": "fundamentals2",
+  "level": "HSK1",
+  "promptLine": "wǒmen de — 我们的",
+  "question": "What does this mean?",
+  "choices": { "A": "our", "B": "we", "C": "their", "D": "us" },
+  "correct": "A",
+  "explanations": { "A": "Correct! 我们的 means our." },
+  "tags": ["beginner"],
+  "difficulty": 1
+},
+{
+  "id": "fundamentals2-006",
+  "kind": "vocab",
+  "deckId": "fundamentals2",
+  "level": "HSK1",
+  "promptLine": "tāmen de — 他们的",
+  "question": "What does this mean?",
+  "choices": { "A": "their", "B": "they", "C": "his", "D": "her" },
+  "correct": "A",
+  "explanations": { "A": "Correct! 他们的 means their." },
+  "tags": ["beginner"],
+  "difficulty": 1
+},
+{
+  "id": "fundamentals2-007",
+  "kind": "vocab",
+  "deckId": "fundamentals2",
+  "level": "HSK1",
+  "promptLine": "zhè — 这",
+  "question": "What does this mean?",
+  "choices": { "A": "this", "B": "that", "C": "here", "D": "it" },
+  "correct": "A",
+  "explanations": { "A": "Correct! 这 (zhè) means this." },
+  "tags": ["beginner"],
+  "difficulty": 1
+},
+{
+  "id": "fundamentals2-008",
+  "kind": "vocab",
+  "deckId": "fundamentals2",
+  "level": "HSK1",
+  "promptLine": "nà — 那",
+  "question": "What does this mean?",
+  "choices": { "A": "that", "B": "this", "C": "there", "D": "it" },
+  "correct": "A",
+  "explanations": { "A": "Correct! 那 (nà) means that." },
+  "tags": ["beginner"],
+  "difficulty": 1
+},
+{
+  "id": "fundamentals2-009",
+  "kind": "vocab",
+  "deckId": "fundamentals2",
+  "level": "HSK1",
+  "promptLine": "we",
+  "question": "Which is correct?",
+  "choices": { "A": "wǒmen — 我们", "B": "tāmen — 他们", "C": "wǒ — 我", "D": "rén — 人" },
+  "correct": "A",
+  "explanations": { "A": "Correct! We is 我们." },
+  "tags": ["beginner","reverse"],
+  "difficulty": 1
+},
+{
+  "id": "fundamentals2-010",
+  "kind": "vocab",
+  "deckId": "fundamentals2",
+  "level": "HSK1",
+  "promptLine": "his / her",
+  "question": "Which is correct?",
+  "choices": {
+    "A": "tā de — 他的 / 她的",
+    "B": "tāmen de — 他们的",
+    "C": "wǒ de — 我的",
+    "D": "tā — 他 / 她"
+  },
+  "correct": "A",
+  "explanations": {
+    "A": "Correct! His / her is tā de — 他的 / 她的. They sound the same in Chinese."
+  },
+  "tags": ["beginner", "reverse"],
+  "difficulty": 1
+},
+
+{
+  "id": "fundamentals2-012",
+  "kind": "vocab",
+  "deckId": "fundamentals2",
+  "level": "HSK1",
+  "promptLine": "they",
+  "question": "Which is correct?",
+  "choices": { "A": "tāmen — 他们", "B": "wǒmen — 我们", "C": "tā — 他", "D": "rén — 人" },
+  "correct": "A",
+  "explanations": { "A": "Correct! They is 他们." },
+  "tags": ["beginner","reverse"],
+  "difficulty": 1
+},
+{
+  "id": "fundamentals2-013",
+  "kind": "vocab",
+  "deckId": "fundamentals2",
+  "level": "HSK1",
+  "promptLine": "our",
+  "question": "Which is correct?",
+  "choices": { "A": "wǒmen de — 我们的", "B": "tāmen de — 他们的", "C": "wǒmen — 我们", "D": "wǒ de — 我的" },
+  "correct": "A",
+  "explanations": { "A": "Correct! Our is 我们的." },
+  "tags": ["beginner","reverse"],
+  "difficulty": 1
+},
+{
+  "id": "fundamentals2-014",
+  "kind": "vocab",
+  "deckId": "fundamentals2",
+  "level": "HSK1",
+  "promptLine": "their",
+  "question": "Which is correct?",
+  "choices": { "A": "tāmen de — 他们的", "B": "tā de — 他的", "C": "tā de — 她的", "D": "wǒmen de — 我们的" },
+  "correct": "A",
+  "explanations": { "A": "Correct! Their is 他们的." },
+  "tags": ["beginner","reverse"],
+  "difficulty": 1
+},
+{
+  "id": "fundamentals2-015",
+  "kind": "vocab",
+  "deckId": "fundamentals2",
+  "level": "HSK1",
+  "promptLine": "this",
+  "question": "Which is correct?",
+  "choices": { "A": "zhè — 这", "B": "nà — 那", "C": "zài — 在", "D": "tā — 它" },
+  "correct": "A",
+  "explanations": { "A": "Correct! This is 这." },
+  "tags": ["beginner","reverse"],
+  "difficulty": 1
+},
+{
+  "id": "fundamentals2-016",
+  "kind": "vocab",
+  "deckId": "fundamentals2",
+  "level": "HSK1",
+  "promptLine": "that",
+  "question": "Which is correct?",
+  "choices": { "A": "nà — 那", "B": "zhè — 这", "C": "zài — 在", "D": "tā — 它" },
+  "correct": "A",
+  "explanations": { "A": "Correct! That is 那." },
+  "tags": ["beginner","reverse"],
+  "difficulty": 1
+},
+
 
   {
     "id": "foundation1-001",
