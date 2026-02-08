@@ -312,6 +312,12 @@ export default function ChapterDetail() {
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <h3 className="modal-title">{modalDeck}</h3>
             <div className="modal-buttons">
+              <button className="modal-button" onClick={() => {
+                setShowDeckModal(false);
+                navigate(`/study-list?deck=${encodeURIComponent(modalDeck)}`, { state: { chapterId: chapter } });
+              }}>
+                📋 Study List
+              </button>
               <button className="modal-button" onClick={handleModalAudioLoop}>
                 🎧 Audio Loop
               </button>

@@ -6,6 +6,7 @@ import LandingPage from './components/LandingPage'
 import QuizFeed from './components/QuizFeed'
 import AudioLoop from './components/AudioLoop'
 import Speedrun from './components/Speedrun'
+import StudyList from './components/StudyList'
 import './App.css'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/quiz" element={<QuizFeed />} />
         <Route path="/audio-loop" element={<AudioLoop />} />
         <Route path="/speedrun" element={<Speedrun />} />
+        <Route path="/study-list" element={<StudyList />} />
       </Routes>
     </BrowserRouter>
   )
