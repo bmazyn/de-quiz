@@ -2422,9 +2422,166 @@
   "explanations": { "A": "Correct! Find / look for is 找 (zhǎo)." },
   "tags": ["beginner","reverse"],
   "difficulty": 1
+},
+
+
+{
+  "id": "corePhrases-001",
+  "kind": "phrase",
+  "deckId": "corePhrases",
+  "level": "HSK1",
+  "promptLine": "wǒ kàn zhège — 我看这个",
+  "question": "What does this mean?",
+  "choices": { "A": "I see this", "B": "I like this", "C": "I want this", "D": "I find this" },
+  "correct": "A",
+  "explanations": { "A": "Correct! 我看这个 means I see this." },
+  "tags": ["beginner","phrase"],
+  "difficulty": 1
+},
+{
+  "id": "corePhrases-002",
+  "kind": "phrase",
+  "deckId": "corePhrases",
+  "level": "HSK1",
+  "promptLine": "wǒ xūyào bāngmáng — 我需要帮忙",
+  "question": "What does this mean?",
+  "choices": { "A": "I need help", "B": "I give help", "C": "I want help", "D": "I find help" },
+  "correct": "A",
+  "explanations": { "A": "Correct! 我需要帮忙 means I need help." },
+  "tags": ["beginner","phrase"],
+  "difficulty": 1
+},
+{
+  "id": "corePhrases-003",
+  "kind": "phrase",
+  "deckId": "corePhrases",
+  "level": "HSK1",
+  "promptLine": "wǒ yào qù — 我要去",
+  "question": "What does this mean?",
+  "choices": { "A": "I want to go", "B": "I go now", "C": "I need to come", "D": "I like to go" },
+  "correct": "A",
+  "explanations": { "A": "Correct! 我要去 means I want to go." },
+  "tags": ["beginner","phrase"],
+  "difficulty": 1
+},
+{
+  "id": "corePhrases-004",
+  "kind": "phrase",
+  "deckId": "corePhrases",
+  "level": "HSK1",
+  "promptLine": "wǒ xǐhuan zhège dìfang — 我喜欢这个地方",
+  "question": "What does this mean?",
+  "choices": { "A": "I like this place", "B": "I see this place", "C": "I find this place", "D": "I want this place" },
+  "correct": "A",
+  "explanations": { "A": "Correct! 我喜欢这个地方 means I like this place." },
+  "tags": ["beginner","phrase"],
+  "difficulty": 1
+},
+{
+  "id": "corePhrases-005",
+  "kind": "phrase",
+  "deckId": "corePhrases",
+  "level": "HSK1",
+  "promptLine": "wǒmen qù jiā — 我们去家",
+  "question": "What does this mean?",
+  "choices": { "A": "We go home", "B": "We live at home", "C": "We like home", "D": "We come home" },
+  "correct": "A",
+  "explanations": { "A": "Correct! 我们去家 means we go home." },
+  "tags": ["beginner","phrase"],
+  "difficulty": 1
+},
+{
+  "id": "corePhrases-006",
+  "kind": "phrase",
+  "deckId": "corePhrases",
+  "level": "HSK1",
+  "promptLine": "tāmen yǒu háizi — 他们有孩子",
+  "question": "What does this mean?",
+  "choices": { "A": "They have children", "B": "They like children", "C": "They find children", "D": "They help children" },
+  "correct": "A",
+  "explanations": { "A": "Correct! 他们有孩子 means they have children." },
+  "tags": ["beginner","phrase"],
+  "difficulty": 1
+},
+{
+  "id": "corePhrases-007",
+  "kind": "phrase",
+  "deckId": "corePhrases",
+  "level": "HSK1",
+  "promptLine": "wǒ zài jiā gōngzuò — 我在家工作",
+  "question": "What does this mean?",
+  "choices": { "A": "I work at home", "B": "I live at work", "C": "I go home to work", "D": "I like to work" },
+  "correct": "A",
+  "explanations": { "A": "Correct! 我在家工作 means I work at home." },
+  "tags": ["beginner","phrase"],
+  "difficulty": 1
+},
+{
+  "id": "corePhrases-008",
+  "kind": "phrase",
+  "deckId": "corePhrases",
+  "level": "HSK1",
+  "promptLine": "wǒ zhǎo zhège dìfang — 我找这个地方",
+  "question": "What does this mean?",
+  "choices": { "A": "I find / look for this place", "B": "I see this place", "C": "I like this place", "D": "I go to this place" },
+  "correct": "A",
+  "explanations": { "A": "Correct! 我找这个地方 means I find or look for this place." },
+  "tags": ["beginner","phrase"],
+  "difficulty": 1
+},
+{
+  "id": "corePhrases-009",
+  "kind": "phrase",
+  "deckId": "corePhrases",
+  "level": "HSK1",
+  "promptLine": "yǒurén bāng wǒ — 有人帮我",
+  "question": "What does this mean?",
+  "choices": { "A": "Someone helps me", "B": "I help someone", "C": "People need help", "D": "Someone finds me" },
+  "correct": "A",
+  "explanations": { "A": "Correct! 有人帮我 means someone helps me." },
+  "tags": ["beginner","phrase"],
+  "difficulty": 1
+},
+{
+  "id": "corePhrases-010",
+  "kind": "phrase",
+  "deckId": "corePhrases",
+  "level": "HSK1",
+  "promptLine": "wǒmen zài zuò — 我们再做",
+  "question": "What does this mean?",
+  "choices": { "A": "We do this again", "B": "We are doing now", "C": "We already did it", "D": "We want to do" },
+  "correct": "A",
+  "explanations": { "A": "Correct! 我们再做 means we do this again." },
+  "tags": ["beginner","phrase"],
+  "difficulty": 1
+},
+{
+  "id": "corePhrases-011",
+  "kind": "phrase",
+  "deckId": "corePhrases",
+  "level": "HSK1",
+  "promptLine": "duōshǎo rén — 多少人",
+  "question": "What does this mean?",
+  "choices": { "A": "How many people", "B": "Which people", "C": "Why people", "D": "Some people" },
+  "correct": "A",
+  "explanations": { "A": "Correct! 多少人 means how many people." },
+  "tags": ["beginner","phrase"],
+  "difficulty": 1
+},
+{
+  "id": "corePhrases-012",
+  "kind": "phrase",
+  "deckId": "corePhrases",
+  "level": "HSK1",
+  "promptLine": "wèishénme tāmen qù — 为什么他们去",
+  "question": "What does this mean?",
+  "choices": { "A": "Why do they go", "B": "When do they go", "C": "Where do they go", "D": "How do they go" },
+  "correct": "A",
+  "explanations": { "A": "Correct! 为什么他们去 means why do they go." },
+  "tags": ["beginner","phrase"],
+  "difficulty": 1
 }
 ,
-
 
 
   {
