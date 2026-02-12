@@ -2874,6 +2874,1370 @@
   "difficulty": 1
 },
 
+  {
+    "id": "ch2-desc2-001",
+    "kind": "vocab",
+    "deckId": "ch2-desc2",
+    "level": "HSK1",
+    "promptLine": "hěn — 很",
+    "question": "What does this mean?",
+    "choices": { "A": "very", "B": "too", "C": "really / truly", "D": "quite / pretty" },
+    "correct": "A",
+    "explanations": { "A": "Correct! 很 (hěn) means very." },
+    "tags": ["description"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-desc2-002",
+    "kind": "vocab",
+    "deckId": "ch2-desc2",
+    "level": "HSK1",
+    "promptLine": "tài — 太",
+    "question": "What does this mean?",
+    "choices": { "A": "too", "B": "very", "C": "quite / pretty", "D": "a bit / kind of" },
+    "correct": "A",
+    "explanations": { "A": "Correct! 太 (tài) means too (excessively)." },
+    "tags": ["description"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-desc2-003",
+    "kind": "vocab",
+    "deckId": "ch2-desc2",
+    "level": "HSK1",
+    "promptLine": "zhēn — 真",
+    "question": "What does this mean?",
+    "choices": { "A": "really / truly", "B": "very", "C": "too / overly", "D": "quite / pretty" },
+    "correct": "A",
+    "explanations": { "A": "Correct! 真 (zhēn) means really / truly." },
+    "tags": ["description"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-desc2-004",
+    "kind": "vocab",
+    "deckId": "ch2-desc2",
+    "level": "HSK1",
+    "promptLine": "tǐng — 挺",
+    "question": "What does this mean?",
+    "choices": { "A": "quite / pretty", "B": "very", "C": "really / truly", "D": "a bit / kind of" },
+    "correct": "A",
+    "explanations": { "A": "Correct! 挺 (tǐng) means quite / pretty (fairly)." },
+    "tags": ["description"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-desc2-005",
+    "kind": "vocab",
+    "deckId": "ch2-desc2",
+    "level": "HSK1",
+    "promptLine": "gèng — 更",
+    "question": "What does this mean?",
+    "choices": { "A": "even more", "B": "most", "C": "more / rather", "D": "quite / pretty" },
+    "correct": "A",
+    "explanations": { "A": "Correct! 更 (gèng) means even more." },
+    "tags": ["description"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-desc2-006",
+    "kind": "vocab",
+    "deckId": "ch2-desc2",
+    "level": "HSK1",
+    "promptLine": "bǐjiào — 比较",
+    "question": "What does this mean?",
+    "choices": { "A": "relatively / comparatively", "B": "even more", "C": "really / truly", "D": "a bit / kind of" },
+    "correct": "A",
+    "explanations": { "A": "Correct! 比较 (bǐjiào) means relatively / comparatively." },
+    "tags": ["description"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-desc2-007",
+    "kind": "vocab",
+    "deckId": "ch2-desc2",
+    "level": "HSK1",
+    "promptLine": "zuì — 最",
+    "question": "What does this mean?",
+    "choices": { "A": "most", "B": "even more", "C": "very / really", "D": "quite / pretty" },
+    "correct": "A",
+    "explanations": { "A": "Correct! 最 (zuì) means most." },
+    "tags": ["description"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-desc2-008",
+    "kind": "vocab",
+    "deckId": "ch2-desc2",
+    "level": "HSK1",
+    "promptLine": "yǒudiǎn — 有点",
+    "question": "What does this mean?",
+    "choices": { "A": "a bit / kind of", "B": "quite / pretty", "C": "really / truly", "D": "too / overly" },
+    "correct": "A",
+    "explanations": { "A": "Correct! 有点 (yǒudiǎn) means a bit / kind of." },
+    "tags": ["description"],
+    "difficulty": 1
+  },
+{
+  "id": "ch2-desc2-009",
+  "kind": "vocab",
+  "deckId": "ch2-desc2",
+  "level": "HSK1",
+  "promptLine": "very",
+  "question": "Which is correct?",
+  "choices": {    "A": "hěn — 很",    "B": "tài — 太",    "C": "zhēn — 真",    "D": "zuì — 最"  },
+  "correct": "A",
+  "explanations": { "A": "Correct! very is hěn — 很." },
+  "tags": ["description","reverse"],
+  "difficulty": 1
+},
+{
+  "id": "ch2-desc2-010",
+  "kind": "vocab",
+  "deckId": "ch2-desc2",
+  "level": "HSK1",
+  "promptLine": "too / overly",
+  "question": "Which is correct?",
+  "choices": {    "A": "tài — 太",    "B": "hěn — 很",    "C": "yǒudiǎn — 有点",    "D": "bǐjiào — 比较"  },
+  "correct": "A",
+  "explanations": { "A": "Correct! too / overly is tài — 太." },
+  "tags": ["description","reverse"],
+  "difficulty": 1
+},
+{
+  "id": "ch2-desc2-011",
+  "kind": "vocab",
+  "deckId": "ch2-desc2",
+  "level": "HSK1",
+  "promptLine": "really / truly",
+  "question": "Which is correct?",
+  "choices": {    "A": "zhēn — 真",    "B": "tǐng — 挺",    "C": "gèng — 更",    "D": "zuì — 最"  },
+  "correct": "A",
+  "explanations": { "A": "Correct! really / truly is zhēn — 真." },
+  "tags": ["description","reverse"],
+  "difficulty": 1
+},
+{
+  "id": "ch2-desc2-012",
+  "kind": "vocab",
+  "deckId": "ch2-desc2",
+  "level": "HSK1",
+  "promptLine": "quite / pretty",
+  "question": "Which is correct?",
+  "choices": {    "A": "tǐng — 挺",    "B": "hěn — 很",    "C": "bǐjiào — 比较",    "D": "yǒudiǎn — 有点"  },
+  "correct": "A",
+  "explanations": { "A": "Correct! quite / pretty is tǐng — 挺." },
+  "tags": ["description","reverse"],
+  "difficulty": 1
+},
+{
+  "id": "ch2-desc2-013",
+  "kind": "vocab",
+  "deckId": "ch2-desc2",
+  "level": "HSK1",
+  "promptLine": "even more",
+  "question": "Which is correct?",
+  "choices": {    "A": "gèng — 更",    "B": "zuì — 最",    "C": "tài — 太",    "D": "zhēn — 真"  },
+  "correct": "A",
+  "explanations": { "A": "Correct! even more is gèng — 更." },
+  "tags": ["description","reverse"],
+  "difficulty": 1
+},
+{
+  "id": "ch2-desc2-014",
+  "kind": "vocab",
+  "deckId": "ch2-desc2",
+  "level": "HSK1",
+  "promptLine": "relatively / comparatively",
+  "question": "Which is correct?",
+  "choices": {    "A": "bǐjiào — 比较",    "B": "gèng — 更",    "C": "tǐng — 挺",    "D": "yǒudiǎn — 有点"  },
+  "correct": "A",
+  "explanations": { "A": "Correct! relatively / comparatively is bǐjiào — 比较." },
+  "tags": ["description","reverse"],
+  "difficulty": 1
+},
+{
+  "id": "ch2-desc2-015",
+  "kind": "vocab",
+  "deckId": "ch2-desc2",
+  "level": "HSK1",
+  "promptLine": "most",
+  "question": "Which is correct?",
+  "choices": {  "A": "zuì — 最",    "B": "gèng — 更",    "C": "hěn — 很",    "D": "bǐjiào — 比较"},
+  "correct": "A",
+  "explanations": { "A": "Correct! most is zuì — 最." },
+  "tags": ["description","reverse"],
+  "difficulty": 1
+},
+{
+  "id": "ch2-desc2-016",
+  "kind": "vocab",
+  "deckId": "ch2-desc2",
+  "level": "HSK1",
+  "promptLine": "a bit / a little",
+  "question": "Which is correct?",
+  "choices": {  "A": "yǒudiǎn — 有点",    "B": "tài — 太",    "C": "tǐng — 挺",    "D": "zhēn — 真"  },
+  "correct": "A",
+  "explanations": { "A": "Correct! a bit / a little is yǒudiǎn — 有点." },
+  "tags": ["description","reverse"],
+  "difficulty": 1
+},
+
+  {
+    "id": "ch2-desc3-001",
+    "kind": "vocab",
+    "deckId": "ch2-desc3",
+    "level": "HSK1",
+    "promptLine": "yíyàng — 一样",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "same / alike",
+      "B": "different / not the same",
+      "C": "right / correct",
+      "D": "easy"
+    },
+    "correct": "A",
+    "explanations": { "A": "Correct! yíyàng — 一样 means same / alike." },
+    "tags": ["description"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-desc3-002",
+    "kind": "vocab",
+    "deckId": "ch2-desc3",
+    "level": "HSK1",
+    "promptLine": "bù yíyàng — 不一样",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "same / alike",
+      "B": "different / not the same",
+      "C": "wrong",
+      "D": "slow"
+    },
+    "correct": "B",
+    "explanations": { "B": "Correct! bù yíyàng — 不一样 means different / not the same." },
+    "tags": ["description"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-desc3-003",
+    "kind": "vocab",
+    "deckId": "ch2-desc3",
+    "level": "HSK1",
+    "promptLine": "róngyì — 容易",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "easy",
+      "B": "hard / difficult",
+      "C": "fast / quick",
+      "D": "right / correct"
+    },
+    "correct": "A",
+    "explanations": { "A": "Correct! róngyì — 容易 means easy." },
+    "tags": ["description"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-desc3-004",
+    "kind": "vocab",
+    "deckId": "ch2-desc3",
+    "level": "HSK1",
+    "promptLine": "nán — 难",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "easy",
+      "B": "hard / difficult",
+      "C": "slow",
+      "D": "same"
+    },
+    "correct": "B",
+    "explanations": { "B": "Correct! nán — 难 means hard / difficult." },
+    "tags": ["description"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-desc3-005",
+    "kind": "vocab",
+    "deckId": "ch2-desc3",
+    "level": "HSK1",
+    "promptLine": "kuài — 快",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "slow",
+      "B": "fast",
+      "C": "right / correct",
+      "D": "different / not the same"
+    },
+    "correct": "B",
+    "explanations": { "B": "Correct! kuài — 快 means fast." },
+    "tags": ["description"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-desc3-006",
+    "kind": "vocab",
+    "deckId": "ch2-desc3",
+    "level": "HSK1",
+    "promptLine": "màn — 慢",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "slow",
+      "B": "fast",
+      "C": "wrong / incorrect",
+      "D": "hard / difficult"
+    },
+    "correct": "A",
+    "explanations": { "A": "Correct! màn — 慢 means slow." },
+    "tags": ["description"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-desc3-007",
+    "kind": "vocab",
+    "deckId": "ch2-desc3",
+    "level": "HSK1",
+    "promptLine": "duì — 对",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "right / correct",
+      "B": "wrong / incorrect",
+      "C": "same / alike",
+      "D": "fast / quick"
+    },
+    "correct": "A",
+    "explanations": { "A": "Correct! duì — 对 means right / correct." },
+    "tags": ["description"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-desc3-008",
+    "kind": "vocab",
+    "deckId": "ch2-desc3",
+    "level": "HSK1",
+    "promptLine": "cuò — 错",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "right / correct",
+      "B": "wrong / incorrect",
+      "C": "different / not the same",
+      "D": "slow / not fast"
+    },
+    "correct": "B",
+    "explanations": { "B": "Correct! cuò — 错 means wrong / incorrect." },
+    "tags": ["description"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-desc3-009",
+    "kind": "vocab",
+    "deckId": "ch2-desc3",
+    "level": "HSK1",
+    "promptLine": "same / alike",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "yíyàng — 一样",
+      "B": "bù yíyàng — 不一样",
+      "C": "duì — 对",
+      "D": "màn — 慢"
+    },
+    "correct": "A",
+    "explanations": { "A": "Correct! same / alike is yíyàng — 一样." },
+    "tags": ["description","reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-desc3-010",
+    "kind": "vocab",
+    "deckId": "ch2-desc3",
+    "level": "HSK1",
+    "promptLine": "different / not the same",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "yíyàng — 一样",
+      "B": "bù yíyàng — 不一样",
+      "C": "cuò — 错",
+      "D": "nán — 难"
+    },
+    "correct": "B",
+    "explanations": { "B": "Correct! different / not the same is bù yíyàng — 不一样." },
+    "tags": ["description","reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-desc3-011",
+    "kind": "vocab",
+    "deckId": "ch2-desc3",
+    "level": "HSK1",
+    "promptLine": "easy",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "nán — 难",
+      "B": "róngyì — 容易",
+      "C": "màn — 慢",
+      "D": "duì — 对"
+    },
+    "correct": "B",
+    "explanations": { "B": "Correct! easy is róngyì — 容易." },
+    "tags": ["description","reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-desc3-012",
+    "kind": "vocab",
+    "deckId": "ch2-desc3",
+    "level": "HSK1",
+    "promptLine": "hard / difficult",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "róngyì — 容易",
+      "B": "nán — 难",
+      "C": "màn — 慢",
+      "D": "yíyàng — 一样"
+    },
+    "correct": "B",
+    "explanations": { "B": "Correct! hard / difficult is nán — 难." },
+    "tags": ["description","reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-desc3-013",
+    "kind": "vocab",
+    "deckId": "ch2-desc3",
+    "level": "HSK1",
+    "promptLine": "fast",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "màn — 慢",
+      "B": "kuài — 快",
+      "C": "cuò — 错",
+      "D": "bù yíyàng — 不一样"
+    },
+    "correct": "B",
+    "explanations": { "B": "Correct! fast is kuài — 快." },
+    "tags": ["description","reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-desc3-014",
+    "kind": "vocab",
+    "deckId": "ch2-desc3",
+    "level": "HSK1",
+    "promptLine": "slow",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "màn — 慢",
+      "B": "kuài — 快",
+      "C": "nán — 难",
+      "D": "duì — 对"
+    },
+    "correct": "A",
+    "explanations": { "A": "Correct! slow is màn — 慢." },
+    "tags": ["description","reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-desc3-015",
+    "kind": "vocab",
+    "deckId": "ch2-desc3",
+    "level": "HSK1",
+    "promptLine": "right / correct",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "cuò — 错",
+      "B": "duì — 对",
+      "C": "kuài — 快",
+      "D": "yíyàng — 一样"
+    },
+    "correct": "B",
+    "explanations": { "B": "Correct! right / correct is duì — 对." },
+    "tags": ["description","reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-desc3-016",
+    "kind": "vocab",
+    "deckId": "ch2-desc3",
+    "level": "HSK1",
+    "promptLine": "wrong / incorrect",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "duì — 对",
+      "B": "cuò — 错",
+      "C": "nán — 难",
+      "D": "bù yíyàng — 不一样"
+    },
+    "correct": "B",
+    "explanations": { "B": "Correct! wrong / incorrect is cuò — 错." },
+    "tags": ["description","reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con1-001",
+    "kind": "vocab",
+    "deckId": "ch2-con1",
+    "level": "HSK2",
+    "promptLine": "hé — 和",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "and",
+      "B": "or",
+      "C": "but",
+      "D": "because"
+    },
+    "correct": "A",
+    "explanations": { "A": "Correct! hé — 和 means and." },
+    "tags": ["connections"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con1-002",
+    "kind": "vocab",
+    "deckId": "ch2-con1",
+    "level": "HSK2",
+    "promptLine": "huòzhě — 或者",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "and",
+      "B": "or",
+      "C": "so",
+      "D": "only"
+    },
+    "correct": "B",
+    "explanations": { "B": "Correct! huòzhě — 或者 means or." },
+    "tags": ["connections"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con1-003",
+    "kind": "vocab",
+    "deckId": "ch2-con1",
+    "level": "HSK2",
+    "promptLine": "dànshì — 但是",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "because",
+      "B": "and",
+      "C": "but",
+      "D": "also"
+    },
+    "correct": "C",
+    "explanations": { "C": "Correct! dànshì — 但是 means but." },
+    "tags": ["connections"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con1-004",
+    "kind": "vocab",
+    "deckId": "ch2-con1",
+    "level": "HSK2",
+    "promptLine": "yīnwèi — 因为",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "so",
+      "B": "because",
+      "C": "and",
+      "D": "already"
+    },
+    "correct": "B",
+    "explanations": { "B": "Correct! yīnwèi — 因为 means because." },
+    "tags": ["connections"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con1-005",
+    "kind": "vocab",
+    "deckId": "ch2-con1",
+    "level": "HSK2",
+    "promptLine": "suǒyǐ — 所以",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "because",
+      "B": "only",
+      "C": "so",
+      "D": "or"
+    },
+    "correct": "C",
+    "explanations": { "C": "Correct! suǒyǐ — 所以 means so." },
+    "tags": ["connections"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con1-006",
+    "kind": "vocab",
+    "deckId": "ch2-con1",
+    "level": "HSK2",
+    "promptLine": "yě — 也",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "also / too",
+      "B": "only / just",
+      "C": "again",
+      "D": "but"
+    },
+    "correct": "A",
+    "explanations": { "A": "Correct! yě — 也 means also / too." },
+    "tags": ["connections"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con1-007",
+    "kind": "vocab",
+    "deckId": "ch2-con1",
+    "level": "HSK2",
+    "promptLine": "zhǐ — 只",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "only / just",
+      "B": "also / too",
+      "C": "so",
+      "D": "because"
+    },
+    "correct": "A",
+    "explanations": { "A": "Correct! zhǐ — 只 means only / just." },
+    "tags": ["connections"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con1-008",
+    "kind": "vocab",
+    "deckId": "ch2-con1",
+    "level": "HSK2",
+    "promptLine": "jiù — 就",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "already",
+      "B": "then / just",
+      "C": "or",
+      "D": "and"
+    },
+    "correct": "B",
+    "explanations": { "B": "Correct! jiù — 就 can mean then / just (depending on context)." },
+    "tags": ["connections"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con1-009",
+    "kind": "vocab",
+    "deckId": "ch2-con1",
+    "level": "HSK2",
+    "promptLine": "and",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "hé — 和",
+      "B": "huòzhě — 或者",
+      "C": "dànshì — 但是",
+      "D": "suǒyǐ — 所以"
+    },
+    "correct": "A",
+    "explanations": { "A": "Correct! and is hé — 和." },
+    "tags": ["connections","reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con1-010",
+    "kind": "vocab",
+    "deckId": "ch2-con1",
+    "level": "HSK2",
+    "promptLine": "or",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "hé — 和",
+      "B": "huòzhě — 或者",
+      "C": "zhǐ — 只",
+      "D": "yě — 也"
+    },
+    "correct": "B",
+    "explanations": { "B": "Correct! or is huòzhě — 或者." },
+    "tags": ["connections","reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con1-011",
+    "kind": "vocab",
+    "deckId": "ch2-con1",
+    "level": "HSK2",
+    "promptLine": "but",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "dànshì — 但是",
+      "B": "yīnwèi — 因为",
+      "C": "suǒyǐ — 所以",
+      "D": "jiù — 就"
+    },
+    "correct": "A",
+    "explanations": { "A": "Correct! but is dànshì — 但是." },
+    "tags": ["connections","reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con1-012",
+    "kind": "vocab",
+    "deckId": "ch2-con1",
+    "level": "HSK2",
+    "promptLine": "because",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "suǒyǐ — 所以",
+      "B": "yīnwèi — 因为",
+      "C": "hé — 和",
+      "D": "zhǐ — 只"
+    },
+    "correct": "B",
+    "explanations": { "B": "Correct! because is yīnwèi — 因为." },
+    "tags": ["connections","reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con1-013",
+    "kind": "vocab",
+    "deckId": "ch2-con1",
+    "level": "HSK2",
+    "promptLine": "so",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "yīnwèi — 因为",
+      "B": "suǒyǐ — 所以",
+      "C": "dànshì — 但是",
+      "D": "yě — 也"
+    },
+    "correct": "B",
+    "explanations": { "B": "Correct! so is suǒyǐ — 所以." },
+    "tags": ["connections","reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con1-014",
+    "kind": "vocab",
+    "deckId": "ch2-con1",
+    "level": "HSK2",
+    "promptLine": "also / too",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "zhǐ — 只",
+      "B": "yě — 也",
+      "C": "jiù — 就",
+      "D": "huòzhě — 或者"
+    },
+    "correct": "B",
+    "explanations": { "B": "Correct! also / too is yě — 也." },
+    "tags": ["connections","reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con1-015",
+    "kind": "vocab",
+    "deckId": "ch2-con1",
+    "level": "HSK2",
+    "promptLine": "only / just",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "zhǐ — 只",
+      "B": "yě — 也",
+      "C": "suǒyǐ — 所以",
+      "D": "dànshì — 但是"
+    },
+    "correct": "A",
+    "explanations": { "A": "Correct! only / just is zhǐ — 只." },
+    "tags": ["connections","reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con1-016",
+    "kind": "vocab",
+    "deckId": "ch2-con1",
+    "level": "HSK2",
+    "promptLine": "then / just",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "jiù — 就",
+      "B": "zhǐ — 只",
+      "C": "yě — 也",
+      "D": "huòzhě — 或者"
+    },
+    "correct": "A",
+    "explanations": { "A": "Correct! then / just is jiù — 就." },
+    "tags": ["connections","reverse"],
+    "difficulty": 1
+  },
+
+  {
+    "id": "ch2-con2-001",
+    "kind": "vocab",
+    "deckId": "ch2-con2",
+    "level": "HSK2",
+    "promptLine": "rúguǒ — 如果",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "if",
+      "B": "then / in that case",
+      "C": "although / even though",
+      "D": "still / yet"
+    },
+    "correct": "A",
+    "explanations": { "A": "Correct! rúguǒ — 如果 means if." },
+    "tags": ["connections"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con2-002",
+    "kind": "vocab",
+    "deckId": "ch2-con2",
+    "level": "HSK2",
+    "promptLine": "nà — 那",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "if",
+      "B": "already",
+      "C": "then / in that case",
+      "D": "again"
+    },
+    "correct": "C",
+    "explanations": { "C": "Correct! nà — 那 means then / in that case." },
+    "tags": ["connections"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con2-003",
+    "kind": "vocab",
+    "deckId": "ch2-con2",
+    "level": "HSK2",
+    "promptLine": "suīrán — 虽然",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "because",
+      "B": "although / even though",
+      "C": "so",
+      "D": "finally / at last"
+    },
+    "correct": "B",
+    "explanations": { "B": "Correct! suīrán — 虽然 means although / even though." },
+    "tags": ["connections"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con2-004",
+    "kind": "vocab",
+    "deckId": "ch2-con2",
+    "level": "HSK2",
+    "promptLine": "háishì — 还是",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "or (in a question)",
+      "B": "still / yet",
+      "C": "already",
+      "D": "again"
+    },
+    "correct": "A",
+    "explanations": { "A": "Correct! háishì — 还是 means or (in a question)." },
+    "tags": ["connections"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con2-005",
+    "kind": "vocab",
+    "deckId": "ch2-con2",
+    "level": "HSK2",
+    "promptLine": "yǐjīng — 已经",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "still / yet",
+      "B": "already",
+      "C": "again",
+      "D": "finally / at last"
+    },
+    "correct": "B",
+    "explanations": { "B": "Correct! yǐjīng — 已经 means already." },
+    "tags": ["connections"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con2-006",
+    "kind": "vocab",
+    "deckId": "ch2-con2",
+    "level": "HSK2",
+    "promptLine": "zài — 再",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "already",
+      "B": "again",
+      "C": "still / yet",
+      "D": "if"
+    },
+    "correct": "B",
+    "explanations": { "B": "Correct! zài — 再 means again (future)." },
+    "tags": ["connections"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con2-007",
+    "kind": "vocab",
+    "deckId": "ch2-con2",
+    "level": "HSK2",
+    "promptLine": "zhōngyú — 终于",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "already",
+      "B": "still / yet",
+      "C": "finally / at last",
+      "D": "although / even though"
+    },
+    "correct": "C",
+    "explanations": { "C": "Correct! zhōngyú — 终于 means finally / at last." },
+    "tags": ["connections"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con2-008",
+    "kind": "vocab",
+    "deckId": "ch2-con2",
+    "level": "HSK2",
+    "promptLine": "hái — 还",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "again",
+      "B": "already",
+      "C": "still / yet",
+      "D": "then / in that case"
+    },
+    "correct": "C",
+    "explanations": { "C": "Correct! hái — 还 means still / yet." },
+    "tags": ["connections"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con2-009",
+    "kind": "vocab",
+    "deckId": "ch2-con2",
+    "level": "HSK2",
+    "promptLine": "if",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "rúguǒ — 如果",
+      "B": "nà — 那",
+      "C": "suīrán — 虽然",
+      "D": "hái — 还"
+    },
+    "correct": "A",
+    "explanations": { "A": "Correct! if is rúguǒ — 如果." },
+    "tags": ["connections","reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con2-010",
+    "kind": "vocab",
+    "deckId": "ch2-con2",
+    "level": "HSK2",
+    "promptLine": "then / in that case",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "rúguǒ — 如果",
+      "B": "nà — 那",
+      "C": "zài — 再",
+      "D": "yǐjīng — 已经"
+    },
+    "correct": "B",
+    "explanations": { "B": "Correct! then / in that case is nà — 那." },
+    "tags": ["connections","reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con2-011",
+    "kind": "vocab",
+    "deckId": "ch2-con2",
+    "level": "HSK2",
+    "promptLine": "although / even though",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "suīrán — 虽然",
+      "B": "hái — 还",
+      "C": "zhōngyú — 终于",
+      "D": "zài — 再"
+    },
+    "correct": "A",
+    "explanations": { "A": "Correct! although / even though is suīrán — 虽然." },
+    "tags": ["connections","reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con2-012",
+    "kind": "vocab",
+    "deckId": "ch2-con2",
+    "level": "HSK2",
+    "promptLine": "or (in a question)",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "rúguǒ — 如果",
+      "B": "háishì — 还是",
+      "C": "hái — 还",
+      "D": "nà — 那"
+    },
+    "correct": "B",
+    "explanations": { "B": "Correct! or (in a question) is háishì — 还是." },
+    "tags": ["connections","reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con2-013",
+    "kind": "vocab",
+    "deckId": "ch2-con2",
+    "level": "HSK2",
+    "promptLine": "already",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "zài — 再",
+      "B": "yǐjīng — 已经",
+      "C": "hái — 还",
+      "D": "zhōngyú — 终于"
+    },
+    "correct": "B",
+    "explanations": { "B": "Correct! already is yǐjīng — 已经." },
+    "tags": ["connections","reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con2-014",
+    "kind": "vocab",
+    "deckId": "ch2-con2",
+    "level": "HSK2",
+    "promptLine": "again",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "zài — 再",
+      "B": "hái — 还",
+      "C": "nà — 那",
+      "D": "suīrán — 虽然"
+    },
+    "correct": "A",
+    "explanations": { "A": "Correct! again is zài — 再." },
+    "tags": ["connections","reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con2-015",
+    "kind": "vocab",
+    "deckId": "ch2-con2",
+    "level": "HSK2",
+    "promptLine": "finally / at last",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "zhōngyú — 终于",
+      "B": "yǐjīng — 已经",
+      "C": "hái — 还",
+      "D": "rúguǒ — 如果"
+    },
+    "correct": "A",
+    "explanations": { "A": "Correct! finally / at last is zhōngyú — 终于." },
+    "tags": ["connections","reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con2-016",
+    "kind": "vocab",
+    "deckId": "ch2-con2",
+    "level": "HSK2",
+    "promptLine": "still / yet",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "yǐjīng — 已经",
+      "B": "hái — 还",
+      "C": "zài — 再",
+      "D": "háishì — 还是"
+    },
+    "correct": "B",
+    "explanations": { "B": "Correct! still / yet is hái — 还." },
+    "tags": ["connections","reverse"],
+    "difficulty": 1
+  },
+
+  {
+    "id": "ch2-con3-001",
+    "kind": "vocab",
+    "deckId": "ch2-con3",
+    "level": "HSK2",
+    "promptLine": "juéde — 觉得",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "think / feel",
+      "B": "know",
+      "C": "decide",
+      "D": "hope"
+    },
+    "correct": "A",
+    "explanations": { "A": "Correct! juéde — 觉得 means think / feel." },
+    "tags": ["connections"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con3-002",
+    "kind": "vocab",
+    "deckId": "ch2-con3",
+    "level": "HSK2",
+    "promptLine": "zhīdào — 知道",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "feel",
+      "B": "know",
+      "C": "plan",
+      "D": "try"
+    },
+    "correct": "B",
+    "explanations": { "B": "Correct! zhīdào — 知道 means know." },
+    "tags": ["connections"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con3-003",
+    "kind": "vocab",
+    "deckId": "ch2-con3",
+    "level": "HSK2",
+    "promptLine": "gǎnjué — 感觉",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "know",
+      "B": "decide",
+      "C": "feel / sense",
+      "D": "hope"
+    },
+    "correct": "C",
+    "explanations": { "C": "Correct! gǎnjué — 感觉 means feel / sense." },
+    "tags": ["connections"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con3-004",
+    "kind": "vocab",
+    "deckId": "ch2-con3",
+    "level": "HSK2",
+    "promptLine": "xiǎng — 想",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "think / want",
+      "B": "decide",
+      "C": "plan",
+      "D": "know"
+    },
+    "correct": "A",
+    "explanations": { "A": "Correct! xiǎng — 想 can mean think / want." },
+    "tags": ["connections"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con3-005",
+    "kind": "vocab",
+    "deckId": "ch2-con3",
+    "level": "HSK2",
+    "promptLine": "juédìng — 决定",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "try",
+      "B": "decide",
+      "C": "feel",
+      "D": "plan"
+    },
+    "correct": "B",
+    "explanations": { "B": "Correct! juédìng — 决定 means decide." },
+    "tags": ["connections"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con3-006",
+    "kind": "vocab",
+    "deckId": "ch2-con3",
+    "level": "HSK2",
+    "promptLine": "shì — 试",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "plan",
+      "B": "hope",
+      "C": "try",
+      "D": "know"
+    },
+    "correct": "C",
+    "explanations": { "C": "Correct! shì — 试 means try." },
+    "tags": ["connections"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con3-007",
+    "kind": "vocab",
+    "deckId": "ch2-con3",
+    "level": "HSK2",
+    "promptLine": "jìhuà — 计划",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "decide",
+      "B": "plan",
+      "C": "hope",
+      "D": "feel"
+    },
+    "correct": "B",
+    "explanations": { "B": "Correct! jìhuà — 计划 means plan." },
+    "tags": ["connections"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con3-008",
+    "kind": "vocab",
+    "deckId": "ch2-con3",
+    "level": "HSK2",
+    "promptLine": "xīwàng — 希望",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "hope",
+      "B": "plan",
+      "C": "decide",
+      "D": "think"
+    },
+    "correct": "A",
+    "explanations": { "A": "Correct! xīwàng — 希望 means hope." },
+    "tags": ["connections"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con3-009",
+    "kind": "vocab",
+    "deckId": "ch2-con3",
+    "level": "HSK2",
+    "promptLine": "think / feel",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "juéde — 觉得",
+      "B": "gǎnjué — 感觉",
+      "C": "xiǎng — 想",
+      "D": "zhīdào — 知道"
+    },
+    "correct": "A",
+    "explanations": { "A": "Correct! think / feel is juéde — 觉得." },
+    "tags": ["connections","reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con3-010",
+    "kind": "vocab",
+    "deckId": "ch2-con3",
+    "level": "HSK2",
+    "promptLine": "know",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "xiǎng — 想",
+      "B": "juédìng — 决定",
+      "C": "zhīdào — 知道",
+      "D": "shì — 试"
+    },
+    "correct": "C",
+    "explanations": { "C": "Correct! know is zhīdào — 知道." },
+    "tags": ["connections","reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con3-011",
+    "kind": "vocab",
+    "deckId": "ch2-con3",
+    "level": "HSK2",
+    "promptLine": "feel / sense",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "juéde — 觉得",
+      "B": "gǎnjué — 感觉",
+      "C": "xiǎng — 想",
+      "D": "xīwàng — 希望"
+    },
+    "correct": "B",
+    "explanations": { "B": "Correct! feel / sense is gǎnjué — 感觉." },
+    "tags": ["connections","reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con3-012",
+    "kind": "vocab",
+    "deckId": "ch2-con3",
+    "level": "HSK2",
+    "promptLine": "think / want",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "xiǎng — 想",
+      "B": "juéde — 觉得",
+      "C": "jìhuà — 计划",
+      "D": "zhīdào — 知道"
+    },
+    "correct": "A",
+    "explanations": { "A": "Correct! think / want is xiǎng — 想." },
+    "tags": ["connections","reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con3-013",
+    "kind": "vocab",
+    "deckId": "ch2-con3",
+    "level": "HSK2",
+    "promptLine": "decide",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "juédìng — 决定",
+      "B": "jìhuà — 计划",
+      "C": "xīwàng — 希望",
+      "D": "shì — 试"
+    },
+    "correct": "A",
+    "explanations": { "A": "Correct! decide is juédìng — 决定." },
+    "tags": ["connections","reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con3-014",
+    "kind": "vocab",
+    "deckId": "ch2-con3",
+    "level": "HSK2",
+    "promptLine": "try",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "shì — 试",
+      "B": "juédìng — 决定",
+      "C": "jìhuà — 计划",
+      "D": "gǎnjué — 感觉"
+    },
+    "correct": "A",
+    "explanations": { "A": "Correct! try is shì — 试." },
+    "tags": ["connections","reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con3-015",
+    "kind": "vocab",
+    "deckId": "ch2-con3",
+    "level": "HSK2",
+    "promptLine": "plan",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "jìhuà — 计划",
+      "B": "juédìng — 决定",
+      "C": "xīwàng — 希望",
+      "D": "xiǎng — 想"
+    },
+    "correct": "A",
+    "explanations": { "A": "Correct! plan is jìhuà — 计划." },
+    "tags": ["connections","reverse"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-con3-016",
+    "kind": "vocab",
+    "deckId": "ch2-con3",
+    "level": "HSK2",
+    "promptLine": "hope",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "xīwàng — 希望",
+      "B": "jìhuà — 计划",
+      "C": "juéde — 觉得",
+      "D": "zhīdào — 知道"
+    },
+    "correct": "A",
+    "explanations": { "A": "Correct! hope is xīwàng — 希望." },
+    "tags": ["connections","reverse"],
+    "difficulty": 1
+  },
+
 
 
 {
