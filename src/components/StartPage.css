@@ -104,3 +104,46 @@
     font-size: 18px;
   }
 }
+
+/* Backup controls */
+.backup-controls {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.backup-button {
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.backup-button:hover {
+  background: var(--bg-tertiary);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.backup-button:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 430px) {
+  .backup-controls {
+    flex-direction: column;
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .backup-button {
+    width: 100%;
+  }
+}
