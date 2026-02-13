@@ -3189,9 +3189,401 @@
     "difficulty": 3
   }  ,
 
+  {
+    "id": "ch2-core5-001",
+    "kind": "vocab",
+    "deckId": "ch2-core5",
+    "level": "HSK1",
+    "promptLine": "duō — 多",
+    "question": "What does this mean?",
+    "choices": { "A": "many", "B": "few", "C": "always", "D": "sometimes" },
+    "correct": "A",
+    "explanation": "多 means many.",
+    "tags": ["quantity"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-core5-002",
+    "kind": "vocab",
+    "deckId": "ch2-core5",
+    "level": "HSK1",
+    "promptLine": "shǎo — 少",
+    "question": "What does this mean?",
+    "choices": { "A": "many", "B": "few", "C": "every", "D": "always" },
+    "correct": "B",
+    "explanation": "少 means few.",
+    "tags": ["quantity"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-core5-003",
+    "kind": "vocab",
+    "deckId": "ch2-core5",
+    "level": "HSK1",
+    "promptLine": "yìdiǎn — 一点",
+    "question": "What does this mean?",
+    "choices": { "A": "a little", "B": "many", "C": "always", "D": "never" },
+    "correct": "A",
+    "explanation": "一点 means a little.",
+    "tags": ["quantity"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-core5-004",
+    "kind": "vocab",
+    "deckId": "ch2-core5",
+    "level": "HSK1",
+    "promptLine": "hěn duō — 很多",
+    "question": "What does this mean?",
+    "choices": { "A": "few", "B": "many", "C": "sometimes", "D": "every" },
+    "correct": "B",
+    "explanation": "很多 means many.",
+    "tags": ["quantity"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-core5-005",
+    "kind": "vocab",
+    "deckId": "ch2-core5",
+    "level": "HSK1",
+    "promptLine": "měi — 每",
+    "question": "What does this mean?",
+    "choices": { "A": "always", "B": "every", "C": "few", "D": "never" },
+    "correct": "B",
+    "explanation": "每 means every.",
+    "tags": ["frequency"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-core5-006",
+    "kind": "vocab",
+    "deckId": "ch2-core5",
+    "level": "HSK1",
+    "promptLine": "cháng — 常",
+    "question": "What does this mean?",
+    "choices": { "A": "often", "B": "always", "C": "few", "D": "every" },
+    "correct": "A",
+    "explanation": "常 means often.",
+    "tags": ["frequency"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-core5-007",
+    "kind": "vocab",
+    "deckId": "ch2-core5",
+    "level": "HSK1",
+    "promptLine": "yǒushíhou — 有时候",
+    "question": "What does this mean?",
+    "choices": { "A": "always", "B": "sometimes", "C": "many", "D": "every" },
+    "correct": "B",
+    "explanation": "有时候 means sometimes.",
+    "tags": ["frequency"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-core5-008",
+    "kind": "vocab",
+    "deckId": "ch2-core5",
+    "level": "HSK1",
+    "promptLine": "zǒngshì — 总是",
+    "question": "What does this mean?",
+    "choices": { "A": "sometimes", "B": "never", "C": "always", "D": "few" },
+    "correct": "C",
+    "explanation": "总是 means always.",
+    "tags": ["frequency"],
+    "difficulty": 1
+  },
 
+  {
+    "id": "ch2-core5-009",
+    "kind": "vocab",
+    "deckId": "ch2-core5",
+    "level": "HSK1",
+    "promptLine": "many",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "duō — 多",
+      "B": "shǎo — 少",
+      "C": "měi — 每",
+      "D": "zǒngshì — 总是"
+    },
+    "correct": "A",
+    "explanation": "many = duō — 多.",
+    "tags": ["quantity"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-core5-010",
+    "kind": "vocab",
+    "deckId": "ch2-core5",
+    "level": "HSK1",
+    "promptLine": "few",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "duō — 多",
+      "B": "shǎo — 少",
+      "C": "cháng — 常",
+      "D": "měi — 每"
+    },
+    "correct": "B",
+    "explanation": "few = shǎo — 少.",
+    "tags": ["quantity"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-core5-011",
+    "kind": "vocab",
+    "deckId": "ch2-core5",
+    "level": "HSK1",
+    "promptLine": "a little",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "hěn duō — 很多",
+      "B": "yìdiǎn — 一点",
+      "C": "zǒngshì — 总是",
+      "D": "yǒushíhou — 有时候"
+    },
+    "correct": "B",
+    "explanation": "a little = yìdiǎn — 一点.",
+    "tags": ["quantity"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-core5-012",
+    "kind": "vocab",
+    "deckId": "ch2-core5",
+    "level": "HSK1",
+    "promptLine": "every",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "měi — 每",
+      "B": "cháng — 常",
+      "C": "duō — 多",
+      "D": "shǎo — 少"
+    },
+    "correct": "A",
+    "explanation": "every = měi — 每.",
+    "tags": ["frequency"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-core5-013",
+    "kind": "vocab",
+    "deckId": "ch2-core5",
+    "level": "HSK1",
+    "promptLine": "often",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "měi — 每",
+      "B": "zǒngshì — 总是",
+      "C": "cháng — 常",
+      "D": "duō — 多"
+    },
+    "correct": "C",
+    "explanation": "often = cháng — 常.",
+    "tags": ["frequency"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-core5-014",
+    "kind": "vocab",
+    "deckId": "ch2-core5",
+    "level": "HSK1",
+    "promptLine": "sometimes",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "yǒushíhou — 有时候",
+      "B": "zǒngshì — 总是",
+      "C": "měi — 每",
+      "D": "duō — 多"
+    },
+    "correct": "A",
+    "explanation": "sometimes = yǒushíhou — 有时候.",
+    "tags": ["frequency"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-core5-015",
+    "kind": "vocab",
+    "deckId": "ch2-core5",
+    "level": "HSK1",
+    "promptLine": "always",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "yǒushíhou — 有时候",
+      "B": "zǒngshì — 总是",
+      "C": "cháng — 常",
+      "D": "shǎo — 少"
+    },
+    "correct": "B",
+    "explanation": "always = zǒngshì — 总是.",
+    "tags": ["frequency"],
+    "difficulty": 1
+  },
+  {
+    "id": "ch2-core5-016",
+    "kind": "vocab",
+    "deckId": "ch2-core5",
+    "level": "HSK1",
+    "promptLine": "many (a lot)",
+    "question": "Which is correct?",
+    "choices": {
+      "A": "yìdiǎn — 一点",
+      "B": "hěn duō — 很多",
+      "C": "shǎo — 少",
+      "D": "měi — 每"
+    },
+    "correct": "B",
+    "explanation": "many (a lot) = hěn duō — 很多.",
+    "tags": ["quantity"],
+    "difficulty": 1
+  }, 
 
-
+  {
+    "id": "ch2-core5_phrase-001",
+    "kind": "vocab",
+    "deckId": "ch2-core5_phrase",
+    "level": "HSK1",
+    "promptLine": "wǒ yǒushíhou qù gōngyuán — 我有时候去公园",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "I sometimes go to the park.",
+      "B": "I always go to the park.",
+      "C": "I never go to the park.",
+      "D": "I go to the park every day."
+    },
+    "correct": "A",
+    "explanation": "有时候 = sometimes.",
+    "tags": ["phrases"],
+    "difficulty": 2
+  },
+  {
+    "id": "ch2-core5_phrase-002",
+    "kind": "vocab",
+    "deckId": "ch2-core5_phrase",
+    "level": "HSK1",
+    "promptLine": "tā zǒngshì hěn máng — 他总是很忙",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "He is sometimes busy.",
+      "B": "He is always busy.",
+      "C": "He is rarely busy.",
+      "D": "He is never busy."
+    },
+    "correct": "B",
+    "explanation": "总是 = always.",
+    "tags": ["phrases"],
+    "difficulty": 2
+  },
+  {
+    "id": "ch2-core5_phrase-003",
+    "kind": "vocab",
+    "deckId": "ch2-core5_phrase",
+    "level": "HSK1",
+    "promptLine": "wǒ cháng qù xuéxiào — 我常去学校",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "I never go to school.",
+      "B": "I sometimes go to school.",
+      "C": "I often go to school.",
+      "D": "I always go to school."
+    },
+    "correct": "C",
+    "explanation": "常 = often.",
+    "tags": ["phrases"],
+    "difficulty": 2
+  },
+  {
+    "id": "ch2-core5_phrase-004",
+    "kind": "vocab",
+    "deckId": "ch2-core5_phrase",
+    "level": "HSK1",
+    "promptLine": "měi tiān wǒ hěn máng — 每天我很忙",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "I am busy every day.",
+      "B": "I am busy sometimes.",
+      "C": "I am busy never.",
+      "D": "I am busy once."
+    },
+    "correct": "A",
+    "explanation": "每 = every.",
+    "tags": ["phrases"],
+    "difficulty": 2
+  },
+  {
+    "id": "ch2-core5_phrase-005",
+    "kind": "vocab",
+    "deckId": "ch2-core5_phrase",
+    "level": "HSK1",
+    "promptLine": "wǒ yǒu hěn duō péngyou — 我有很多朋友",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "I have few friends.",
+      "B": "I have many friends.",
+      "C": "I have one friend.",
+      "D": "I have no friends."
+    },
+    "correct": "B",
+    "explanation": "很多 = many.",
+    "tags": ["phrases"],
+    "difficulty": 2
+  },
+  {
+    "id": "ch2-core5_phrase-006",
+    "kind": "vocab",
+    "deckId": "ch2-core5_phrase",
+    "level": "HSK1",
+    "promptLine": "wǒ zhǐ yǒu yìdiǎn qián — 我只有一点钱",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "I have a lot of money.",
+      "B": "I have no money.",
+      "C": "I have a little money.",
+      "D": "I have many friends."
+    },
+    "correct": "C",
+    "explanation": "一点 = a little.",
+    "tags": ["phrases"],
+    "difficulty": 2
+  },
+  {
+    "id": "ch2-core5_phrase-007",
+    "kind": "vocab",
+    "deckId": "ch2-core5_phrase",
+    "level": "HSK1",
+    "promptLine": "tā yǒu shǎo péngyou — 他有少朋友",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "He has many friends.",
+      "B": "He has few friends.",
+      "C": "He has no friends.",
+      "D": "He has a little money."
+    },
+    "correct": "B",
+    "explanation": "少 = few.",
+    "tags": ["phrases"],
+    "difficulty": 2
+  },
+  {
+    "id": "ch2-core5_phrase-008",
+    "kind": "vocab",
+    "deckId": "ch2-core5_phrase",
+    "level": "HSK1",
+    "promptLine": "wǒ yǒushíhou hěn lèi — 我有时候很累",
+    "question": "What does this mean?",
+    "choices": {
+      "A": "I am always tired.",
+      "B": "I am sometimes tired.",
+      "C": "I am never tired.",
+      "D": "I am very busy."
+    },
+    "correct": "B",
+    "explanation": "有时候 = sometimes.",
+    "tags": ["phrases"],
+    "difficulty": 2
+  }
+,
 
 {
     "id": "travel4-food1-001",

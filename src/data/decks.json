@@ -16,14 +16,14 @@
 
 
   "ch2-core4": { "chapter": 2, "section": "Description", "deckName": "Core 4", "order": 1 },
-  "ch2-phrases-core4": { "chapter": 2, "section": "Description", "deckName": "Core 4 phrase", "order": 2 },
+  "ch2-phrases-core4": { "chapter": 2, "section": "Description", "deckName": "Core 4 phrases", "order": 2 },
   "ch2-sent-core4": { "chapter": 2, "section": "Description", "deckName": "Core 4 Sent", "order": 3 },
   "ch2-bonus_phrase1": { "chapter": 2, "section": "Description", "deckName": "Bonus Phrases 1", "order": 4 },
 
-  "ch2-con1": { "chapter": 2, "section": "Connections", "deckName": "Connect 1", "order": 1 },
-  "ch2-con2": { "chapter": 2, "section": "Connections", "deckName": "Connect 2", "order": 2 },
-  "ch2-con3": { "chapter": 2, "section": "Connections", "deckName": "Connect 3", "order": 3 },
-  "ch2-conp": { "chapter": 2, "section": "Connections", "deckName": "Connect Phrases", "order": 4 },
+  "ch2-core5": { "chapter": 2, "section": "Frequency", "deckName": "Core 5", "order": 1 },
+  "ch2-core5_phrase": { "chapter": 2, "section": "Frequency", "deckName": "Core 5 Phrases", "order": 2 },
+  "ch2-core6": { "chapter": 2, "section": "Frequency", "deckName": "Core 6", "order": 3 },
+  "ch2-core6_phrase": { "chapter": 2, "section": "Frequency", "deckName": "Core 6 Phrases", "order": 4 },
 
   "ch2-comp1": { "chapter": 2, "section": "Comparison", "deckName": "Compare 1", "order": 1 },
   "ch2-comp2": { "chapter": 2, "section": "Comparison", "deckName": "Compare 2", "order": 2 },
