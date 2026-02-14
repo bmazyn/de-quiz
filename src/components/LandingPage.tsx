@@ -4,6 +4,27 @@ import { getSections, getDecksForSection, getChapterStructure, getDeckIdByName }
 import "./LandingPage.css";
 // comment to test
 
+// Get deck stats from localStorage
+function getDeckStats(deckId: string): { attempts: number; correct: number } | null {
+  try {
+    const key = `de_quiz_stats:${deckId}`;
+    const stored = localStorage.getItem(key);
+    return stored ? JSON.parse(stored) : null;
+  } catch {
+    return null;
+  }
+}
+
+// Get percent correct for a deck
+function getDeckPercentCorrect(deckId: string): string {
+  const stats = getDeckStats(deckId);
+  if (!stats || stats.attempts === 0) {
+    return "No attempts yet";
+  }
+  const percent = Math.round((stats.correct / stats.attempts) * 100);
+  return `${percent}%`;
+}
+
 // Compute sections and decks from decks.json
 const sections = getSections();
 const decksPerSection: Record<string, string[]> = {};

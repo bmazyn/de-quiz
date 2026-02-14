@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { getChapters, getDecksForChapter } from "../utils/decks";
 import "./Chapters.css";
