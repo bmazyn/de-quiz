@@ -88,11 +88,11 @@ export default function QuizCard({ card, answerState, onAnswer, onNext, isDisabl
               : "✕ Wrong"}
           </div>
           <div className="explanation">
-            <strong>Correct Answer: {card.answer}</strong>
+            <strong>Correct Answer:</strong>
+            <p>{card.choices[card.answer]}</p>
             <p>{card.whyCorrect}</p>
             {!answerState.isCorrect && answerState.selectedChoice && card.whyWrong[answerState.selectedChoice] && (
               <div className="why-wrong">
-                <strong>Why {answerState.selectedChoice} is wrong:</strong>
                 <p>{card.whyWrong[answerState.selectedChoice]}</p>
               </div>
             )}

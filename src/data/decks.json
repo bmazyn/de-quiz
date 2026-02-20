@@ -1,4 +1,31 @@
 {
-  "dbx.delta.opt1": {"app": "DE", "chapter": 1, "chapterName": "Databricks", 
-    "section": "Delta Lake", "deckName": "Optimization Basics", "order": 1  }
+  "dbx.delta.opt1": { "app": "DE", "chapter": 1, "chapterName": "Databricks",
+    "section": "Delta Lake", "deckName": "Optimization Basics", "order": 1 },
+
+  "cli.git.1": { "app": "DE", "chapter": 2, "chapterName": "CLI",
+    "section": "Git", "deckName": "Git 1 – Core Commands", "order": 1 },
+  "cli.git.2": { "app": "DE", "chapter": 2, "chapterName": "CLI",
+    "section": "Git", "deckName": "Git 2 – Branching & Merge", "order": 2 },
+  "cli.git.3": { "app": "DE", "chapter": 2, "chapterName": "CLI",
+    "section": "Git", "deckName": "Git 3 – Collaboration", "order": 3 },
+  "cli.git.4": { "app": "DE", "chapter": 2, "chapterName": "CLI",
+    "section": "Git", "deckName": "Git 4 – Recovery & History", "order": 4 },
+
+  "cli.bash.1": { "app": "DE", "chapter": 2, "chapterName": "CLI",
+    "section": "Bash", "deckName": "Bash 1 – Navigation & Files", "order": 1 },
+  "cli.bash.2": { "app": "DE", "chapter": 2, "chapterName": "CLI",
+    "section": "Bash", "deckName": "Bash 2 – Pipes & Text Tools", "order": 2 },
+  "cli.bash.3": { "app": "DE", "chapter": 2, "chapterName": "CLI",
+    "section": "Bash", "deckName": "Bash 3 – Scripting Basics", "order": 3 },
+  "cli.bash.4": { "app": "DE", "chapter": 2, "chapterName": "CLI",
+    "section": "Bash", "deckName": "Bash 4 – Processes & Environment", "order": 4 },
+
+  "cli.win.1": { "app": "DE", "chapter": 2, "chapterName": "CLI",
+    "section": "Windows CLI", "deckName": "Windows CLI 1 – CMD Basics", "order": 1 },
+  "cli.win.2": { "app": "DE", "chapter": 2, "chapterName": "CLI",
+    "section": "Windows CLI", "deckName": "Windows CLI 2 – PowerShell Core", "order": 2 },
+  "cli.win.3": { "app": "DE", "chapter": 2, "chapterName": "CLI",
+    "section": "Windows CLI", "deckName": "Windows CLI 3 – Objects & Pipeline", "order": 3 },
+  "cli.win.4": { "app": "DE", "chapter": 2, "chapterName": "CLI",
+    "section": "Windows CLI", "deckName": "Windows CLI 4 – Admin & Automation", "order": 4 }
 }

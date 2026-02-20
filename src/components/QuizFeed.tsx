@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams, useLocation } from "react-router-dom";
 import QuizCard from "./QuizCard";
 import type { Question, ChoiceKey, AnswerState } from "../types";
 import questionsData from "../data/questions.json";
+import { getDeckIdByName } from "../utils/decks";
 import "./QuizFeed.css";
 
 // Fisher-Yates shuffle
@@ -17,6 +18,7 @@ function shuffleArray<T>(array: T[]): T[] {
 
 export default function QuizFeed() {
   const navigate = useNavigate();
+  const location = useLocation();
   const { deckId } = useParams<{ deckId: string }>();
   
   const [filteredCards, setFilteredCards] = useState<Question[]>([]);
@@ -34,17 +36,34 @@ export default function QuizFeed() {
     
     let filtered: Question[];
     
+    // Get selectedDecks from navigation state (array of deck names)
+    const stateData = location.state as { selectedDecks?: string[] } | null;
+    const selectedDeckNames = stateData?.selectedDecks;
+    
     if (deckId) {
-      // Filter by deckId from route param
+      // Filter by deckId from route param (single deck)
       filtered = allQuestions.filter(q => q.deckId === deckId);
+      console.log(`🎯 QuizFeed: Loaded ${filtered.length} cards for deckId="${deckId}"`);
+    } else if (selectedDeckNames && selectedDeckNames.length > 0) {
+      // Convert deck names to deck IDs
+      const deckIds = selectedDeckNames
+        .map(name => getDeckIdByName(name))
+        .filter((id): id is string => id !== undefined);
+      
+      console.log(`🎯 QuizFeed: Converting deck names to IDs:`, selectedDeckNames, '→', deckIds);
+      
+      // Filter by the selected deck IDs
+      filtered = allQuestions.filter(q => deckIds.includes(q.deckId));
+      console.log(`🎯 QuizFeed: Loaded ${filtered.length} cards for ${deckIds.length} deck(s)`);
     } else {
       // No filtering - use all questions
       filtered = allQuestions;
+      console.log(`🎯 QuizFeed: No deck specified, loaded all ${filtered.length} cards`);
     }
     
     setFilteredCards(filtered);
     setShuffledDeck(shuffleArray(filtered));
-  }, [deckId]);
+  }, [deckId, location.state]);
 
   const handleAnswer = (choice: ChoiceKey) => {
     const currentCard = shuffledDeck[currentIndex];
@@ -55,10 +74,11 @@ export default function QuizFeed() {
       isCorrect,
     });
 
-    // Track stats per deck
-    if (deckId) {
+    // Track stats per deck using the card's deckId
+    const cardDeckId = currentCard.deckId;
+    if (cardDeckId) {
       try {
-        const key = `de_quiz_stats:${deckId}`;
+        const key = `de_quiz_stats:${cardDeckId}`;
         const stored = localStorage.getItem(key);
         const stats = stored ? JSON.parse(stored) : { attempts: 0, correct: 0 };
         

@@ -51,7 +51,22 @@ export default function StartPage() {
     <div className="start-page">
       <div className="start-content">
         <div className="start-logo">
-          <div className="logo-character">快</div>
+          <svg width="90" height="90" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            {/* Bottom cylinder */}
+            <ellipse cx="50" cy="75" rx="35" ry="12" fill="currentColor" opacity="0.9"/>
+            <rect x="15" y="50" width="70" height="25" fill="currentColor" opacity="0.9"/>
+            <ellipse cx="50" cy="50" rx="35" ry="12" fill="currentColor"/>
+            
+            {/* Middle cylinder */}
+            <ellipse cx="50" cy="50" rx="35" ry="12" fill="currentColor" opacity="0.9"/>
+            <rect x="15" y="32" width="70" height="18" fill="currentColor" opacity="0.9"/>
+            <ellipse cx="50" cy="32" rx="35" ry="12" fill="currentColor"/>
+            
+            {/* Top cylinder */}
+            <ellipse cx="50" cy="32" rx="35" ry="12" fill="currentColor" opacity="0.9"/>
+            <rect x="15" y="20" width="70" height="12" fill="currentColor" opacity="0.95"/>
+            <ellipse cx="50" cy="20" rx="35" ry="12" fill="currentColor"/>
+          </svg>
         </div>
         
         <h1 className="start-title">QuickCard</h1>

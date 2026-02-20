@@ -4,7 +4,7 @@
     "id": "dbx-001",
     "app": "DE",
     "chapter": 1,
-    "deckId": "dbx.delta.opt",
+    "deckId": "dbx.delta.opt1",
     "difficulty": 2,
     "promptLine": "A Delta table becomes slow after many small batch inserts. What is the best action to improve read performance?",
     "choices": { "A": "VACUUM my_table", "B": "OPTIMIZE my_table", "C": "REFRESH TABLE my_table", "D": "CACHE TABLE my_table" },
@@ -198,6 +198,118 @@
 },
 "conceptTags":["delta","partitioning","zorder","performance"]
 }
+,
+
+
+{
+"id":"cli-git1-001","app":"DE","chapter":2,"deckId":"cli.git.1","difficulty":1,
+"promptLine":"What does `git init` do?",
+"choices":{"A":"Creates a new local Git repository","B":"Connects to a remote repository","C":"Stages all files","D":"Creates a new branch"},
+"answer":"A",
+"whyCorrect":"git init initializes a new repository by creating a .git directory to track changes.",
+"whyWrong":{"B":"Remote connections require git remote add.","C":"Staging requires git add.","D":"Branches are created with git branch."},
+"conceptTags":["git","init","repository"]
+},
+{
+"id":"cli-git1-002","app":"DE","chapter":2,"deckId":"cli.git.1","difficulty":1,
+"promptLine":"What does `git clone <url>` do?",
+"choices":{"A":"Creates a new empty repo","B":"Downloads a remote repo with history","C":"Stages files","D":"Deletes local repo"},
+"answer":"B",
+"whyCorrect":"git clone copies a remote repository including commit history.",
+"whyWrong":{"A":"git init creates empty repos.","C":"git add stages files.","D":"Clone does not delete repos."},
+"conceptTags":["git","clone","remote"]
+},
+{
+"id":"cli-git1-003","app":"DE","chapter":2,"deckId":"cli.git.1","difficulty":1,
+"promptLine":"What information does `git status` provide?",
+"choices":{"A":"Commit history","B":"Remote URLs","C":"Working directory and staging state","D":"Branch merge conflicts"},
+"answer":"C",
+"whyCorrect":"git status shows tracked/untracked files and staging status.",
+"whyWrong":{"A":"History uses git log.","B":"Remotes use git remote -v.","D":"Conflicts appear during merge."},
+"conceptTags":["git","status","staging"]
+},
+{
+"id":"cli-git1-004","app":"DE","chapter":2,"deckId":"cli.git.1","difficulty":1,
+"promptLine":"What is the purpose of `git add file.txt`?",
+"choices":{"A":"Commit file","B":"Stage file for next commit","C":"Push to remote","D":"Delete file"},
+"answer":"B",
+"whyCorrect":"git add moves changes into the staging area.",
+"whyWrong":{"A":"Commit requires git commit.","C":"Push requires git push.","D":"Delete uses git rm."},
+"conceptTags":["git","add","staging"]
+},
+{
+"id":"cli-git1-005","app":"DE","chapter":2,"deckId":"cli.git.1","difficulty":1,
+"promptLine":"What does `git commit -m \"message\"` do?",
+"choices":{"A":"Stages files","B":"Creates a snapshot of staged changes","C":"Pushes to remote","D":"Creates a branch"},
+"answer":"B",
+"whyCorrect":"git commit records staged changes as a new snapshot.",
+"whyWrong":{"A":"git add stages.","C":"git push uploads.","D":"git branch creates branches."},
+"conceptTags":["git","commit","snapshot"]
+},
+{
+"id":"cli-git1-006","app":"DE","chapter":2,"deckId":"cli.git.1","difficulty":1,
+"promptLine":"What does `git log` display?",
+"choices":{"A":"File differences","B":"Remote repos","C":"Commit history","D":"Current branch only"},
+"answer":"C",
+"whyCorrect":"git log shows commit history including author and messages.",
+"whyWrong":{"A":"Diff uses git diff.","B":"Remotes use git remote.","D":"Log shows history across branches unless filtered."},
+"conceptTags":["git","log","history"]
+},
+{
+"id":"cli-git1-007","app":"DE","chapter":2,"deckId":"cli.git.1","difficulty":2,
+"promptLine":"What does `git diff` show?",
+"choices":{"A":"Differences between working directory and staging area","B":"Remote differences","C":"Branch list","D":"Commit history"},
+"answer":"A",
+"whyCorrect":"git diff compares changes not yet staged.",
+"whyWrong":{"B":"Remote diff requires comparing refs.","C":"git branch lists branches.","D":"git log shows history."},
+"conceptTags":["git","diff","changes"]
+},
+{
+"id":"cli-git1-008","app":"DE","chapter":2,"deckId":"cli.git.1","difficulty":2,
+"promptLine":"What does `git rm file.txt` do?",
+"choices":{"A":"Deletes file and stages deletion","B":"Removes commit history","C":"Deletes remote repo","D":"Unstages file"},
+"answer":"A",
+"whyCorrect":"git rm removes the file and stages that removal.",
+"whyWrong":{"B":"History remains intact.","C":"Remote deletion is separate.","D":"Unstage uses git restore --staged."},
+"conceptTags":["git","rm","staging"]
+},
+{
+"id":"cli-git1-009","app":"DE","chapter":2,"deckId":"cli.git.1","difficulty":2,
+"promptLine":"What does `git mv old.txt new.txt` do?",
+"choices":{"A":"Renames file and stages change","B":"Commits file","C":"Pushes rename","D":"Deletes file"},
+"answer":"A",
+"whyCorrect":"git mv renames the file and stages the rename.",
+"whyWrong":{"B":"Commit requires git commit.","C":"Push uses git push.","D":"It renames, not deletes."},
+"conceptTags":["git","mv","rename"]
+},
+{
+"id":"cli-git1-010","app":"DE","chapter":2,"deckId":"cli.git.1","difficulty":2,
+"promptLine":"What does `git remote -v` show?",
+"choices":{"A":"Commit history","B":"Configured remote URLs","C":"Branch list","D":"File changes"},
+"answer":"B",
+"whyCorrect":"git remote -v lists remotes and their fetch/push URLs.",
+"whyWrong":{"A":"History uses git log.","C":"git branch lists branches.","D":"Changes use git diff."},
+"conceptTags":["git","remote","configuration"]
+},
+{
+"id":"cli-git1-011","app":"DE","chapter":2,"deckId":"cli.git.1","difficulty":2,
+"promptLine":"What does `git fetch` do?",
+"choices":{"A":"Downloads changes without merging","B":"Downloads and merges automatically","C":"Commits changes","D":"Deletes local branch"},
+"answer":"A",
+"whyCorrect":"git fetch retrieves updates but does not merge them.",
+"whyWrong":{"B":"git pull merges.","C":"Commit requires git commit.","D":"Fetch does not delete branches."},
+"conceptTags":["git","fetch","remote"]
+},
+{
+"id":"cli-git1-012","app":"DE","chapter":2,"deckId":"cli.git.1","difficulty":2,
+"promptLine":"What does `git pull` do?",
+"choices":{"A":"Stages files","B":"Downloads and merges remote changes","C":"Creates branch","D":"Resets repository"},
+"answer":"B",
+"whyCorrect":"git pull = git fetch + merge, updating the current branch.",
+"whyWrong":{"A":"Staging uses git add.","C":"Branch creation uses git branch.","D":"Reset uses git reset."},
+"conceptTags":["git","pull","merge"]
+}
+
 
 
 ]
