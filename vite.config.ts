@@ -8,29 +8,29 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico', 'apple-touch-icon.png'],
+      includeAssets: ['favicon.ico', 'apple-touch-icon-v2.png'],
       manifest: {
         name: 'QuickCard',
         short_name: 'QuickCard',
-        description: 'QuickCard — Chinese flashcard quiz',
+        description: 'QuickCard — Database Quiz App',
         start_url: '/',
-        theme_color: '#ffffff',
-        background_color: '#ffffff',
+        theme_color: '#667eea',
+        background_color: '#1a1a1a',
         display: 'standalone',
         orientation: 'portrait',
         icons: [
           {
-            src: 'pwa-192.png',
+            src: 'pwa-192-v2.png',
             sizes: '192x192',
             type: 'image/png'
           },
           {
-            src: 'pwa-512.png',
+            src: 'pwa-512-v2.png',
             sizes: '512x512',
             type: 'image/png'
           },
           {
-            src: 'pwa-512.png',
+            src: 'pwa-512-v2.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'any maskable'

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate DB Icons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #1a1a1a;
+            color: white;
+        }
+        canvas {
+            border: 1px solid #444;
+            margin: 10px;
+            background: white;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>DB Icon Generator</h1>
+    <p>Right-click each canvas and "Save image as..." to download the icons.</p>
+    <p>Save as: pwa-192-v2.png, pwa-512-v2.png, and apple-touch-icon-v2.png</p>
+    
+    <div>
+        <h2>192x192</h2>
+        <canvas id="canvas192" width="192" height="192"></canvas>
+    </div>
+    
+    <div>
+        <h2>512x512</h2>
+        <canvas id="canvas512" width="512" height="512"></canvas>
+    </div>
+    
+    <div>
+        <h2>180x180 (Apple Touch Icon)</h2>
+        <canvas id="canvas180" width="180" height="180"></canvas>
+    </div>
+
+    <script>
+        function drawDBIcon(canvas) {
+            const ctx = canvas.getContext('2d');
+            const size = canvas.width;
+            const padding = size * 0.15;
+            const centerX = size / 2;
+            const dbWidth = size * 0.5;
+            const dbHeight = size * 0.7;
+            const ellipseHeight = size * 0.08;
+            
+            // Background with gradient
+            const gradient = ctx.createLinearGradient(0, 0, size, size);
+            gradient.addColorStop(0, '#667eea');
+            gradient.addColorStop(1, '#764ba2');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, size, size);
+            
+            // Draw database cylinders (white)
+            ctx.fillStyle = 'white';
+            ctx.strokeStyle = 'white';
+            ctx.lineWidth = size * 0.01;
+            
+            const cylinderSpacing = size * 0.12;
+            const topY = padding + ellipseHeight;
+            const midY = topY + cylinderSpacing;
+            const bottomY = midY + cylinderSpacing;
+            const finalY = bottomY + cylinderSpacing;
+            
+            // Bottom cylinder
+            ctx.globalAlpha = 0.9;
+            drawCylinder(ctx, centerX, bottomY, dbWidth, finalY - bottomY, ellipseHeight);
+            
+            // Middle cylinder
+            ctx.globalAlpha = 0.9;
+            drawCylinder(ctx, centerX, midY, dbWidth, bottomY - midY, ellipseHeight);
+            
+            // Top cylinder
+            ctx.globalAlpha = 1;
+            drawCylinder(ctx, centerX, topY, dbWidth, midY - topY, ellipseHeight);
+            
+            ctx.globalAlpha = 1;
+        }
+        
+        function drawCylinder(ctx, x, y, width, height, ellipseHeight) {
+            const radiusX = width / 2;
+            const radiusY = ellipseHeight / 2;
+            
+            // Draw sides
+            ctx.fillRect(x - radiusX, y, width, height);
+            
+            // Draw bottom ellipse
+            ctx.beginPath();
+            ctx.ellipse(x, y + height, radiusX, radiusY, 0, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Draw top ellipse
+            ctx.beginPath();
+            ctx.ellipse(x, y, radiusX, radiusY, 0, 0, Math.PI * 2);
+            ctx.fill();
+        }
+        
+        // Generate all icons
+        drawDBIcon(document.getElementById('canvas192'));
+        drawDBIcon(document.getElementById('canvas512'));
+        drawDBIcon(document.getElementById('canvas180'));
+    </script>
+</body>
+</html>
